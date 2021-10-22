@@ -1,0 +1,18 @@
+<CombineXMesh>
+	<Material
+		AlbedoMap="trucks/mod_scout__d.tga"
+		Name="mod_scout_mat"
+		NormalMap="trucks/mod_scout__n_d.tga"
+		ShadingMap="trucks/mod_scout__sh_d.tga"
+		ForceSnowUnderwater="true"
+		SnowUpAngleRange="35.0"
+		SnowUpFlatten="0.50"
+		SnowUpIntensity="3.0"
+		SnowUpNoiseIntensity="0.52"
+		SnowUpNoiseScale="0.4"
+		SnowUpNormalsSpace="object"
+		SnowifyNoiseIntensity="3.0"
+		SnowifyNoiseIntensityShift="0.1"
+		SnowifyNoiseTilingMult="10.0"
+	/>
+</CombineXMesh>

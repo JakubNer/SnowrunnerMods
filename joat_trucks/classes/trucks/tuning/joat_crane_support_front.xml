@@ -1,0 +1,23 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/joat_crane_support_front" >
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		Price="100"
+		CameraPreset="addon_1"
+		Category="frame_addons"		
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Crane Support"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Crane Support"
+		/>
+		<InstallSocket Type="joat_crane_support_front" />
+	</GameData>
+</TruckAddon>

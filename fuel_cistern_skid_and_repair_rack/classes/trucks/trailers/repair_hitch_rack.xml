@@ -1,0 +1,64 @@
+<_templates Include="trucks">
+	<Wheel>
+		<DollyWheel
+			SuspensionHeight=".5"
+			SuspensionStrength=".3"
+			Torque="none"
+			Type="wheel_scout_trailer_front"
+			SuspensionMin="-1"
+		/>
+	</Wheel>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData FuelCapacity="20" RepairsCapacity="300" WheelRepairsCapacity="4">
+		<Wheels>
+			<Wheel _template="DollyWheel" Pos="(-.91; 2.1; .67)" />
+			<Wheel _template="DollyWheel" Pos="(-.91; 2.1; .67)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-0.071; 2.1; .67)" />
+			<Wheel _template="DollyWheel" Pos="(-0.071; 2.1; .67)" RightSide="true" />					
+		</Wheels>
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-0.5"
+			MaxX="4"
+		/>
+		<LimitedFluid
+			Center="(-.32; 1.75; 0.33)"
+			SizeX=".39"
+			SizeY=".2"
+			SizeZ=".3"
+			Type="Box"
+		/>
+
+		<Constraint Type="Hinge" AxisLocal="(0; 1; 0)" MinLimit="-1" MaxLimit="1">
+		</Constraint>
+		<Camera Center="(0; 0; 0)" />
+	</TruckData>	
+	<!-- 
+		trucks/cargo/cargo_vehicles_spare_parts_1
+		trucks/hummer_h2_tuning_hummer_h2_roofrack
+		trucks/don_71_tuning_don_71_roofrack_1
+	-->
+	<PhysicsModel Mesh="trucks/don_71_tuning_don_71_roofrack_1">
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="100"
+		>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/cargo_unit_service_spare_parts_1_lmk" MinScale="1.8" MaxScale="3.8" />
+	<GameData Price="275">
+		<CraneSocket Pos="(-.62; 1.83; 0)" />
+		<UiDesc
+			UiDesc="Repair Hitch Cargo Rack (Non Scout)"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="Repair Hitch Cargo Rack (Non Scout)"
+		/>
+		<InstallSocket Offset="(0.12; 1.8; 0)" Type="Trailer" />		
+		<WinchSocket Pos="(.12; 1.8; 0)" ParentFrame="BoneCabin_cdt" />		
+		<CraneSocket Pos="(.12; 1.8; 0)" />						
+	</GameData>
+</Truck>
