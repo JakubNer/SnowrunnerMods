@@ -363,9 +363,6 @@
 			</Socket>			
 		</AddonSockets>		
 		<AddonSockets>
-			<Socket Names="joat_crane_bumper" Offset="(1.665; 0.1; 0)" DefaultAddon="joat_crane_bumper" />
-		</AddonSockets>		
-		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Visor" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets>

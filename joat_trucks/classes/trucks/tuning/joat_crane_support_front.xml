@@ -6,7 +6,7 @@
 		</Body>
 	</PhysicsModel>
 	<GameData
-		Price="100"
+		Price="700"
 		CameraPreset="addon_1"
 		Category="frame_addons"		
 		UnlockByExploration="false"
@@ -18,6 +18,35 @@
 			UiIcon40x40=""
 			UiName="[JoAT] Crane Support"
 		/>
+		
 		<InstallSocket Type="joat_crane_support_front" />
+
+		<WinchSocket Pos="(.265; .55; .45)" />
+		<WinchSocket Pos="(.265; .55; -.45)" />
+		<CraneSocket Pos="(.265; .55; .45)" />
+		<CraneSocket Pos="(.265; .55; -.45)" />
+		
 	</GameData>
+	<ModelAttachments>
+        <Ignition>
+			<Flare
+				_template="IgnitionSignalWhite"
+				Pos="(.28; .37; .35)"
+			/>
+			<Flare
+				_template="IgnitionSignalWhite"
+				Pos="(.28; .37; -.35)"
+			/>
+		</Ignition>
+		<HeadLight>
+			<Flare
+				_template="HeadLight"
+				Pos="(.28; .37; .35)"
+			/>
+			<Flare
+				_template="HeadLight"
+				Pos="(.28; .37; -.35)"
+			/>
+		</HeadLight>		
+	</ModelAttachments>
 </TruckAddon>

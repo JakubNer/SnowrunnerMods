@@ -1,18 +1,10 @@
 <CombineXMesh>
 	<Material
-		AlbedoMap="trucks/bumpy_metal__d.tga"
-		Name="joat_crane_support_mat"
-		NormalMap="trucks/bumpy_metal__n_d.tga"
-		ShadingMap="trucks/bumpy_metal__sh_d.tga"
+		AlbedoMap="trucks/joat_crane_support_front__d.tga"
+		Name="joat_crane_support_front_mat"
+		NormalMap="trucks/joat_crane_support_front__n_d.tga"
+		ShadingMap="trucks/joat_crane_support_front__sh_d.tga"
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>
-	<Material
-		AlbedoMap="trucks/mod_scout__d.tga"
-		Name="mod_scout_mat"
-		NormalMap="trucks/mod_scout__n_d.tga"
-		ShadingMap="trucks/mod_scout__sh_d.tga"
-		SnowUpIntensity="0.0"
-		AlphaKill="true"
-	/>	
 </CombineXMesh>
