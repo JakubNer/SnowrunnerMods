@@ -7,7 +7,7 @@
 	</PhysicsModel>	
 	<GameData
 		CameraPreset="rear"
-		Category="rear"
+		Category="joat_hitch_both_cat"
 		Price="400"
 		UnlockByExploration="false"
 		UnlockByRank="1"
