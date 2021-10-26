@@ -133,7 +133,7 @@
 		</Body>
 	</PhysicsModel>
 	<GameData
-		CameraPreset="addon_1"
+		Preset="front"
 		Category="frame_addons"
 		IsCustomizable="true"
 		Price="5700"
@@ -141,12 +141,11 @@
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="UI_ADDON_MINICRANE_RU_DESC"
+			UiDesc="[JoAT] IM50 Front Crane"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_ADDON_MINICRANE_RU_NAME"
+			UiName="[JoAT] IM50 Front Crane"
 		/>
-		<InstallSocket Offset="(0; 0.17; 0)" Type="MinicraneRU" />
 		<CraneSourceSocket Pos="(0.074; 1.52; 0.861)" ParentFrame="BoneArmExt2_cdt" />
 		<AddonType Name="Crane" />
 		<SoundPoweredGroupStart Name="addons/common/crane_powergroups_start" Range="20" Volume="1"/>

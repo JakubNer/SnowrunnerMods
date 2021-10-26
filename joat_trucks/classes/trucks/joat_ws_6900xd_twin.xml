@@ -616,12 +616,13 @@
 		<CraneSocket Pos="(1.616; 1.71; -1.45)" />
 		<CraneSocket Pos="(1.616; 1.71; 0)" />
 		<AddonSockets>
-			<Socket Names="MinicraneRU" Offset="(-8.38525; 1.65; 0)" />
-			<Socket Names="LogLift" Offset="(-7.8; 1.65; 0)" />
-			<Socket Names="CraneKrs58Bandit" Offset="(-9.16; 0.4; 0)"/>
+			<Socket Names="joat_rear_crane" Offset="(-8.38525; 1.66; 0)" DefaultAddon="joat_rear_crane" />
 		</AddonSockets>		
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-7.786; 1.25; 0)" />
+			<Socket Names="joat_crane_support_rear" Offset="(-8.255; 1.37; 0)" ParentFrame="BoneChassis_cdt" DefaultAddon="joat_crane_support_rear" />
+		</AddonSockets>		
+		<AddonSockets>
+			<Socket Names="Trailer" Offset="(-7.786; 0.732; 0)" />
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="Ws6900xdTwinSpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">

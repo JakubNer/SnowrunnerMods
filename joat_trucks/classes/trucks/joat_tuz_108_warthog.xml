@@ -357,7 +357,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="joat_hitch" Offset="(-1.425; .75; 0)" DefaultAddon="joat_hitch" />
+			<Socket Names="joat_hitch_scout" Offset="(-2.95; .5; 0)" DefaultAddon="joat_hitch_scout" />
 		</AddonSockets>				
 		<AddonSockets>
 			<Socket Names="joat_crane_support_front" Offset="(3.68; .66; 0)" ParentFrame="BoneChassis_cdt" DefaultAddon="joat_crane_support_front" NamesBlock="tuz108warthogBumperExtra,tuz108warthogBumperProtect" />
@@ -370,11 +370,9 @@
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="Semitrailer" Offset="(-1.89; 1.458; 0)" />
-			<Socket Names="Trailer" Offset="(-3.065; 1.071; 0)" >
-				<AddonsShift Offset="(-0.6; .37; 0)" Types="joat_hitch" />								
-			</Socket>
+			<Socket Names="Trailer" Offset="(-3.065; 1.071; 0)" />
 			<Socket Names="ScautTrailer" Offset="(-3.065; 1.071; 0)" >
-				<AddonsShift Offset="(-0.62; .37; 0)" Types="joat_hitch" />								
+				<AddonsShift Offset="(-.03; -.1; 0)" Types="joat_hitch_scout" />								
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="tuz_108_warthog_diff_lock_default">

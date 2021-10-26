@@ -7,7 +7,8 @@
 	</PhysicsModel>
 	<GameData
 		Price="700"
-		CameraPreset="addon_1"
+		CameraPreset="front"
+		Category="front"
 		Category="frame_addons"		
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -31,20 +32,24 @@
         <Ignition>
 			<Flare
 				_template="IgnitionSignalWhite"
+				Size="0.5"
 				Pos="(.28; .37; .35)"
 			/>
 			<Flare
 				_template="IgnitionSignalWhite"
+				Size="0.5"
 				Pos="(.28; .37; -.35)"
 			/>
 		</Ignition>
 		<HeadLight>
 			<Flare
 				_template="HeadLight"
+				Size="0.5"
 				Pos="(.28; .37; .35)"
 			/>
 			<Flare
 				_template="HeadLight"
+				Size="0.5"
 				Pos="(.28; .37; -.35)"
 			/>
 		</HeadLight>		
