@@ -133,7 +133,7 @@
 		</Body>
 	</PhysicsModel>
 	<GameData
-		Preset="front"
+		CameraPreset="rear"
 		Category="JOAT"
 		IsCustomizable="true"
 		Price="5700"
