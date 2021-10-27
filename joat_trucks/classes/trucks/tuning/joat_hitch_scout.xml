@@ -7,7 +7,7 @@
 	</PhysicsModel>	
 	<GameData
 		CameraPreset="rear"
-		Category="rear"
+		Category="JOAT"
 		Price="400"
 		UnlockByExploration="false"
 		UnlockByRank="1"

@@ -159,8 +159,8 @@
 		<SoundOpenStop Name="addons/minicrane_us/minicrane_us_open_stop" Range="20" Volume="1"/>
 		<SoundClose Name="addons/minicrane_us/minicrane_us_close" Range="20" Volume="1"/>
 		
-		<InstallSocket Type="joat_front_crane" />
-		<RequiredAddon Types="joat_crane_support_front" />						
+		<InstallSocket Type="joat_front_crane_loadstar" />
+		<RequiredAddon Types="joat_crane_support_front_loadstar" />						
 	</GameData>
 	<ControlledIK
 		CoeffEndMovementSpeedOY="1.0"

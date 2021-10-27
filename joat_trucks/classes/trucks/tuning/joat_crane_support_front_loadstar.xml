@@ -8,7 +8,8 @@
 	<GameData
 		Price="700"
 		CameraPreset="front"
-		Category="JOAT"		
+		Category="JOAT"
+		Category="frame_addons"		
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
@@ -19,7 +20,8 @@
 			UiName="[JoAT] Crane Support"
 		/>
 		
-		<InstallSocket Type="joat_crane_support_front" />
+		<InstallSocket Type="joat_crane_support_front_loadstar" />
+		<RequiredAddon Types="international_loadstar_1700_bumper_default" />						
 
 		<WinchSocket Pos="(.265; .55; .45)" />
 		<WinchSocket Pos="(.265; .55; -.45)" />

@@ -1,9 +1,0 @@
-<CategoryList>
-	<Category
-		Name="joat_hitch_both_cat"
-		UiName="[JoAT] Hitch"
-		UiDesc="[JoAT] Hitch"
-		UiIcon="exteriorFigureImg40"
-		RequiresOneAddonInstalled="true"
-	/>
-</CategoryList>

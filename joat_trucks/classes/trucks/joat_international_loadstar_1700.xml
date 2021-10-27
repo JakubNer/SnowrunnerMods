@@ -320,20 +320,21 @@
 		<AddonSockets>
 			<Socket Names="ScautTrailer" Offset="(-3.21; 0.76; 0)">
 				<AddonsShift Offset="(-0.283; -0.055; 0)" Types="InternationalLoadstar1700ServiceBody" />
+				<AddonsShift Offset="(-.16; -.02; 0)" Types="joat_hitch_both" />																
 			</Socket>
 			<Socket Names="Trailer" Offset="(-3.195; 0.7; 0)">
 				<AddonsShift Offset="(-0.283; -0.055; 0)" Types="InternationalLoadstar1700ServiceBody" TrailerNamesBlock="Trailer"/>
-				<AddonsShift Offset="(-.03; -.1; 0)" Types="joat_hitch_both" />												
+				<AddonsShift Offset="(-.12; .16; 0)" Types="joat_hitch_both" />												
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_hitch_both">
-			<Socket Names="joat_hitch_both" Offset="(-3.24; 0.325; 0)" NamesBlock="InternationalLoadstar1700Pickup, InternationalLoadstar1700ServiceBody"/>
+			<Socket Names="joat_hitch_both" Offset="(-3.24; 0.325; 0)" NamesBlock="InternationalLoadstar1700ServiceBody"/>
 		</AddonSockets>				
-		<AddonSockets DefaultAddon="joat_crane_support_front" >
-			<Socket Names="joat_crane_support_front" Offset="(3.68; .66; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="tuz108warthogBumperExtra,tuz108warthogBumperProtect" />
+		<AddonSockets DefaultAddon="joat_crane_support_front_loadstar" >
+			<Socket Names="joat_crane_support_front_loadstar" Offset="(3.45; .19; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-		<AddonSockets>
-			<Socket Names="joat_front_crane" Offset="(2.293; -.7; 0)" DefaultAddon="joat_front_crane" NamesBlock="international_loadstar_1700_bumper_4, international_loadstar_1700_bumper_1, international_loadstar_1700_bumper_2, international_loadstar_1700_bumper_3">
+		<AddonSockets DefaultAddon="joat_front_crane_loadstar" >
+			<Socket Names="joat_front_crane_loadstar" Offset="(3.3; .49; 0)" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>			

@@ -134,7 +134,7 @@
 	</PhysicsModel>
 	<GameData
 		Preset="front"
-		Category="frame_addons"
+		Category="JOAT"
 		IsCustomizable="true"
 		Price="5700"
 		UnlockByExploration="false"
