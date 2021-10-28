@@ -335,8 +335,13 @@
 				<!-- <AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Semitrailer, SemitrailerOiltank" Types="zikz_5368WheelAddon" /> -->
 			</Socket>
 			<Socket Names="Trailer" Offset="(-3.311; 0.9; 0)" />
-			<Socket Names="ScautTrailer" Offset="(-3.311; 0.9; 0)" />															
+			<Socket Names="ScautTrailer" Offset="(-3.311; 0.9; 0)" >
+				<AddonsShift Offset="(-.04; -.19; 0)" Types="joat_hitch_scout" />								
+			</Socket>			
 		</AddonSockets>
+		<AddonSockets DefaultAddon="joat_hitch_scout">
+			<Socket Names="joat_hitch_scout" Offset="(-3.21; .32; 0)" />
+		</AddonSockets>								
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-4.600; 1.023; 0.000)" NamesBlock="MetalDetector, MinicraneRU, zikz_5368WheelAddon" />
 			<Socket Names="LogLift" Offset="(0.602; 1.023; 0)" NamesBlock="MetalDetector, MinicraneRU, zikz_5368WheelAddon" />
@@ -344,17 +349,17 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>
-			<Socket Names="FrameAddon" NamesBlock="Trailer" Offset="(-1.674; 1.021; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddon" NamesBlock="Trailer,ScautTrailer" Offset="(-1.674; 1.021; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="FrameAddonKung"
-				NamesBlock="zikz_5368WheelAddon"
+				NamesBlock="zikz_5368WheelAddon, Trailer, ScautTrailer"
 				Offset="(-1.92; 1.093; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" NamesBlock="zikz_5368WheelAddon, Trailer" Offset="(-2.65; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTank" NamesBlock="zikz_5368WheelAddon, Trailer, ScautTrailer" Offset="(-2.65; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonSideboard1" Offset="(-1.762; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonMaintainerSmall" Offset="(-1.22; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonTankSmall" Offset="(-1.095; 1.018; 0)" ParentFrame="BoneChassis_cdt" >

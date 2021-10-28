@@ -286,7 +286,7 @@
 		Price="0"
 		UnlockByExploration="true"
 		UnlockByRank="1"
-		ExcludeAddons="trailer_log_pole"
+		ExcludeAddons="trailer_log_pole, repair_hitch_rack\fuel_cistern_skid_and_repair_rack, equipment_trailer_flatbed_2\support_crew_trailers"				
 	>
 		<WinchSocket Pos="(3.687; 1.24; -0.369)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(3.687; 1.24; 0.369)" ParentFrame="BoneCabin_cdt" />

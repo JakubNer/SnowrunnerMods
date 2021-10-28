@@ -341,7 +341,7 @@
 	<HeadLight _template="Default" Pos="(5.052; 1.103; 0)" />
 	<GameData
 		Country="RU"
-		ExcludeAddons="trailer_log_pole"
+		ExcludeAddons="trailer_log_pole, trailer_log, trailer_oiltank, trailer_service_2, trailer_sideboard_2, trailer_addon_maintainer, repair_hitch_rack\fuel_cistern_skid_and_repair_rack, equipment_trailer_flatbed_2\support_crew_trailers"
 		_Price="165300"
 		Price="0"
 		UnlockByExploration="true"
@@ -387,7 +387,7 @@
 			<Socket Names="Trailer" Offset="(-4.823; 0.838; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.53; 1.718; 0)" />
 		</AddonSockets>
-		<AddonSockets>
+		<AddonSockets DefaultAddon="frame_flatbed_2_zikz_605r">
 			<Socket Names="ZikzLogLift" ParentFrame="BoneAddonAttachment_cdt">
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="zikz605rTrunk" />
 			</Socket>
@@ -399,16 +399,21 @@
 			<Socket Names="FrameAddonTankZikz" ParentFrame="BoneAddonAttachment_cdt"/>
 			<Socket Names="FrameAddonLogShortZikz" Offset="(-2.849; 1.64; 0)" ParentFrame="BoneAddonAttachment_cdt"/>
 		</AddonSockets>
-		<AddonSockets>
+		<AddonSockets DefaultAddon="joat_rear_crane">
 			<Socket
-				Names="MinicraneRU"
+				Names="joat_rear_crane"
 				NamesBlock="ZikzBigCrane, ZikzSaddleHigh, FrameAddonKungZikz, ZikzLogLift, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz"
 				Offset="(-2.8; 1.38; 0)"
 				ParentFrame="BoneAddonAttachment_cdt"
 			>
-				<AddonsShift Offset="(-3.405; 0.43; 0)" Types="ZikzFrameAddon" />						
+				<AddonsShift Offset="(-3.405; 0.41; 0)" Types="ZikzFrameAddon" />						
 			</Socket>
 		</AddonSockets>		
+		<AddonSockets DefaultAddon="joat_crane_support_rear" >
+			<Socket Names="joat_crane_support_rear" Offset="(-4.82; .88; 0)" ParentFrame="BoneChassis_cdt" >
+				<AddonsShift Offset="(-1.26; 0.61; 0)" Types="ZikzFrameAddon" />						
+			</Socket>
+		</AddonSockets>				
 		<AddonSockets>
 			<Socket Names="zikz605rTrunk" NamesBlock="ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz" />
 		</AddonSockets>
