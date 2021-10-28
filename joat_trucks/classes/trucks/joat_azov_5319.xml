@@ -53,7 +53,7 @@
 		</Mudguard>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="azov_5319">
 	<TruckData
 		BackSteerSpeed="0.02"
 		DiffLockType="Always"

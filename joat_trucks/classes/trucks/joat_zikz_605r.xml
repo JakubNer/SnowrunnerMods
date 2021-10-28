@@ -39,7 +39,7 @@
 		</SideMirror>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="zikz_605r">
 	<TruckData
 		BackSteerSpeed="0.01"
 		DiffLockType="Always"

@@ -98,7 +98,7 @@
     </IKBone>
 -->
 </_templates>
-<Truck>
+<Truck OriginalTruck="ws_6900xd_twin">
 	<TruckData
 		BackSteerSpeed="0.016"
 		DiffLockType="Installed"

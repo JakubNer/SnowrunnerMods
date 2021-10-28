@@ -68,7 +68,7 @@
 		</SideMirror>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="azov_4220_antarctic">
 	<TruckData
 		BackSteerSpeed="0.02"
 		DiffLockType="Installed"

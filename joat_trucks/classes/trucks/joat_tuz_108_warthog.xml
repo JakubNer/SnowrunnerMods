@@ -46,7 +46,7 @@
 		</Mudguard>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="tuz_108_warthog">
 	<TruckData
 		BackSteerSpeed="0.025"
 		DiffLockType="Installed"

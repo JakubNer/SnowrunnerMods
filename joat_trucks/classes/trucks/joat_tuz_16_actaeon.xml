@@ -47,7 +47,7 @@
 		</Mudguard>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="tuz_16_actaeon">
 	<TruckData
 		BackSteerSpeed="0.025"
 		DiffLockType="Installed"

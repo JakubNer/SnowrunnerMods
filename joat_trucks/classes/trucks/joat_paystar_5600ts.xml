@@ -135,7 +135,7 @@
 		</Antenna>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="paystar_5600ts">
 	<TruckData
 		BackSteerSpeed="0.016"
 		DiffLockType="Installed"

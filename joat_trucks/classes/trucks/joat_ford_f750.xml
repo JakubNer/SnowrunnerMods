@@ -47,7 +47,7 @@
 		</Mirror>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="ford_f750">
 	<TruckData
 		BackSteerSpeed="0.06"
 		DiffLockType="Always"

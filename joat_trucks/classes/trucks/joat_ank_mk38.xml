@@ -31,7 +31,7 @@
 		</Mirror>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="ank_mk38">
 	<TruckData
 		BackSteerSpeed="0.025"
 		DiffLockType="Always"

@@ -37,7 +37,7 @@
 		</BoneSunshield>
 	</Body>
 </_templates>
-<Truck>
+<Truck OriginalTruck="international_loadstar_1700">
 	<TruckData
 		BackSteerSpeed="0.06"
 		DiffLockType="Always"
