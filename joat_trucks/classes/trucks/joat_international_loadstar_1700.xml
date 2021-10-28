@@ -155,8 +155,6 @@
 		<CompatibleWheels OffsetZ="0.05" Scale="0.52" Type="wheels_medium_double" />
 		<CompatibleWheels OffsetZ=".08" RearOffsetZ=".11" Scale="0.45" Type="wheels_scout_yar_87" />
 		<CompatibleWheels OffsetZ=".08" RearOffsetZ=".11" Scale="0.52" Type="wheels_scout_yar_87" />
-		<CompatibleWheels OffsetZ=".09" RearOffsetZ=".10" Scale="0.45" Type="wheels_superheavy_cat770g_double_1700" />
-		<CompatibleWheels OffsetZ=".09" RearOffsetZ=".10" Scale="0.52" Type="wheels_superheavy_cat770g_double_1700" />
 		<CompatibleWheels OffsetZ=".08" RearOffsetZ=".13" Scale="0.45" Type="wheels_scout_offroad2_hummer_h2" />
 		<CompatibleWheels OffsetZ=".08" RearOffsetZ=".13" Scale="0.52" Type="wheels_scout_offroad2_hummer_h2" />
 		<CompatibleWheels OffsetZ=".11" RearOffsetZ=".13" Scale="0.45" Type="wheels_medium_mudtires_actaeon" />
