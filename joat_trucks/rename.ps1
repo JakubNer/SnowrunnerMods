@@ -22,8 +22,10 @@ cd $pwd/classes/trucks
 $names | ForEach {
 	$nameToChange = $_
 	Get-ChildItem -path "." -file -filter "*.xml" | foreach-object {
-		if (!$_.name.contains("joat") -and ! $_.PSIsContainer) {
+		if ($_.name.contains("joat") -and ! $_.PSIsContainer) {
 			((Get-Content -path $_ -Raw) -replace "$nameToChange","vanilla_$nameToChange") | Set-Content -Path $_
 		}
 	}
 }
+
+cd $pwd
