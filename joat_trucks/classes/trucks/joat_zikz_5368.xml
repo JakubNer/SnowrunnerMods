@@ -82,7 +82,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="zikz_5368_suspension_high_firm"
-			Type="joat_zikz_5368"
+			Type="s_joat_zikz_5368"
 			MaxWheelRadiusWithoutSuspension="0.43"
 		/>
 		<SteeringWheel Frame="BoneSteering" />

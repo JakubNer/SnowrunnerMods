@@ -130,7 +130,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="ws_6900xd_twin_suspension_high_crane"
-			Type="joat_ws_6900xd_twin"
+			Type="s_joat_ws_6900xd_twin"
 			MaxWheelRadiusWithoutSuspension="0.6"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -557,8 +557,7 @@
 	<GameData
 		Country="US"
 		ExcludedCargoTypes="CargoPlane, CargoWing1, CargoWing2"
-		Price="0"
-		_Price="45150"
+		Price="45150"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>

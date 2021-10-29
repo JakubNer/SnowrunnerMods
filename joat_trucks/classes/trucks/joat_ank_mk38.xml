@@ -60,7 +60,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="ank_mk38_suspension_ultimate_crane"
-			Type="joat_ank_mk38"
+			Type="s_joat_ank_mk38"
 			MaxWheelRadiusWithoutSuspension="0.45"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -282,8 +282,7 @@
 	<HeadLight _template="Default" Pos="(5; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="US"
-		_Price="51100"
-		Price="0"
+		Price="51100"
 		UnlockByExploration="true"
 		UnlockByRank="1"
 		ExcludeAddons="trailer_log_pole, repair_hitch_rack\fuel_cistern_skid_and_repair_rack, equipment_trailer_flatbed_2\support_crew_trailers"				

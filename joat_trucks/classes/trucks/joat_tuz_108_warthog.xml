@@ -73,7 +73,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="tuz_108_warthog_suspension_high_crane"
-			Type="joat_tuz_108_warthog"
+			Type="s_joat_tuz_108_warthog"
 			MaxWheelRadiusWithoutSuspension="0.42"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -296,8 +296,7 @@
 	<HeadLight _template="Default" Pos="(2.865; 1.326; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="RU"
-		_Price="19900"
-		Price="0"
+		Price="19900"
 		UnlockByExploration="true"
 		UnlockByRank="1"
 		ExcludeAddons="trailer_log_pole"

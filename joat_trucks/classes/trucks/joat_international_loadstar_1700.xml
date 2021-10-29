@@ -64,7 +64,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="international_loadstar_1700_suspension_high_crane"
-			Type="joat_international_loadstar_1700"
+			Type="s_joat_international_loadstar_1700"
 			MaxWheelRadiusWithoutSuspension="0.25"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -268,8 +268,7 @@
 	<HeadLight _template="Default" Pos="(3.294; 0.961; 0)" />
 	<GameData
 		Country="US"
-		_Price="28200"
-		Price="0"
+		Price="28200"
 		Recallable="true"
 		UnlockByExploration="false"
 		UnlockByRank="1"
