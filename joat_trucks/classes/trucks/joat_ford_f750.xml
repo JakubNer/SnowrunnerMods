@@ -65,7 +65,7 @@
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_ford_f750"
-			DefaultWheelType="wheelvanilla_s_ford_f750"
+			DefaultWheelType="wheels_ford_f750"
 		>
 			<Wheel _template="FrontWheel" Pos="(3.044; 0.48; 1.023)" />
 			<Wheel _template="FrontWheel" RightSide="true" Pos="(3.044; 0.48; 1.023)" />
@@ -142,12 +142,12 @@
 			<DamageArea Type="Engine" Min="(2.4; 0.7; -1)" Max="(3.9; 1.7; 1)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.43; 0.35; 1.12)" Max="(2.29; 0.765; -1.12)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.47" Type="wheelvanilla_s_ford_f750" />
-		<CompatibleWheels Scale="0.52" Type="wheelvanilla_s_ford_f750" />
+		<CompatibleWheels Scale="0.47" Type="wheels_ford_f750" />
+		<CompatibleWheels Scale="0.52" Type="wheels_ford_f750" />
 		<CompatibleWheels Scale="0.52" OffsetZ="-0.02" Type="wheels_heavy_mudtires_tayga" />
 		<CompatibleWheels Scale="0.52" RearOffsetZ="-0.03" Type="wheels_scout_yar_871" />
 
-		<CompatibleWheels Scale="0.57" Type="wheelvanilla_s_ford_f750" />
+		<CompatibleWheels Scale="0.57" Type="wheels_ford_f750" />
 		<CompatibleWheels Scale="0.57" OffsetZ="-0.02" Type="wheels_heavy_mudtires_tayga" />
 		<CompatibleWheels Scale="0.57" RearOffsetZ="-0.03" Type="wheels_scout_yar_871" />
 		
@@ -467,4 +467,5 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
 

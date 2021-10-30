@@ -26,7 +26,7 @@ Get-ChildItem -path "." -file -filter "*.xml" | foreach-object {
 		$names | % {
 			$nameToChange = $_
 			Write-Host "   processing $file :: $nameToChange"
-			$content = $content -replace "$nameToChange","vanilla_$nameToChange"
+			$content = $content -replace """$nameToChange""","""vanilla_$nameToChange"""
 		}				
 	}
 	

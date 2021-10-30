@@ -57,7 +57,7 @@
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="mudtires_zikz605r_1"
-			DefaultWheelType="wheelvanilla_s_zikz_605r_1"
+			DefaultWheelType="wheels_zikz_605r_1"
 		>
 			<Wheel _template="FirstAxle" Pos="(2.338; 0.781; 1.23)" />
 			<Wheel _template="FirstAxle" RightSide="true" Pos="(2.338; 0.781; 1.23)" />
@@ -150,7 +150,7 @@
 			<DamageArea Type="Engine" Min="(0.122; 1.1; -0.6)" Max="(4; 2.100; 0.6)" />
 			<DamageArea Type="FuelTank" Min="(-1.631; 0.55; -0.822)" Max="(-0.6; 1.351; 0.822)" />
 		</Damage>
-		<CompatibleWheels Scale="0.78" Type="wheelvanilla_s_zikz_605r_1" />
+		<CompatibleWheels Scale="0.78" Type="wheels_zikz_605r_1" />
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
 				_template="Default"
@@ -580,4 +580,5 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
 
