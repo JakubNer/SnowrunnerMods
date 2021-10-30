@@ -65,7 +65,7 @@
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_ford_f750"
-			DefaultWheelType="wheels_ford_f750"
+			DefaultWheelType="wheelvanilla_s_ford_f750"
 		>
 			<Wheel _template="FrontWheel" Pos="(3.044; 0.48; 1.023)" />
 			<Wheel _template="FrontWheel" RightSide="true" Pos="(3.044; 0.48; 1.023)" />
@@ -74,7 +74,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="ford_f750_suspension_default"
-			Type="s_ford_f750"
+			Type="vanilla_s_ford_f750"
 			MaxWheelRadiusWithoutSuspension="0.32"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -142,12 +142,12 @@
 			<DamageArea Type="Engine" Min="(2.4; 0.7; -1)" Max="(3.9; 1.7; 1)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.43; 0.35; 1.12)" Max="(2.29; 0.765; -1.12)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.47" Type="wheels_ford_f750" />
-		<CompatibleWheels Scale="0.52" Type="wheels_ford_f750" />
+		<CompatibleWheels Scale="0.47" Type="wheelvanilla_s_ford_f750" />
+		<CompatibleWheels Scale="0.52" Type="wheelvanilla_s_ford_f750" />
 		<CompatibleWheels Scale="0.52" OffsetZ="-0.02" Type="wheels_heavy_mudtires_tayga" />
 		<CompatibleWheels Scale="0.52" RearOffsetZ="-0.03" Type="wheels_scout_yar_871" />
 
-		<CompatibleWheels Scale="0.57" Type="wheels_ford_f750" />
+		<CompatibleWheels Scale="0.57" Type="wheelvanilla_s_ford_f750" />
 		<CompatibleWheels Scale="0.57" OffsetZ="-0.02" Type="wheels_heavy_mudtires_tayga" />
 		<CompatibleWheels Scale="0.57" RearOffsetZ="-0.03" Type="wheels_scout_yar_871" />
 		
@@ -345,14 +345,14 @@
 		<AddonSockets DefaultAddon="joat_hitch_scout">
 			<Socket Names="joat_hitch_scout" Offset="(-3.8; .21; 0)" />
 		</AddonSockets>						
-		<AddonSockets DefaultAddon="ford_f750_bumper_default">
+		<AddonSockets DefaultAddon="vanilla_ford_f750_bumper_default">
 			<Socket Names="FordF750Bumper" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ford_f750_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla_ford_f750_exhaust_default">
 			<Socket Names="FordF750ExhaustDefault" ParentFrame="BoneCabin_cdt" />
 			<Socket Names="FordF750Exhaust" NamesBlock="MinicraneLoadstar" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ford_f750_gabarite_default">
+		<AddonSockets DefaultAddon="vanilla_ford_f750_gabarite_default">
 			<Socket Names="FordF750Gabarite" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -372,7 +372,7 @@
 				<AddonsShift Offset="(-0.15; 0; 0)" Types="MinicraneRU" />									 
 			</Socket>
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ford_f750_transferbox_default">
+		<AddonSockets DefaultAddon="vanilla_ford_f750_transferbox_default">
 			<Socket Names="FordF750TransferBox" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 				<ExtraParent Frame="BoneAxle1" />
@@ -467,3 +467,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+

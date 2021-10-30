@@ -351,7 +351,7 @@
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Gabarite" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="international_loadstar_1700_bumper_default">
+		<AddonSockets DefaultAddon="vanilla_international_loadstar_1700_bumper_default">
 			<Socket Names="InternationalLoadstar1700Bumper" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets>
@@ -362,7 +362,7 @@
 			<Socket Names="InternationalLoadstar1700Pickup" Offset="(0; 0; 0)" />
 			<Socket Names="MinicraneLoadstar" Offset="(-1; 0.82; 0)" />
 			<Socket Names="MinicraneRU" Offset="(-.85; 0.82; 0)" />
-			<Socket Names="FrameAddonSideboard1" Offset="(-1.75; .81; 0)" DefaultAddon="frame_addon_sideboard_1" />			
+			<Socket Names="FrameAddonSideboard1" Offset="(-1.75; .81; 0)" DefaultAddon="vanilla_frame_addon_sideboard_1" />			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Visor" Offset="(0; 0; 0)" />
@@ -437,3 +437,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+

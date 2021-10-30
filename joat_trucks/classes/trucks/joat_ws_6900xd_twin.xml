@@ -628,32 +628,32 @@
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_bumper_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_bumper_default">
 			<Socket Names="WS6900XDTwinBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_visor_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_visor_default">
 			<Socket Names="WS6900XDTwinVisor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="WS6900XDTwinSpotLight1" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 			<Socket Names="WS6900XDTwinSpotLight2" NamesBlock="WS6900XDTwinBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_beacon_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_beacon_default">
 			<Socket Names="WS6900XDTwinBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_gabarite_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_gabarite_default">
 			<Socket Names="WS6900XDTwinGabarite" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_exhaust_default">
 			<Socket Names="WS6900XDTwinExhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_horn_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_horn_default">
 			<Socket Names="WS6900XDTwinHorn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_snorkel_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_snorkel_default">
 			<Socket Names="WS6900XDTwinSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_diff_lock_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_diff_lock_default">
 			<Socket Names="ws_6900xd_twinDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -714,7 +714,7 @@
 		<AddonSockets>
 			<Socket Names="ws6900XdTwinSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ws_6900xd_twin_transferbox_default">
+		<AddonSockets DefaultAddon="vanilla_ws_6900xd_twin_transferbox_default">
 			<Socket Names="WS6900XDTwinTransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis1_cdt" />
 				<ExtraParent Frame="BoneChassis2_cdt" />
@@ -818,3 +818,4 @@
 		</IKBone>  -->
 	</AutomaticIK>
 </Truck>
+

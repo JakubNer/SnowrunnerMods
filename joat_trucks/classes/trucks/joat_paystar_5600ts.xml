@@ -168,7 +168,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="paystar_5600ts_suspension_default"
-			Type="s_paystar_5600ts"
+			Type="vanilla_s_paystar_5600ts"
 			MaxWheelRadiusWithoutSuspension="0.6"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -511,7 +511,7 @@
 	<HeadLight _template="Default" Pos="(6.917; 0.94; 0)" ParentFrame="BoneCabinSusp_cdt" />
 	<GameData
 		Country="US"
-		ExcludeAddons="frame_addon_sideboard_2"
+		ExcludeAddons="vanilla_frame_addon_sideboard_2"
 		Price="102600"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -618,16 +618,16 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.98; 1.44; 0)" />
 			<Socket Names="Trailer" Offset="(-5.935; 0.98; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="paystar_5600ts_bumper_default">
+		<AddonSockets DefaultAddon="vanilla_paystar_5600ts_bumper_default">
 			<Socket Names="paystar5600TsBumper" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="paystar_5600ts_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla_paystar_5600ts_exhaust_default">
 			<Socket Names="paystar5600TsExhaust" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="paystar_5600ts_gabarite_1">
+		<AddonSockets DefaultAddon="vanilla_paystar_5600ts_gabarite_1">
 			<Socket Names="paystar5600TsGabarite1" ParentFrame="BoneCabinSusp_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="paystar_5600ts_gabarite_2">
+		<AddonSockets DefaultAddon="vanilla_paystar_5600ts_gabarite_2">
 			<Socket Names="paystar5600TsGabarite2" ParentFrame="BoneCabinSusp_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -701,10 +701,10 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodPaystar5600Ts" ParentFrame="BoneCabinSusp_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="paystar_5600ts_diff_lock_default">
+		<AddonSockets DefaultAddon="vanilla_vanilla_paystar_5600ts_diff_lock_default">
 			<Socket Names="Paystar5600TSDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="paystar_5600ts_transferbox_default">
+		<AddonSockets DefaultAddon="vanilla_paystar_5600ts_transferbox_default">
 			<Socket Names="Paystar5600TsTransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 				<ExtraParent Frame="BoneTieRodL1_cdt" />
@@ -887,3 +887,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+

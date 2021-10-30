@@ -57,7 +57,7 @@
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="mudtires_zikz605r_1"
-			DefaultWheelType="wheels_zikz_605r_1"
+			DefaultWheelType="wheelvanilla_s_zikz_605r_1"
 		>
 			<Wheel _template="FirstAxle" Pos="(2.338; 0.781; 1.23)" />
 			<Wheel _template="FirstAxle" RightSide="true" Pos="(2.338; 0.781; 1.23)" />
@@ -70,7 +70,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="zikz_605r_suspension_default"
-			Type="s_zikz_605r"
+			Type="vanilla_s_zikz_605r"
 			MaxWheelRadiusWithoutSuspension="0.76"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -150,7 +150,7 @@
 			<DamageArea Type="Engine" Min="(0.122; 1.1; -0.6)" Max="(4; 2.100; 0.6)" />
 			<DamageArea Type="FuelTank" Min="(-1.631; 0.55; -0.822)" Max="(-0.6; 1.351; 0.822)" />
 		</Damage>
-		<CompatibleWheels Scale="0.78" Type="wheels_zikz_605r_1" />
+		<CompatibleWheels Scale="0.78" Type="wheelvanilla_s_zikz_605r_1" />
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
 				_template="Default"
@@ -386,7 +386,7 @@
 			<Socket Names="Trailer" Offset="(-4.823; 0.838; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.53; 1.718; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="frame_flatbed_2_zikz_605r">
+		<AddonSockets DefaultAddon="vanilla_frame_flatbed_2_zikz_605r">
 			<Socket Names="ZikzLogLift" ParentFrame="BoneAddonAttachment_cdt">
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="zikz605rTrunk" />
 			</Socket>
@@ -416,13 +416,13 @@
 		<AddonSockets>
 			<Socket Names="zikz605rTrunk" NamesBlock="ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="zikz_605r_horn_default">
+		<AddonSockets DefaultAddon="vanilla_zikz_605r_horn_default">
 			<Socket Names="zikz605rHorn" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="zikz605rVisor" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="zikz_605r_spot_light_default">
+		<AddonSockets DefaultAddon="vanilla_zikz_605r_spot_light_default">
 			<Socket Names="zikz605rSpotLight" />
 		</AddonSockets>
 		<AddonSockets>
@@ -434,10 +434,10 @@
 		<AddonSockets>
 			<Socket Names="zikz605rAirConditioner" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="zikz_605r_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla_zikz_605r_exhaust_default">
 			<Socket Names="zikz605rExhaust" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="zikz_605r_bumper_default">
+		<AddonSockets DefaultAddon="vanilla_zikz_605r_bumper_default">
 			<Socket Names="zikz605rBumper" />
 		</AddonSockets>
 		<AddonSockets>
@@ -580,3 +580,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+

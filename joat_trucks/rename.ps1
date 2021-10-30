@@ -22,14 +22,11 @@ cd $pwd/classes/trucks
 Get-ChildItem -path "." -file -filter "*.xml" | foreach-object {
 	$file = $_
 	$content = Get-Content -path $file -Raw
-	Write-Host $content
-	exit
-	Write-Host "replacing for $file"
 	if ($file.name.contains("joat") -and ! $_.PSIsContainer) {
 		$names | % {
 			$nameToChange = $_
-			Write-Host "   processing $nameToChange"
-			$content.replace("$name0ToChange","vanilla_$nameToChange")
+			Write-Host "   processing $file :: $nameToChange"
+			$content = $content -replace "$nameToChange","vanilla_$nameToChange"
 		}				
 	}
 	

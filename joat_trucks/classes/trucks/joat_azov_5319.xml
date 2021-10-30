@@ -85,7 +85,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="azov_5319_suspension_default"
-			Type="s_azov_5319"
+			Type="vanilla_s_azov_5319"
 			MaxWheelRadiusWithoutSuspension="1"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -420,7 +420,7 @@
 			</Socket>
 			<Socket Names="LogLift" Offset="(0.9; 1.340; 0)" NamesBlock="FrameAddonLogShort, SaddleLow, SaddleHigh, FrameAddon, MinicraneRU, BunkLog, FrameAddonTank, FrameAddonKung, BigCraneRu, FrameAddonMaintainer, FrameAddonSeismicVibrator, LargeSemitrailerOiltank" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="azov_5319_fender_default">
+		<AddonSockets DefaultAddon="vanilla_azov_5319_fender_default">
 			<Socket Names="Azov5319Fender" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
@@ -440,7 +440,7 @@
 		<AddonSockets>
 			<Socket Names="Azov5319Gabarite" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="azov_5319_gabarite_default">
+		<AddonSockets DefaultAddon="vanilla_azov_5319_gabarite_default">
 			<Socket
 				Names="Azov5319GabariteDefault"
 				NamesBlock="Azov5319Visor"
@@ -579,3 +579,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+

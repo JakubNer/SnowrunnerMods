@@ -92,7 +92,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="azov_73210_suspension_default"
-			Type="s_azov_73210"
+			Type="vanilla_s_azov_73210"
 			MaxWheelRadiusWithoutSuspension="1"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -481,16 +481,16 @@
 		<AddonSockets>
 			<Socket Names="Azov73210SpareWheel" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="azov_73210_fender_rear_default">
+		<AddonSockets DefaultAddon="vanilla_azov_73210_fender_rear_default">
 			<Socket Names="Azov73210RearFender" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="azov_73210_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla_azov_73210_exhaust_default">
 			<Socket Names="Azov73210Exhaust" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="azov_73210_beacon_default">
+		<AddonSockets DefaultAddon="vanilla_azov_73210_beacon_default">
 			<Socket Names="Azov73210Beacon" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="azov_73210_snorkel_default">
+		<AddonSockets DefaultAddon="vanilla_azov_73210_snorkel_default">
 			<Socket Names="Azov73210Snorkel" />
 		</AddonSockets>
 		<AddonSockets>
@@ -660,3 +660,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+

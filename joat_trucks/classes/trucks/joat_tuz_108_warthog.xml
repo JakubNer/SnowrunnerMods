@@ -374,10 +374,10 @@
 				<AddonsShift Offset="(-.03; -.2; 0)" Types="joat_hitch_scout" />								
 			</Socket>
 		</AddonSockets>
-		<AddonSockets DefaultAddon="tuz_108_warthog_diff_lock_default">
+		<AddonSockets DefaultAddon="vanilla_tuz_108_warthog_diff_lock_default">
 			<Socket Names="TUZ108DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="tuz_108_warthog_bumper_default">
+		<AddonSockets DefaultAddon="vanilla_tuz_108_warthog_bumper_default">
 			<Socket Names="tuz108warthogBumper" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="tuz108warthogBumperExtra" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
@@ -450,14 +450,14 @@
 		<AddonSockets>
 			<Socket Names="tuz108warthogTrunk" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="tuz_108_warthog_spot_light_default">
+		<AddonSockets DefaultAddon="vanilla_tuz_108_warthog_spot_light_default">
 			<Socket Names="tuz108warthogSpotlight" NamesBlock="tuz108warthogTrunk" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="tuz108warthogSnorkel" ParentFrame="BoneCabin_cdt" />
 			<Socket Names="tuz108warthogSnorkel2" NamesBlock="tuz108warthogBumperProtect" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="tuz_108_warthog_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla_tuz_108_warthog_exhaust_default">
 			<Socket Names="tuz108warthogExhaust" />
 			<Socket Names="tuz108warthogExhaustCabin" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
@@ -520,3 +520,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
