@@ -29,6 +29,7 @@ function renameXmls() {
 			}				
 		}
 		
+		$content.Trim()
 		$content | Set-Content -Path $file
 	}
 }
@@ -54,6 +55,7 @@ function prune() {
 		if (! ($content.contains($nameToCheck))) {
 			Get-ChildItem -path "$pwd/classes" -file -force -recurse -filter "*.xml" | foreach-object {
 				if ($_.BaseName -eq "$prefix$nameToCheck") {
+					Write-Host removing $_.FullName
 					rm $_.FullName
 				}
 			}			
