@@ -284,7 +284,7 @@
 		Country="US"
 		_Price="51100"
 		Price="0"
-		UnlockByExploration="true"
+		UnlockByExploration="false"
 		UnlockByRank="1"
 		ExcludeAddons="trailer_log_pole, repair_hitch_rack\fuel_cistern_skid_and_repair_rack, equipment_trailer_flatbed_2\support_crew_trailers"				
 	>

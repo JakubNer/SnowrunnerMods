@@ -514,7 +514,7 @@
 		ExcludeAddons="vanilla__frame_addon_sideboard_2"
 		_Price="102600"
 		Price="0"
-		UnlockByExploration="true"
+		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
 		<WinchSocket Pos="(6.229; 0.997; 0)" ParentFrame="BoneCabin_cdt" />

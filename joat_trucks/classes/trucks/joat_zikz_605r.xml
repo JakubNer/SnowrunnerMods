@@ -344,7 +344,7 @@
 		ExcludeAddons="trailer_log_pole, trailer_log, trailer_oiltank, trailer_service_2, trailer_sideboard_2, trailer_addon_maintainer, repair_hitch_rack\fuel_cistern_skid_and_repair_rack, equipment_trailer_flatbed_2\support_crew_trailers"
 		_Price="165300"
 		Price="0"
-		UnlockByExploration="true"
+		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
 		<WinchSocket Pos="(4.223; 1.21; 0)" />

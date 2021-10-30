@@ -292,7 +292,7 @@
 		_Price="43600"
 		Price="0"
 		Recallable="true"
-		UnlockByExploration="true"
+		UnlockByExploration="false"
 		UnlockByRank="1"
 		ExcludeAddons="trailer_log_pole"
 	>

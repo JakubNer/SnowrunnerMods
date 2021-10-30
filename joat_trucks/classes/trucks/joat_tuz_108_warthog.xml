@@ -298,7 +298,7 @@
 		Country="RU"
 		_Price="19900"
 		Price="0"
-		UnlockByExploration="true"
+		UnlockByExploration="false"
 		UnlockByRank="1"
 		ExcludeAddons="trailer_log_pole"
 	>
