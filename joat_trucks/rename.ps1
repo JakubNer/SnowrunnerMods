@@ -17,20 +17,27 @@ Get-ChildItem -path "./classes" -file -force -recurse -filter "*.xml" | foreach-
 	}
 }
 
-cd $pwd/classes/trucks
-
-Get-ChildItem -path "." -file -filter "*.xml" | foreach-object {
-	$file = $_
-	$content = Get-Content -path $file -Raw
-	if ($file.name.contains("joat") -and ! $_.PSIsContainer) {
-		$names | % {
-			$nameToChange = $_
-			Write-Host "   processing $file :: $nameToChange"
-			$content = $content -replace """$nameToChange""","""vanilla_$nameToChange"""
-		}				
+function renameXmls() {
+	Get-ChildItem -path "." -file -filter "*.xml" | foreach-object {
+		$file = $_
+		$content = Get-Content -path $file -Raw
+		if ($file.name.contains("joat") -and ! $_.PSIsContainer) {
+			$names | % {
+				$nameToChange = $_
+				Write-Host "   processing $file :: $nameToChange"
+				$content = $content -replace """$nameToChange""","""vanilla_$nameToChange"""
+			}				
+		}
+		
+		$content | Set-Content -Path $file
 	}
-	
-	$content | Set-Content -Path $file
 }
+
+cd $pwd/classes/trucks
+renameXmls
+
+cd $pwd/classes/trucks/joat
+renameXmls
+
 
 cd $pwd
