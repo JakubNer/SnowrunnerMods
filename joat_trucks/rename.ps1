@@ -33,11 +33,40 @@ function renameXmls() {
 	}
 }
 
+
+function prune() {
+	$content = ""
+	
+	Get-ChildItem -path "$pwd\classes\trucks" -file -filter "*.xml" | foreach-object {
+		$file = $_
+		$content += Get-Content $file.FullName -Raw
+	}
+	
+	Get-ChildItem -path "$pwd\classes\trucks\joat\" -file -filter "*.xml" | foreach-object {
+		$file = $_
+		$content += Get-Content $file.FullName -Raw
+	}
+	
+
+	$names | % {
+		$nameToCheck = $_
+		Write-Host " $nameToCheck :: $($content.contains($nameToCheck))"
+		if (! ($content.contains($nameToCheck))) {
+			Get-ChildItem -path "$pwd/classes" -file -force -recurse -filter "*.xml" | foreach-object {
+				if ($_.BaseName -eq "$prefix$nameToCheck") {
+					rm $_.FullName
+				}
+			}			
+		}
+	}					
+}
+
 cd $pwd/classes/trucks
 renameXmls
 
 cd $pwd/classes/trucks/joat
 renameXmls
 
+prune
 
 cd $pwd
