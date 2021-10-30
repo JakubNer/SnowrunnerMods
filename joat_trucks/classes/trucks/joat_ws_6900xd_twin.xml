@@ -557,7 +557,8 @@
 	<GameData
 		Country="US"
 		ExcludedCargoTypes="CargoPlane, CargoWing1, CargoWing2"
-		Price="45150"
+		_Price="45150"
+		Price="0"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>

@@ -439,7 +439,8 @@
 	/>
 	<GameData
 		Country="RU"
-		Price="111600"
+		_Price="111600"
+		Price="0"
 		UnlockByExploration="false"
 		UnlockByRank="26"
 	>

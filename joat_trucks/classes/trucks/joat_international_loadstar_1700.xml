@@ -268,7 +268,8 @@
 	<HeadLight _template="Default" Pos="(3.294; 0.961; 0)" />
 	<GameData
 		Country="US"
-		Price="28200"
+		_Price="28200"
+		Price="0"
 		Recallable="true"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -362,7 +363,7 @@
 			<Socket Names="InternationalLoadstar1700Pickup" Offset="(0; 0; 0)" />
 			<Socket Names="MinicraneLoadstar" Offset="(-1; 0.82; 0)" />
 			<Socket Names="MinicraneRU" Offset="(-.85; 0.82; 0)" />
-			<Socket Names="FrameAddonSideboard1" Offset="(-1.75; .81; 0)" DefaultAddon="vanilla__frame_addon_sideboard_1" />			
+			<Socket Names="FrameAddonSideboard1" Offset="(-1.75; .81; 0)" />			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Visor" Offset="(0; 0; 0)" />

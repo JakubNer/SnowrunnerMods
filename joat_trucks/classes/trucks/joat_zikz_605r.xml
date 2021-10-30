@@ -342,7 +342,8 @@
 	<GameData
 		Country="RU"
 		ExcludeAddons="trailer_log_pole, trailer_log, trailer_oiltank, trailer_service_2, trailer_sideboard_2, trailer_addon_maintainer, repair_hitch_rack\fuel_cistern_skid_and_repair_rack, equipment_trailer_flatbed_2\support_crew_trailers"
-		Price="165300"
+		_Price="165300"
+		Price="0"
 		UnlockByExploration="true"
 		UnlockByRank="1"
 	>

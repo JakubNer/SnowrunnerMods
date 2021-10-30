@@ -336,7 +336,8 @@
 	<HeadLight _template="Default" Pos="(4.447; 1.042; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="RU"
-		Price="64600"
+		_Price="64600"
+		Price="0"
 		UnlockByExploration="false"
 		UnlockByRank="14"
 	>

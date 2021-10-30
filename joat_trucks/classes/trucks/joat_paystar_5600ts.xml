@@ -512,7 +512,8 @@
 	<GameData
 		Country="US"
 		ExcludeAddons="vanilla__frame_addon_sideboard_2"
-		Price="102600"
+		_Price="102600"
+		Price="0"
 		UnlockByExploration="true"
 		UnlockByRank="1"
 	>

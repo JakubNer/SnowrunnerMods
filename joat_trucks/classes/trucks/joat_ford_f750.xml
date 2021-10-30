@@ -289,7 +289,8 @@
 	<HeadLight _template="Default" Pos="(4; 1; 0)" />
 	<GameData
 		Country="US"
-		Price="43600"
+		_Price="43600"
+		Price="0"
 		Recallable="true"
 		UnlockByExploration="true"
 		UnlockByRank="1"
