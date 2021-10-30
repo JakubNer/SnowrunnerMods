@@ -25,7 +25,7 @@ function renameXmls() {
 			$names | % {
 				$nameToChange = $_
 				Write-Host "   processing $file :: $nameToChange"
-				$content = $content -replace """$nameToChange""","""vanilla_$nameToChange"""
+				$content = $content -replace """$nameToChange""","""$prefix$nameToChange"""
 			}				
 		}
 		

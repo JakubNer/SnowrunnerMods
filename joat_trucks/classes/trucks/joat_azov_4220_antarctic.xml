@@ -97,7 +97,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="azov_4220_antarctic_suspension_default"
-			Type="vanilla_s_azov_4220_antarctic"
+			Type="vanilla__s_azov_4220_antarctic"
 			MaxWheelRadiusWithoutSuspension="1.2"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -504,16 +504,16 @@
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-5.23; 1.265; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_azov_4220_antarctic_diff_lock_default">
+		<AddonSockets DefaultAddon="vanilla__azov_4220_antarctic_diff_lock_default">
 			<Socket Names="azov4220antarcticDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_azov_4220_antarctic_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla__azov_4220_antarctic_exhaust_default">
 			<Socket Names="Azov4220AntarcticExhaust" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_azov_4220_antarctic_beacon_default">
+		<AddonSockets DefaultAddon="vanilla__azov_4220_antarctic_beacon_default">
 			<Socket Names="Azov4220AntarcticBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_azov_4220_antarctic_fender_default">
+		<AddonSockets DefaultAddon="vanilla__azov_4220_antarctic_fender_default">
 			<Socket Names="Azov4220AntarcticFender" Offset="(0; 0; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -531,7 +531,7 @@
 		<AddonSockets>
 			<Socket Names="Azov4220AntarcticSpotLight" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_azov_4220_antarctic_snorkel_default">
+		<AddonSockets DefaultAddon="vanilla__azov_4220_antarctic_snorkel_default">
 			<Socket Names="Azov4220AntarcticSnorkelDefault" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt">
 				<ExtraParent Frame="BoneFront_cdt" />
 			</Socket>
@@ -671,6 +671,7 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
 
 
 

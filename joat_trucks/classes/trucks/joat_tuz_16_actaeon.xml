@@ -74,7 +74,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="tuz_16_actaeon_suspension_default"
-			Type="vanilla_s_tuz_16_actaeon"
+			Type="vanilla__s_tuz_16_actaeon"
 			MaxWheelRadiusWithoutSuspension="0.47"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -394,10 +394,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_tuz_16_actaeon_bumper_default">
+		<AddonSockets DefaultAddon="vanilla__tuz_16_actaeon_bumper_default">
 			<Socket _template="Cabin2Chassis" Names="tuz_16_actaeonBumper" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_tuz_16_actaeon_wheel_addon_1">
+		<AddonSockets DefaultAddon="vanilla__tuz_16_actaeon_wheel_addon_1">
 			<Socket Names="tuz_16_actaeonWheelAddon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -418,7 +418,7 @@
 		<AddonSockets>
 			<Socket _template="Cabin2Chassis" Names="tuz_16_actaeonRooftopTrunk" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_tuz_16_actaeon_diff_lock_default">
+		<AddonSockets DefaultAddon="vanilla__tuz_16_actaeon_diff_lock_default">
 			<Socket Names="Tuz16ActaeonDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -570,6 +570,7 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
 
 
 

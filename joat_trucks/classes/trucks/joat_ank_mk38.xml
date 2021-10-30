@@ -339,13 +339,13 @@
 		<AddonSockets>
 			<Socket Names="AnkMk38WheelAddon" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_ank_mk38_bumper_default">
+		<AddonSockets DefaultAddon="vanilla__ank_mk38_bumper_default">
 			<Socket Names="AnkMk38Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_ank_mk38_snorkel_default">
+		<AddonSockets DefaultAddon="vanilla__ank_mk38_snorkel_default">
 			<Socket _template="Cabin2Chassis" Names="AnkMk38Snorkel" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla_ank_mk38_exhaust_default">
+		<AddonSockets DefaultAddon="vanilla__ank_mk38_exhaust_default">
 			<Socket _template="Cabin2Chassis" Names="AnkMk38Exhaust" />
 		</AddonSockets>
 		<AddonSockets>
@@ -445,6 +445,7 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
 
 
 
