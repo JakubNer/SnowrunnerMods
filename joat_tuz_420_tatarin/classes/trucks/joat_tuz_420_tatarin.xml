@@ -315,7 +315,7 @@
 			<Socket Names="joat_rear_crane_420" Offset="(-4; 1.2; 0)" />
 		</AddonSockets>		
 		<AddonSockets DefaultAddon="joat_snorkel" >
-			<Socket Names="joat_snorkel" Offset="(-4.9; 0; -.6)" />
+			<Socket Names="joat_snorkel" Offset="(-4.9; 0.1; -.5)" />
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="ScautTrailer" Offset="(-3.6; 1.45; 0)">
