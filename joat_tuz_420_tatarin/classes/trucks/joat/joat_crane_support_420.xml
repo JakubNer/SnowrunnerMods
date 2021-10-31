@@ -1,0 +1,73 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/joat_crane_support_rear" >
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		Price="700"
+		CameraPreset="rear"
+		Category="JOAT"
+		Category="frame_addons"		
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Crane Support"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Crane Support"
+		/>
+		
+		<InstallSocket Type="joat_crane_support_420" />
+		<RequiredAddon Types="joat_crane_support_420 />						
+
+		<WinchSocket Pos="(-.6; .55; .31)" />
+		<WinchSocket Pos="(-.6; .55; -.31)" />
+		<CraneSocket Pos="(-.6; .55; .31)" />
+		<CraneSocket Pos="(-.6; .55; -.31)" />
+		
+	</GameData>
+	<ModelAttachments>
+        <Ignition>
+			<Flare
+				_template="IgnitionSignalRed"
+				Size="0.5"
+				Pos="(-.65; .37; .18)"
+			/>
+			<Flare
+				_template="IgnitionSignalRed"
+				Size="0.5"
+				Pos="(-.65; .37; -.18)"
+			/>
+		</Ignition>
+		<StopSignals>
+			<Flare
+				_template="StopSignal"
+				Size="0.5"
+				Pos="(-.65; .37; .18)"
+			/>
+			<Flare
+				_template="StopSignal"
+				Size="0.5"
+				Pos="(-.65; .37; -.18)"
+			/>
+		</StopSignals>		
+	</ModelAttachments>
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
