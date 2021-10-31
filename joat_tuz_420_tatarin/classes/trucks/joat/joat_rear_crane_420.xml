@@ -160,7 +160,7 @@
 		<SoundClose Name="addons/minicrane_us/minicrane_us_close" Range="20" Volume="1"/>
 		
 		<InstallSocket Type="joat_rear_crane_420" />
-		<RequiredAddon Types="joat_crane_support_420 />						
+		<RequiredAddon Types="joat_crane_support_420" />						
 	</GameData>
 	<ControlledIK
 		CoeffEndMovementSpeedOY="1.0"
