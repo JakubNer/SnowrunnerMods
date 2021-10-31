@@ -19,7 +19,8 @@
 			UiName="[JoAT] Both Hitches"
 		/>
 		<InstallSocket Type="joat_hitch_420" />
-				
+		<RequiredAddon Types="joat_crane_support_420 />						
+
 	</GameData>
 </TruckAddon>
 

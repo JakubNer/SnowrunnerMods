@@ -1,5 +1,5 @@
 <TruckSet>
-	<Truck Name = "tuz_420_tatarin">
+	<Truck Name = "joat_tuz_420_tatarin">
 		<CustomizationPreset
 			Id = "0"
 			TintColor1 = "g(117; 18; 38)"

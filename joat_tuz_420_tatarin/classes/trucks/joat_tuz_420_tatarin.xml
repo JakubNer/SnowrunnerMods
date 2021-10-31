@@ -308,11 +308,11 @@
 		<CraneSocket Pos="(1.666; 1.585; -1.437)" />
 		<CraneSocket Pos="(1.666; 1.585; 1.437)" />
 		<CraneSocket Pos="(-3.56; 1.43; 0)" />
-		<AddonSockets DefaultAddon="joat_rear_crane_420" >
-			<Socket Names="joat_rear_crane_420" Offset="(-8.38525; 1.66; 0)" />
-		</AddonSockets>		
 		<AddonSockets DefaultAddon="joat_crane_support_420" >
-			<Socket Names="joat_crane_support_420" Offset="(-8.255; 1.37; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="joat_crane_support_420" Offset="(-3.845; .91 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>		
+		<AddonSockets DefaultAddon="joat_rear_crane_420" >
+			<Socket Names="joat_rear_crane_420" Offset="(-3.845; .91 0)" />
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="ScautTrailer" Offset="(-3.21; 0.76; 0)">
@@ -322,7 +322,7 @@
 				<AddonsShift Offset="(-.12; .16; 0)" Types="joat_hitch_420" />												
 			</Socket>
 		</AddonSockets>
-		<AddonSockets DefaultAddon="joat_hitch_both">
+		<AddonSockets DefaultAddon="joat_hitch_420">
 			<Socket Names="joat_hitch_420" Offset="(-3.24; 0.325; 0)"/>
 		</AddonSockets>				
 		<AddonSockets>

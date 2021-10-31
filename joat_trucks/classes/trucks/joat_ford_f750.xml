@@ -305,7 +305,7 @@
 			UiIcon30x30="scoutVehicleImg30"
 			UiIcon328x458="Ford750"
 			UiIcon40x40="scoutVehicleImg"
-			UiIconLogo="FordLogoAlt80"
+			UiIconLogo="JoATLogo80"
 			UiName="[JoAT] Ford F750"
 		/>
 		<CustomizationCameras>

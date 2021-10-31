@@ -21,7 +21,6 @@
 		/>
 		
 		<InstallSocket Type="joat_crane_support_420" />
-		<RequiredAddon Types="joat_crane_support_420 />						
 
 		<WinchSocket Pos="(-.6; .55; .31)" />
 		<WinchSocket Pos="(-.6; .55; -.31)" />
