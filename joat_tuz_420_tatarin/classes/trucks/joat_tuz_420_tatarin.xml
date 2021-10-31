@@ -62,7 +62,7 @@
 		</Wheels>
 		<SuspensionSocket
 			Default="tuz_420_tatarin_suspension_default"
-			Type="s_tuz_420_tatarin"
+			Type="vanilla__s_tuz_420_tatarin"
 			MaxWheelRadiusWithoutSuspension="0.62"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
@@ -464,3 +464,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+
