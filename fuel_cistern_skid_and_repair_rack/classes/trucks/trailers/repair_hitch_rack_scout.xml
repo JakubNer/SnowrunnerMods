@@ -42,8 +42,9 @@
 		<CraneSocket Pos="(-.3; 1.6; 0)" />
 		<UiDesc
 			UiDesc="Repair Hitch Cargo Rack (Scout)"
-			UiIcon30x30="trailerSemiImg30"
-			UiIcon40x40="trailerSemiImg"
+			UiIcon20x20="cargoTypeVehiclesSpareParts20"
+			UiIcon40x40="cargoTypeVehiclesSpareParts40"
+			UiIcon100x100="cargoTypeVehicleSpareParts"
 			UiName="Repair Hitch Cargo Rack (Scout)"
 		/>
 		<InstallSocket Offset="(.45; 0.55; 0)" Type="ScautTrailer" />		

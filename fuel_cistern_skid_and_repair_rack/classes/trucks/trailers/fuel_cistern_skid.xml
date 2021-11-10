@@ -12,10 +12,10 @@
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="1280">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.7; 0.7; .7)" />
-			<Wheel _template="DollyWheel" Pos="(.7; 0.7; .7)" RightSide="true" />
-			<Wheel _template="DollyWheel" Pos="(-.7; 0.7; .7)" />
-			<Wheel _template="DollyWheel" Pos="(-.7; 0.7; .7)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(.76; 0.7; .7)" />
+			<Wheel _template="DollyWheel" Pos="(.76; 0.7; .7)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-.76; 0.7; .7)" />
+			<Wheel _template="DollyWheel" Pos="(-.76; 0.7; .7)" RightSide="true" />
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="1.8"
@@ -24,10 +24,10 @@
 			MaxX="4"
 		/>
 		<LimitedFluid
-			Center="(0; .6; 0)"
+			Center="(0; .8; 0)"
 			SizeX="2.1"
-			SizeY="1"
-			SizeZ="2.1"
+			SizeY=".9"
+			SizeZ="1.45"
 			Type="Box"
 		/>
 		<Constraint _template="TrailerRagdoll">
@@ -35,12 +35,7 @@
 		</Constraint>
 		<Camera Center="(0; 0; 0)" />
 	</TruckData>	
-	<!-- 
-		models/cargo_unit_barrels_1 
-		trucks/trailers/scout_trailer_oiltank
-		trucks/cargo/cargo_barrels_1
-	-->
-	<PhysicsModel Mesh="trucks/cargo/cargo_barrels_1">
+	<PhysicsModel Mesh="trucks/tuning/fuel">
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
@@ -53,8 +48,9 @@
 		<CraneSocket Pos="(0; 1.2; 0)" />
 		<UiDesc
 			UiDesc="Fuel Cistern Skid"
-			UiIcon30x30="trailerSemiImg30"
-			UiIcon40x40="trailerSemiImg"
+			UiIcon20x20="cargoTypeBarrel20"
+			UiIcon40x40="cargoTypeBarrel40"
+			UiIcon100x100="cargoTypeBarrels"
 			UiName="Fuel Cistern Skid"
 		/>
 		<InstallSocket Offset="(4.5; 0.75; 0)" Type="Trailer" />

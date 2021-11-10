@@ -1,0 +1,10 @@
+<CombineXMesh>
+	<Material
+		AlbedoMap="trucks/fuel__d.tga"
+		Name="fuel_mat"
+		NormalMap="trucks/fuel__n_d.tga"
+		ShadingMap="trucks/fuel__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+</CombineXMesh>
