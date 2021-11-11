@@ -12,10 +12,10 @@
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="1280">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.76; 0.7; .7)" />
-			<Wheel _template="DollyWheel" Pos="(.76; 0.7; .7)" RightSide="true" />
-			<Wheel _template="DollyWheel" Pos="(-.76; 0.7; .7)" />
-			<Wheel _template="DollyWheel" Pos="(-.76; 0.7; .7)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .9)" />
+			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .9)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .9)" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .9)" RightSide="true" />			
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="1.8"
@@ -24,10 +24,10 @@
 			MaxX="4"
 		/>
 		<LimitedFluid
-			Center="(0; .8; 0)"
-			SizeX="2.1"
-			SizeY=".9"
-			SizeZ="1.45"
+			Center="(0; .56; 0)"
+			SizeX="1.47"
+			SizeY=".63"
+			SizeZ="1.015"
 			Type="Box"
 		/>
 		<Constraint _template="TrailerRagdoll">
@@ -45,7 +45,6 @@
 	</PhysicsModel>
 	<Landmark Mesh="landmarks/cargo_unit_barrels_1_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData Price="550">
-		<CraneSocket Pos="(0; 1.2; 0)" />
 		<UiDesc
 			UiDesc="Fuel Cistern Skid"
 			UiIcon20x20="cargoTypeBarrel20"
@@ -54,8 +53,12 @@
 			UiName="Fuel Cistern Skid"
 		/>
 		<InstallSocket Offset="(4.5; 0.75; 0)" Type="Trailer" />
-		<WinchSocket Pos="(1; .75; 0)" ParentFrame="BoneRoot_cdt" />
-		<CraneSocket Pos="(1; .75; 0)" ParentFrame="BoneRoot_cdt" />		
+
+		<CraneSocket Pos="(0; .835; 0)" />
+		<WinchSocket Pos="(0; .835; 0)" />
+
+		<WinchSocket Pos="(.8; .1; 0)" ParentFrame="BoneRoot_cdt" />
+		<CraneSocket Pos="(.8; .1; 0)" ParentFrame="BoneRoot_cdt" />		
 	</GameData>
 	<FuelMass>
 		<Body Mass="1280" />
