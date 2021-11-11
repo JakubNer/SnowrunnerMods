@@ -12,10 +12,10 @@
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="1280">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .4)" />
-			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .4)" RightSide="true" />
-			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .4)" />
-			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .4)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .9)" />
+			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .9)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .9)" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .9)" RightSide="true" />			
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="1.8"
