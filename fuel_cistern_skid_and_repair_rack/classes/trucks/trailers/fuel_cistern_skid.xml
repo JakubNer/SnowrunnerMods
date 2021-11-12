@@ -24,10 +24,10 @@
 			MaxX="4"
 		/>
 		<LimitedFluid
-			Center="(0; .56; 0)"
-			SizeX="1.47"
-			SizeY=".63"
-			SizeZ="1.015"
+			Center="(0; .48; 0)"
+			SizeX="1.54"
+			SizeY=".82"
+			SizeZ="2.13"
 			Type="Box"
 		/>
 		<Constraint _template="TrailerRagdoll">
