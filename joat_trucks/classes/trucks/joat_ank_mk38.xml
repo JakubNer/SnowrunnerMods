@@ -329,6 +329,7 @@
 		<CraneSocket Pos="(-0.721; 1.09; 0.429)" />
 		<AddonSockets DefaultAddon="joat_rear_crane" >
 			<Socket Names="joat_rear_crane" Offset="(-5.515; 1.15; 0)" />
+			<Socket Names="joat_crane_krs_58_bandit" Offset="(-6.305; -.04; 0)" />			
 		</AddonSockets>		
 		<AddonSockets DefaultAddon="joat_crane_support_rear" >
 			<Socket Names="joat_crane_support_rear" Offset="(-5.34; .86; 0)" ParentFrame="BoneChassis_cdt" />

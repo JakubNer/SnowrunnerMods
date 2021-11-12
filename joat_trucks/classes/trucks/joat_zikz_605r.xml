@@ -386,7 +386,7 @@
 			<Socket Names="Trailer" Offset="(-4.823; 0.838; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.53; 1.718; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="vanilla__frame_flatbed_2_zikz_605r">
+		<AddonSockets DefaultAddon="frame_flatbed_2_zikz_605r">
 			<Socket Names="ZikzLogLift" ParentFrame="BoneAddonAttachment_cdt">
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="zikz605rTrunk" />
 			</Socket>
@@ -407,9 +407,17 @@
 			>
 				<AddonsShift Offset="(-3.405; 0.41; 0)" Types="ZikzFrameAddon" />						
 			</Socket>
+			<Socket
+				Names="joat_crane_krs_58_bandit"
+				NamesBlock="ZikzBigCrane, ZikzSaddleHigh, FrameAddonKungZikz, ZikzLogLift, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz"
+				Offset="(-5.77; 0; 0)"				
+				ParentFrame="BoneAddonAttachment_cdt"
+			>
+				<AddonsShift Offset="(-1.25; 0.615; 0)" Types="ZikzFrameAddon" />						
+			</Socket>
 		</AddonSockets>		
 		<AddonSockets DefaultAddon="joat_crane_support_rear" >
-			<Socket Names="joat_crane_support_rear" Offset="(-4.82; .88; 0)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="joat_crane_support_rear" Offset="(-4.82; .88; 0)" >
 				<AddonsShift Offset="(-1.26; 0.61; 0)" Types="ZikzFrameAddon" />						
 			</Socket>
 		</AddonSockets>				
