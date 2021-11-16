@@ -13,10 +13,10 @@
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="[JoAT] Crane Support"
+			UiDesc="[JoAT] Crane Support (Front)"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="[JoAT] Crane Support"
+			UiName="[JoAT] Crane Support (Front)"
 		/>
 		
 		<InstallSocket Type="joat_crane_support_front" />

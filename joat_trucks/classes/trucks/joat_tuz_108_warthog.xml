@@ -343,10 +343,6 @@
 		<CraneSocket Pos="(-0.998; 1.026; -0.448)" />
 		<CraneSocket Pos="(-0.998; 1.026; 0.448)" />
 		<AddonSockets>
-			<!--Socket Names="MinicraneRU" Offset="(-1.2; 1.141; 0)">
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
-			</Socket-->		
 			<Socket Names="FrameAddonSideboard1" Offset="(-2.05; 1.141; 0)" />
 			<Socket Names="FrameAddonTankSmallShort" Offset="(-1.98; 1.141; 0)" />
 			<Socket Names="FrameAddonMaintainerSmall" NamesBlock="tuz108warthogTrunk, tuz108warthogExhaustCabin, tuz108warthogBumperProtect" Offset="(-2.05; 1.141; 0)" />
@@ -361,11 +357,18 @@
 		<AddonSockets DefaultAddon="joat_crane_support_front">
 			<Socket Names="joat_crane_support_front" Offset="(3.68; .66; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="tuz108warthogBumperExtra,tuz108warthogBumperProtect" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="joat_front_crane">
+		<AddonSockets DefaultAddon="joat_crane_krs_58_bandit_front">
 			<Socket Names="joat_front_crane" Offset="(3.37; .95; 0)" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>			
+			<Socket
+				Names="joat_crane_krs_58_bandit_front"
+				Offset="(4.15; -.23; 0)"				
+				Dir="(0;0;-1)" 
+				UpDir="(0;1;0)"
+				ParentFrame="BoneAddonAttachment_cdt"
+			/>			
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="Semitrailer" Offset="(-1.89; 1.458; 0)" />

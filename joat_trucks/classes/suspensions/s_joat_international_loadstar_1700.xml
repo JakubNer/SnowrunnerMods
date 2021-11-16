@@ -59,7 +59,7 @@
 		/>
 		<GameData
 			Price="5700"
-			UnlockByExploration="true"
+			UnlockByExploration="false"
 			UnlockByRank="1"
 		>
 			<UiDesc
@@ -94,7 +94,7 @@
 		/>
 		<GameData
 			Price="5700"
-			UnlockByExploration="true"
+			UnlockByExploration="false"
 			UnlockByRank="1"
 		>
 			<UiDesc

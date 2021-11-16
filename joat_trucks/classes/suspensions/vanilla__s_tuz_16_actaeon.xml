@@ -61,7 +61,7 @@
 		/>
 		<GameData
 			Price="7900"
-			UnlockByExploration="true"
+			UnlockByExploration="false"
 			UnlockByRank="1"
 		>
 			<UiDesc
@@ -101,7 +101,7 @@
 		<GameData
 			Price="9800"
 			UnlockByExploration="false"
-			UnlockByRank="26"
+			UnlockByRank="1"
 		>
 			<UiDesc
 				UiDesc="UI_SUSPENSION_ACTIVE_DESC"

@@ -1,0 +1,73 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/joat_crane_support_front" >
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		Price="700"
+		CameraPreset="front"
+		Category="JOAT"
+		Category="frame_addons"		
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Crane Support"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Crane Support"
+		/>
+		
+		<InstallSocket Type="joat_6x6_crane_support_front_loadstar" />
+		<RequiredAddon Types="joat_6x6_international_loadstar_1700_bumper_default" />						
+
+		<WinchSocket Pos="(.265; .55; .45)" />
+		<WinchSocket Pos="(.265; .55; -.45)" />
+		<CraneSocket Pos="(.265; .55; .45)" />
+		<CraneSocket Pos="(.265; .55; -.45)" />
+		
+	</GameData>
+	<ModelAttachments>
+        <Ignition>
+			<Flare
+				_template="IgnitionSignalWhite"
+				Size="0.5"
+				Pos="(.28; .37; .35)"
+			/>
+			<Flare
+				_template="IgnitionSignalWhite"
+				Size="0.5"
+				Pos="(.28; .37; -.35)"
+			/>
+		</Ignition>
+		<HeadLight>
+			<Flare
+				_template="HeadLight"
+				Size="0.5"
+				Pos="(.28; .37; .35)"
+			/>
+			<Flare
+				_template="HeadLight"
+				Size="0.5"
+				Pos="(.28; .37; -.35)"
+			/>
+		</HeadLight>		
+	</ModelAttachments>
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

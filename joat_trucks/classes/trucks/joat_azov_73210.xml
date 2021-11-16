@@ -378,7 +378,7 @@
 		Country="RU"
 		Price="66000"
 		UnlockByExploration="false"
-		UnlockByRank="20"
+		UnlockByRank="1"
 	>
 		<WinchSocket Pos="(5.163; 0.621; -0.319)" />
 		<WinchSocket Pos="(5.163; 0.621; 0.319)" />

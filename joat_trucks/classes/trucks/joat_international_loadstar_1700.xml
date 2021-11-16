@@ -330,11 +330,19 @@
 		<AddonSockets DefaultAddon="joat_crane_support_front_loadstar" >
 			<Socket Names="joat_crane_support_front_loadstar" Offset="(3.45; .19; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="joat_front_crane_loadstar" >
-			<Socket Names="joat_front_crane_loadstar" Offset="(3.3; .49; 0)" >
+		<AddonSockets DefaultAddon="joat_crane_krs_58_bandit_loadstar" >
+			<Socket Names="joat_front_crane_loadstar" Offset="(3.3; .49; 0)" NamesBlock="MinicraneRU,MinicraneLoadstar" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>			
+			<Socket
+				Names="joat_crane_krs_58_bandit_loadstar"
+ 			    NamesBlock="MinicraneRU,MinicraneLoadstar" 
+				Offset="(3.95; -.7; 0)"				
+				Dir="(0;0;-1)" 
+				UpDir="(0;1;0)"
+				ParentFrame="BoneChassis_cdt"
+			/>				
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Flasher" NamesBlock="InternationalLoadstar1700Spotlight2" Offset="(0; 0; 0)" />

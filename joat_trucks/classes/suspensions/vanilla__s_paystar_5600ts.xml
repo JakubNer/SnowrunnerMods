@@ -33,7 +33,7 @@
 		<Suspension Damping="0.2" Height="0.2" Strength="0.022" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.45" />
 		<GameData
 			Price="9400"
-			UnlockByExploration="true"
+			UnlockByExploration="false"
 			UnlockByRank="1"
 		>
 			<UiDesc

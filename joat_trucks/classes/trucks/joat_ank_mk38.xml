@@ -327,7 +327,7 @@
 		<CraneSocket Pos="(-4.113; 0.92; 0)" />
 		<CraneSocket Pos="(-0.721; 1.09; -0.429)" />
 		<CraneSocket Pos="(-0.721; 1.09; 0.429)" />
-		<AddonSockets DefaultAddon="joat_rear_crane" >
+		<AddonSockets DefaultAddon="joat_crane_krs_58_bandit" >
 			<Socket Names="joat_rear_crane" Offset="(-5.515; 1.15; 0)" />
 			<Socket Names="joat_crane_krs_58_bandit" Offset="(-6.305; -.04; 0)" />			
 		</AddonSockets>		
