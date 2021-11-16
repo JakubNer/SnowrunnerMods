@@ -1,0 +1,37 @@
+<_templates Include="trucks" />
+<SuspensionSetVariants>
+	<SuspensionSet
+		_template="Ultimate"
+		DamageCapacity="75"
+		Name="ford_f750_suspension_ultimate"
+	>
+		<Suspension 
+			Damping="0.3" 
+			Height="0.32" 
+			Strength="0.05" 
+			WheelType="front" 
+			BrokenSuspensionMax="0.15" 
+			SuspensionMin="-0.5" 
+		/>
+		<Suspension 
+			Damping="0.3" 
+			Height="0.22" 
+			Strength="0.08" 
+			WheelType="rear" 
+			BrokenSuspensionMax="0.15" 
+			SuspensionMin="-0.25" 
+			/>
+		<GameData
+			Price="6000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_ULTIMATE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_ULTIMATE_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>

@@ -1,0 +1,38 @@
+<_templates Include="trucks" />
+<SuspensionSetVariants>
+	<SuspensionSet
+		_template="High"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="160"
+		Name="international_loadstar_1700_suspension_high"
+	>
+		<Suspension 
+			Damping=".2" 
+			Height="0.35" 
+			Strength="0.035" 
+			WheelType="front" 
+			BrokenSuspensionMax="0.15" 
+			SuspensionMin="-0.45" 
+		/>
+		<Suspension 
+			Damping=".2" 
+			Height="0.18" 
+			Strength="0.045" 
+			WheelType="rear" 
+			BrokenSuspensionMax="0.15" 
+			SuspensionMin="-0.4" 
+		/>
+		<GameData
+			Price="5700"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_HIGH_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_HIGH_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>

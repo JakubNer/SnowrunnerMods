@@ -1,0 +1,38 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/joat_loadstar_guard">
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>	
+	<GameData
+		CameraPreset="rear"
+		Category="JOAT"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Third Axle"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Third Axle"
+		/>
+		<InstallSocket Type="joat_loadstar_guard" />
+				
+	</GameData>
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
