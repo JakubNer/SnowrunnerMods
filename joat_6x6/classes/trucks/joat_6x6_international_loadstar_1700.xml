@@ -65,7 +65,7 @@
 			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.78; 0.376; 0.9)" />
 		</Wheels>
 		<SuspensionSocket
-			Default="international_loadstar_1700_suspension_high_crane"
+			Default="international_loadstar_1700_suspension_high"
 			Type="s_joat_6x6_international_loadstar_1700"
 			MaxWheelRadiusWithoutSuspension="0.25"
 		/>
@@ -313,32 +313,22 @@
 		<CraneSocket Pos="(-3.21; 0.734; 0)" />
 		<AddonSockets>
 			<Socket Names="ScautTrailer" Offset="(-3.21; 0.76; 0)">
-				<AddonsShift Offset="(-0.283; -0.055; 0)" Types="InternationalLoadstar1700ServiceBody" />
-				<AddonsShift Offset="(-.16; -.02; 0)" Types="joat_6x6_hitch_both" />																
+				<AddonsShift Offset="(-.16; -.14; 0)" Types="joat_6x6_hitch_both" />																
 			</Socket>
 			<Socket Names="Trailer" Offset="(-3.195; 0.7; 0)">
-				<AddonsShift Offset="(-0.283; -0.055; 0)" Types="InternationalLoadstar1700ServiceBody" TrailerNamesBlock="Trailer"/>
-				<AddonsShift Offset="(-.12; .16; 0)" Types="joat_6x6_hitch_both" />												
+				<AddonsShift Offset="(-.12; .04; 0)" Types="joat_6x6_hitch_both" />												
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_loadstar_guard">
 			<Socket Names="joat_loadstar_guard" Offset="(-2.777; 0.45; 0)" />
 		</AddonSockets>				
 		<AddonSockets DefaultAddon="joat_6x6_hitch_both">
-			<Socket Names="joat_6x6_hitch_both" Offset="(-3.24; 0.325; 0)" NamesBlock="InternationalLoadstar1700ServiceBody"/>
+			<Socket Names="joat_6x6_hitch_both" Offset="(-3.24; 0.205; 0)" NamesBlock="InternationalLoadstar1700ServiceBody"/>
 		</AddonSockets>				
-		<AddonSockets DefaultAddon="joat_6x6_crane_support_front_loadstar" >
-			<Socket Names="joat_6x6_crane_support_front_loadstar" Offset="(3.45; .19; 0)" ParentFrame="BoneChassis_cdt" />
-		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_6x6_crane_krs_58_bandit_loadstar" >
-			<Socket Names="joat_6x6_front_crane_loadstar" Offset="(3.3; .49; 0)" NamesBlock="MinicraneRU,MinicraneLoadstar" >
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
-			</Socket>			
 			<Socket
 				Names="joat_6x6_crane_krs_58_bandit_loadstar"
- 			    NamesBlock="MinicraneRU,MinicraneLoadstar" 
-				Offset="(3.95; -.7; 0)"				
+				Offset="(.045; -.547; 0)"				
 				Dir="(0;0;-1)" 
 				UpDir="(0;1;0)"
 				ParentFrame="BoneChassis_cdt"
@@ -366,11 +356,9 @@
 			<Socket Names="InternationalLoadstar1700Snorkel" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalLoadstar1700ServiceBody" Offset="(0; 0; 0)" />
-			<Socket Names="InternationalLoadstar1700Pickup" Offset="(0; 0; 0)" />
-			<Socket Names="MinicraneLoadstar" Offset="(-1; 0.82; 0)" />
-			<Socket Names="MinicraneRU" Offset="(-.85; 0.82; 0)" />
-			<Socket Names="FrameAddonSideboard1" Offset="(-1.75; .81; 0)" />			
+			<Socket Names="FrameAddonSideboard1" Offset="(-1.75; .81; 0)" >			
+				<AddonsShift Offset="(-.62; 0; 0)" Types="joat_6x6_crane_krs_58_bandit_loadstar" />																
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Visor" Offset="(0; 0; 0)" />

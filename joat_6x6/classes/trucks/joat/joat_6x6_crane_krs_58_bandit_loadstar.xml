@@ -161,7 +161,6 @@
 		<SoundIKStart Name="trucks/krs_58_bandit/krs_58_bandit_crane_move_start" Range="20" Volume="1" />
 		<SoundIKLoop Name="trucks/krs_58_bandit/krs_58_bandit_crane_move_loop" Range="20" Volume="1" />
 		<InstallSocket Type="joat_6x6_crane_krs_58_bandit_loadstar" />
-		<RequiredAddon Types="joat_6x6_crane_support_front_loadstar" />									
 		<CraneSourceSocket Pos="(3.845; 3.600; 0.000)" ParentFrame="BoneArm4_cdt" />
 		<AddonType Name="Crane" />
 	</GameData>
