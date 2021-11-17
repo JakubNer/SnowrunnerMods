@@ -369,7 +369,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_6x6_ford_f750_transferbox_default">
-			<Socket Names="FordF750TransferBox" ParentFrame="BoneChassis_cdt">
+			<Socket Names="Joat6x6FordF750TransferBox" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 				<ExtraParent Frame="BoneAxle1" />
 				<ExtraParent Frame="BoneRack" />
