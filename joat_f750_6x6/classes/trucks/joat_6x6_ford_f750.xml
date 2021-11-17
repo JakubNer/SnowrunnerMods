@@ -145,9 +145,7 @@
 			<DamageArea Type="FuelTank" Min="(0.43; 0.35; 1.12)" Max="(2.29; 0.765; -1.12)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.57" Type="wheels_ford_f750" />
-		<CompatibleWheels Scale="0.57" OffsetZ="-0.02" Type="wheels_heavy_mudtires_tayga" />
-		<CompatibleWheels Scale="0.57" RearOffsetZ="-0.03" Type="wheels_scout_yar_871" />
-		
+		<CompatibleWheels Scale="0.57" Type="wheels_heavy_mudtires_tayga" />	
 		
 		<Camera Center="(-1; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
@@ -340,7 +338,7 @@
 			</Socket>			
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_f750_guard">
-			<Socket Names="joat_f750_guard" Offset="(-3.1; 0.45; 0)" />
+			<Socket Names="joat_f750_guard" Offset="(-3.15; 0.5; 0)" />
 		</AddonSockets>			
 		<AddonSockets DefaultAddon="joat_6x6_hitch_scout">
 			<Socket Names="joat_6x6_hitch_scout" Offset="(-3.8; .21; 0)" />

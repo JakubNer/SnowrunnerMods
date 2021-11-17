@@ -153,7 +153,7 @@
 			<DamageArea Type="Engine" Min="(1.605; 0.51; -0.55)" Max="(2.8; 1.629; 0.55)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.5; 0.25; -1.2)" Max="(1.5; 0.863; 1.2)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels OffsetZ=".08" RearOffsetZ=".11" Scale="0.52" Type="wheels_scout_yar_87" />
+		<CompatibleWheels OffsetZ=".11" RearOffsetZ=".13" Scale="0.52" Type="wheels_medium_double" />
 		<CompatibleWheels OffsetZ=".11" RearOffsetZ=".13" Scale="0.52" Type="wheels_medium_mudtires_actaeon" />
 																			   
 		<Camera Center="(-1.2; 0; 0)" RadiusMultiplier="0.8">
