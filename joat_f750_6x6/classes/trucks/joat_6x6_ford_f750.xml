@@ -343,14 +343,14 @@
 		<AddonSockets DefaultAddon="joat_6x6_hitch_scout">
 			<Socket Names="joat_6x6_hitch_scout" Offset="(-3.8; .21; 0)" />
 		</AddonSockets>						
-		<AddonSockets DefaultAddon="joat_6x6_ford_f750_bumper_default">
+		<AddonSockets>
 			<Socket Names="FordF750Bumper" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="joat_6x6_ford_f750_exhaust_default">
+		<AddonSockets>
 			<Socket Names="FordF750ExhaustDefault" ParentFrame="BoneCabin_cdt" />
 			<Socket Names="FordF750Exhaust" NamesBlock="MinicraneLoadstar" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="joat_6x6_ford_f750_gabarite_default">
+		<AddonSockets>
 			<Socket Names="FordF750Gabarite" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
@@ -362,8 +362,6 @@
 			<Socket Names="FordF750Rooftrunk" NamesBlock="FordF750Spotlight, FordF750Beacon, FordF750Beacon2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FordF750Pickup" />
-			<Socket Names="FordF750PickupRooftrunk" NamesBlock="MinicraneLoadstar,MinicraneRU" />
 			<Socket Names="FrameAddonFlatbed1" Offset="(-2; 0.911; 0)">
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="FordF750Trunk" />
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="MinicraneLoadstar" />

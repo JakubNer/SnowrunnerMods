@@ -348,7 +348,7 @@
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Gabarite" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="joat_6x6_international_loadstar_1700_bumper_default">
+		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Bumper" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets>
