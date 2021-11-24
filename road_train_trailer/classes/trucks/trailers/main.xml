@@ -92,6 +92,30 @@
 			Mass="1000"
 			ModelFrame="BoneChassis_cdt"
 		>
+			<Body Mass="100" ModelFrame="BoneAttach_cdt">
+				<Constraint
+					Type="Fixed"
+				>
+				</Constraint>
+			</Body>		
+			<Body Mass="100" ModelFrame="FlapR_cdt">
+				<Constraint
+					Type="Fixed"
+				>
+				</Constraint>
+			</Body>		
+			<Body Mass="100" ModelFrame="FlapL_cdt">
+				<Constraint
+					Type="Fixed"
+				>
+				</Constraint>
+			</Body>		
+			<Body Mass="100" ModelFrame="Lift_cdt">
+				<Constraint
+					Type="Fixed"
+				>
+				</Constraint>
+			</Body>		
 			<Body Mass="1000" ModelFrame="BoneCargo_1_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
@@ -153,17 +177,17 @@
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData Price="2100">
 		<UiDesc
-			UiDesc="[JoAT] 4-Slot+ Semi-Trailer (main)"
+			UiDesc="[JoAT] 4-Slot+ Semi-Trailer (High Saddle)"
 			UiIcon30x30="trailerSemiImg30"
 			UiIcon40x40="trailerSemiImg"
-			UiName="[JoAT] 4-Slot+ Semi-Trailer (main)"
+			UiName="[JoAT] 4-Slot+ Semi-Trailer (High Saddle)"
 		/>
 		<RequiredAddon _template="SaddleHigh" />
 		<InstallSocket
-			Offset="(6.88; .56; 0)"
-			Type="Semitrailer"
+			Offset="(6.88; 0.56; 0)"
+			Type="LargeSemitrailer"
 			CablesPos="(6.47; 1.631; 0)"
-			ParentFrame="BoneChassis_cdt"
+			ParentFrame="BoneAttach_cdt"
 		/>
 		<AddonSlots
 			InitialOffset="(5.118; 1.705; 0)"
