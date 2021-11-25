@@ -54,10 +54,10 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-3.1; 0.44; .95)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-3.1; 0.44; .95)" />
-			<Wheel _template="TrailerWheel" Pos="(-4.36; 0.44; .95)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-4.36; 0.44; .95)" />
+			<Wheel _template="TrailerWheel" Pos="(-6.54; 0.83; .95)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 0.83; .95)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.8; .83; .95)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 0.83; .95)" />
 		</Wheels>
   	    <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".6" Type="wheels_heavy_single" />				
 		<OcclusionMap
@@ -72,6 +72,7 @@
 		<Camera Center="(0; 0; 0)" />
 		<Axles>
 			<Axle Frame="Axle1_cdt" />
+			<Axle Frame="Axle2_cdt" />			
 		</Axles>		
 	</TruckData>	
 	<PoweredConstraints>
@@ -92,7 +93,7 @@
 			Mass="1000"
 			ModelFrame="BoneChassis_cdt"
 		>
-			<Body Mass="100" ModelFrame="BoneAttach_cdt">
+			<!--Body Mass="100" ModelFrame="BoneAttach_cdt">
 				<Constraint
 					Type="Fixed"
 				>
@@ -155,7 +156,7 @@
 				>
 					<Motor Damping="1000000" Spring="2200000" Type="Spring" />
 				</Constraint>
-			</Body>
+			</Body-->
 			<Body
 				ForceBodyParams="true"
 				Mass="500"
@@ -187,13 +188,13 @@
 			Offset="(6.88; 0.56; 0)"
 			Type="LargeSemitrailer"
 			CablesPos="(6.47; 1.631; 0)"
-			ParentFrame="BoneAttach_cdt"
+			ParentFrame="BoneChassis_cdt	"
 		/>
-		<AddonSlots
+		<!--AddonSlots
 			InitialOffset="(5.118; 1.705; 0)"
 			OffsetStep="(2.559; 0; 0)"
 			ParentFrames="BoneCargo_4_cdt,BoneCargo_3_cdt,BoneCargo_2_cdt, BoneCargo_1_cdt"
 			Quantity="4"
-		/>
+		/-->
 	</GameData>
 </Truck>
