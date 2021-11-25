@@ -37,19 +37,7 @@
 			Size="0.2"
 		/>
 	</Flare>
-	<Constraint>
-		<TrailerRagdoll
-			PlaneAxisLocal="(0; 0; 1)"
-			TwistAxisLocal="(1; 0; 0)"
-			Type="Ragdoll"
-			PlaneMin="-90"
-			TwistMin="-30"
-			PlaneMax="90"
-			TwistMax="30"
-		>
-			<TwistMotor Damping="80000" Spring="320000" Type="Spring" />
-		</TrailerRagdoll>
-	</Constraint>	
+
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
@@ -91,7 +79,6 @@
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="1000"
-			ModelFrame="BoneChassis_cdt"
 		>
 			<!--Body Mass="100" ModelFrame="BoneAttach_cdt">
 				<Constraint
@@ -168,7 +155,7 @@
 					Name="Leg"
 					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="0.78"
+					MaxLimit="0.77"
 				>
 					<Motor Force="150000" Type="Position" />
 				</Constraint>
@@ -185,10 +172,8 @@
 		/>
 		<RequiredAddon _template="SaddleHigh" />
 		<InstallSocket
-			Offset="(6.88; 0.56; 0)"
+			Offset="(4.41; 1.7; 0)"
 			Type="LargeSemitrailer"
-			CablesPos="(6.47; 1.631; 0)"
-			ParentFrame="BoneChassis_cdt	"
 		/>
 		<!--AddonSlots
 			InitialOffset="(5.118; 1.705; 0)"
