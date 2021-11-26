@@ -98,24 +98,14 @@
 				>
 				</Constraint>
 			</Body!-->		
-			<Body Mass="1000" ModelFrame="BoneCargo_1_cdt">
+			<!--Body Mass="1000" ModelFrame="BoneCargo_4_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
 					Type="Hinge"
 					MinLimit="-5"
 					MaxLimit="5"
 				>
-					<Motor Damping="1000000" Spring="2200000" Type="Spring" />
-				</Constraint>
-			</Body>
-			<Body Mass="1000" ModelFrame="BoneCargo_2_cdt">
-				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Type="Hinge"
-					MinLimit="-5"
-					MaxLimit="5"
-				>
-					<Motor Damping="1000000" Spring="2200000" Type="Spring" />
+					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
 			</Body>
 			<Body Mass="1000" ModelFrame="BoneCargo_3_cdt">
@@ -125,19 +115,29 @@
 					MinLimit="-5"
 					MaxLimit="5"
 				>
-					<Motor Damping="1000000" Spring="2200000" Type="Spring" />
+					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
-			</Body>
-			<Body Mass="1000" ModelFrame="BoneCargo_4_cdt">
+			</Body>				
+			<Body Mass="1000" ModelFrame="BoneCargo_2_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
 					Type="Hinge"
 					MinLimit="-5"
 					MaxLimit="5"
 				>
-					<Motor Damping="1000000" Spring="2200000" Type="Spring" />
+					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
-			</Body>
+			</Body>				
+			<Body Mass="1000" ModelFrame="BoneCargo_1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Damping="100000000" Spring="220000" Type="Spring" />
+				</Constraint>
+			</Body-->
 			<Body
 				ForceBodyParams="true"
 				Mass="500"
@@ -166,14 +166,14 @@
 		/>
 		<RequiredAddon _template="SaddleHigh" />
 		<InstallSocket
-			Offset="(4.41; 1.7; 0)"
+			Offset="(5.21; 1.7; 0)"
 			Type="LargeSemitrailer"
 		/>
-		<AddonSlots
-			InitialOffset="(-0.14; 1.94; 0)"
+		<!--AddonSlots
+			InitialOffset="(.52; 1.94; 0)"
 			OffsetStep="(-2.559; 0; 0)"
 			ParentFrames="BoneCargo_4_cdt,BoneCargo_3_cdt,BoneCargo_2_cdt, BoneCargo_1_cdt"
 			Quantity="4"
-		/>
+		/-->
 	</GameData>
 </Truck>
