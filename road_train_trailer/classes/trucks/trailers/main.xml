@@ -106,42 +106,26 @@
 			</Body!-->		
 			<Body Mass="1000" ModelFrame="BoneCargo_4_cdt">
 				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Type="Hinge"
-					MinLimit="-5"
-					MaxLimit="5"
+					Type="Rigid"
 				>
-					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
 			</Body>
 			<Body Mass="1000" ModelFrame="BoneCargo_3_cdt">
 				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Type="Hinge"
-					MinLimit="-5"
-					MaxLimit="5"
+					Type="Rigid"
 				>
-					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
 			</Body>				
 			<Body Mass="1000" ModelFrame="BoneCargo_2_cdt">
 				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Type="Hinge"
-					MinLimit="-5"
-					MaxLimit="5"
+					Type="Rigid"
 				>
-					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
 			</Body>				
 			<Body Mass="1000" ModelFrame="BoneCargo_1_cdt">
 				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Type="Hinge"
-					MinLimit="-5"
-					MaxLimit="5"
+					Type="Rigid"
 				>
-					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
 			</Body>
 			<Body
