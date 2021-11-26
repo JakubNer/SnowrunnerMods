@@ -104,7 +104,7 @@
 				>
 				</Constraint>
 			</Body!-->		
-			<!--Body Mass="1000" ModelFrame="BoneCargo_4_cdt">
+			<Body Mass="1000" ModelFrame="BoneCargo_4_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
 					Type="Hinge"
@@ -143,7 +143,7 @@
 				>
 					<Motor Damping="100000000" Spring="220000" Type="Spring" />
 				</Constraint>
-			</Body-->
+			</Body>
 			<Body
 				ForceBodyParams="true"
 				Mass="500"
@@ -175,11 +175,11 @@
 			Offset="(5.21; 1.7; 0)"
 			Type="LargeSemitrailer"
 		/>
-		<!--AddonSlots
+		<AddonSlots
 			InitialOffset="(.52; 1.94; 0)"
 			OffsetStep="(-2.559; 0; 0)"
 			ParentFrames="BoneCargo_4_cdt,BoneCargo_3_cdt,BoneCargo_2_cdt, BoneCargo_1_cdt"
 			Quantity="4"
-		/-->
+		/>
 	</GameData>
 </Truck>
