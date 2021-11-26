@@ -78,8 +78,14 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="1000"
+			Mass="500"
 		>
+			<Body Mass="500" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>
+				</Constraint>
+			</Body>		
 			<!--Body Mass="100" ModelFrame="FlapR_cdt">
 				<Constraint
 					Type="Fixed"
