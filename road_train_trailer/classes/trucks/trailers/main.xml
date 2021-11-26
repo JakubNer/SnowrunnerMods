@@ -170,8 +170,8 @@
 			Type="LargeSemitrailer"
 		/>
 		<AddonSlots
-			InitialOffset="(5.118; 1.705; 0)"
-			OffsetStep="(2.559; 0; 0)"
+			InitialOffset="(-0.14; 1.94; 0)"
+			OffsetStep="(-2.559; 0; 0)"
 			ParentFrames="BoneCargo_4_cdt,BoneCargo_3_cdt,BoneCargo_2_cdt, BoneCargo_1_cdt"
 			Quantity="4"
 		/>
