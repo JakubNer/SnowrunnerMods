@@ -73,9 +73,8 @@
 				Position="0.78"
 			/>
 		</Group>
-		<Group ExternalUi="true" Id="anchors_position" LocaleUid="UI_HUD_INTERATION_PANEL_ACTIVATE_ADDON">
-			<Constraint InitialFix="true" Name="RunnerL" SpeedMult="0.5" Position="110" />
-			<Constraint InitialFix="true" Name="RunnerR" SpeedMult="0.5" Position="110" />
+		<Group ExternalUi="true" Id="foo" LocaleUid="EXTEND HITCH">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".4" Position=".3"/>
 		</Group>		
 	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/main">
@@ -87,7 +86,7 @@
 			<Body Mass="500" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
-				>
+				>				
 				</Constraint>
 			</Body>		
 			<!--Body Mass="100" ModelFrame="FlapR_cdt">
@@ -108,30 +107,6 @@
 				>
 				</Constraint>
 			</Body!-->		
-			<Body Mass="1000" ModelFrame="BoneCargo_4_cdt">
-				<Constraint
-					Type="Rigid"
-				>
-				</Constraint>
-			</Body>
-			<Body Mass="1000" ModelFrame="BoneCargo_3_cdt">
-				<Constraint
-					Type="Rigid"
-				>
-				</Constraint>
-			</Body>				
-			<Body Mass="1000" ModelFrame="BoneCargo_2_cdt">
-				<Constraint
-					Type="Rigid"
-				>
-				</Constraint>
-			</Body>				
-			<Body Mass="1000" ModelFrame="BoneCargo_1_cdt">
-				<Constraint
-					Type="Rigid"
-				>
-				</Constraint>
-			</Body>
 			<Body
 				ForceBodyParams="true"
 				Mass="500"
@@ -151,47 +126,25 @@
 			<Body
 				Friction="2.0"
 				Mass="200"
-				ModelFrame="BoneRampR_cdt"
+				ModelFrame="BoneHitch_cdt"
 				NetSync="pv"
 				NoFoliageCollisions="true"
 			>
 				<Constraint
-					AxisLocal="(0; 0; 1)"
-					Name="RunnerR"
-					Type="Hinge"
+					AxisLocal="(1; 0; 0)"
+					Name="Hitch"
+					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="180"
+					MaxLimit="1"
 				>
 					<Motor
-						Damping="1.0"
-						Force="18000"
-						Tau="0.4"
+						Damping="1"
+						Force="1500000"
+						Tau="1"
 						Type="Position"
 					/>
 				</Constraint>
 			</Body>
-			<Body
-				Friction="2.0"
-				Mass="200"
-				ModelFrame="BoneRampL_cdt"
-				NetSync="pv"
-				NoFoliageCollisions="true"
-			>
-				<Constraint
-					AxisLocal="(0; 0; 1)"
-					Name="RunnerL"
-					Type="Hinge"
-					MinLimit="0"
-					MaxLimit="180"
-				>
-					<Motor
-						Damping="1.0"
-						Force="18000"
-						Tau="0.4"
-						Type="Position"
-					/>
-				</Constraint>
-			</Body>			
 		</Body>
 	</PhysicsModel>
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
@@ -207,10 +160,29 @@
 			Offset="(5.21; 1.7; 0)"
 			Type="LargeSemitrailer"
 		/>
+
+		<WinchSocket Pos="(-8.454; 5.3; 0)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(-8.454; 5.3; 0)" ParentFrame="BoneHandle_cdt" />	
+		<WinchSocket Pos="(-8.454; 5.3; 0.6)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(-8.454; 5.3; -0.6)" ParentFrame="BoneHandle_cdt" />	
+		<WinchSocket Pos="(-8.454; 5.3; 0.6)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(-8.454; 5.3; -0.6)" ParentFrame="BoneHandle_cdt" />	
+		<WinchSocket Pos="(-8.454; 1.9; 0)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(-8.454; 1.9; 0)" ParentFrame="BoneHandle_cdt" />	
+		<WinchSocket Pos="(-8; 1.9; -1.5)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(-8; 1.9; -1.5)" ParentFrame="BoneHandle_cdt" />	
+		<CraneSocket Pos="(-8; 1.9; 0)" ParentFrame="BoneHandle_cdt" />	
+		<WinchSocket Pos="(-3.5; 1.9; -1.5)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(-3.5; 1.9; -1.5)" ParentFrame="BoneHandle_cdt" />	
+		<CraneSocket Pos="(-3.5; 1.9; 0)" ParentFrame="BoneHandle_cdt" />	
+		<WinchSocket Pos="(1; 1.9; -1.5)" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket Pos="(1; 1.9; -1.5)" ParentFrame="BoneHandle_cdt" />	
+		<CraneSocket Pos="(1; 1.9; 0)" ParentFrame="BoneHandle_cdt" />	
+		
 		<AddonSlots
 			InitialOffset="(.52; 1.94; 0)"
 			OffsetStep="(-2.559; 0; 0)"
-			ParentFrames="BoneCargo_4_cdt,BoneCargo_3_cdt,BoneCargo_2_cdt, BoneCargo_1_cdt"
+			ParentFrames="Body_cdt,Body_cdt,Body_cdt, Body_cdt"
 			Quantity="4"
 		/>
 	</GameData>
