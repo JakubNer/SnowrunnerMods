@@ -73,6 +73,10 @@
 				Position="0.78"
 			/>
 		</Group>
+		<Group ExternalUi="true" Id="anchors_position" LocaleUid="UI_HUD_INTERATION_PANEL_ACTIVATE_ADDON">
+			<Constraint InitialFix="true" Name="RunnerL" SpeedMult="0.5" Position="110" />
+			<Constraint InitialFix="true" Name="RunnerR" SpeedMult="0.5" Position="110" />
+		</Group>		
 	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/main">
 		<Body
@@ -144,6 +148,50 @@
 					<Motor Force="150000" Type="Position" />
 				</Constraint>
 			</Body>
+			<Body
+				Friction="2.0"
+				Mass="200"
+				ModelFrame="BoneRampR_cdt"
+				NetSync="pv"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="RunnerR"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="180"
+				>
+					<Motor
+						Damping="1.0"
+						Force="18000"
+						Tau="0.04"
+						Type="Position"
+					/>
+				</Constraint>
+			</Body>
+			<Body
+				Friction="2.0"
+				Mass="200"
+				ModelFrame="BoneRampL_cdt"
+				NetSync="pv"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="RunnerL"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="180"
+				>
+					<Motor
+						Damping="1.0"
+						Force="18000"
+						Tau="0.04"
+						Type="Position"
+					/>
+				</Constraint>
+			</Body>			
 		</Body>
 	</PhysicsModel>
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
