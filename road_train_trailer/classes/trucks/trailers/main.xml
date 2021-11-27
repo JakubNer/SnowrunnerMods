@@ -165,7 +165,7 @@
 					<Motor
 						Damping="1.0"
 						Force="18000"
-						Tau="0.04"
+						Tau="0.4"
 						Type="Position"
 					/>
 				</Constraint>
@@ -187,7 +187,7 @@
 					<Motor
 						Damping="1.0"
 						Force="18000"
-						Tau="0.04"
+						Tau="0.4"
 						Type="Position"
 					/>
 				</Constraint>
