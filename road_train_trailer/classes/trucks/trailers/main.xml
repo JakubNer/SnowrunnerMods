@@ -179,10 +179,10 @@
 
 		<WinchSocket Pos="(-8.454; 5.3; 0)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8.454; 5.3; 0)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 5.3; 0.6)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 5.3; -0.6)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 5.3; 0.6)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 5.3; -0.6)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 5.3; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 5.3; -0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 5.3; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 5.3; -0.4)" ParentFrame="Body_cdt" />	
 		<WinchSocket Pos="(-8.454; 1.9; 0)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8.454; 1.9; 0)" ParentFrame="Body_cdt" />	
 		<WinchSocket Pos="(-8; 1.9; -1.5)" ParentFrame="Body_cdt" />
