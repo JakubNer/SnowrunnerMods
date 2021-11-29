@@ -73,8 +73,14 @@
 				Position="0.78"
 			/>
 		</Group>
-		<Group ExternalUi="true" Id="hitch" LocaleUid="TOGGLE HITCH">
-			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".4" Position=".3"/>
+		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
+		</Group>		
+		<Group ExternalUi="true" Id="hitch2" LocaleUid="TOGGLE HITCH (out)">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="0"/>
+		</Group>		
+		<Group ExternalUi="true" Id="hitch3" LocaleUid="TOGGLE HITCH (extended)">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="-.2"/>
 		</Group>		
 		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT 2/5">
 			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="1.6"/>
@@ -128,12 +134,12 @@
 					AxisLocal="(1; 0; 0)"
 					Name="Hitch"
 					Type="Prismatic"
-					MinLimit="0"
+					MinLimit="-1"
 					MaxLimit="1"
 				>
 					<Motor
 						Damping="1"
-						Force="1500000"
+						Force="15000000"
 						Tau="1"
 						Type="Position"
 					/>
@@ -177,12 +183,12 @@
 			Type="LargeSemitrailer"
 		/>
 
-		<WinchSocket Pos="(-8.454; 5.3; 0)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 5.3; 0)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 5.3; 0.4)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 5.3; -0.4)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 5.3; 0.4)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 5.3; -0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.4; 0)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.4; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.4; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.4; -0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.4; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.4; -0.4)" ParentFrame="Body_cdt" />	
 		<WinchSocket Pos="(-8.454; 1.9; 0)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8.454; 1.9; 0)" ParentFrame="Body_cdt" />	
 		<WinchSocket Pos="(-8; 1.9; -1.5)" ParentFrame="Body_cdt" />

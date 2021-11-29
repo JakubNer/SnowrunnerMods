@@ -1,0 +1,229 @@
+<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheel
+			ConnectedToHandbrake="true"
+			SuspensionHeight="0.0244"
+			SuspensionStrength="0.0422"
+			Torque="default"
+			Type="semitrailer_oiltank"
+			SuspensionMin="-0.1"
+		/>
+	</Wheel>
+	<Flare>
+		<IgnitionSignalYellow
+			AspectRatio="1.4"
+			Color="g(238; 195; 34) x 0.4"
+			ColorMultAtDay="0.6"
+			Dir="(1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+		<IgnitionSignalRedSmall
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.6"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+	</Flare>	
+	<Flare>
+		<IgnitionSignalRed
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.8"
+			ColorMultAtDay="0.3"
+			Dir="(-1; 0; 0)"
+			DirAngle="90"
+			Size="0.2"
+		/>
+	</Flare>
+
+</_templates>
+<Truck Type="Trailer" AttachType="Saddle">
+	<TruckData>
+		<Wheels>
+			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.03; 1.06)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.03; 1.06)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.03; 1.06)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.03; 1.06)" />
+		</Wheels>
+  	    <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".6" Type="wheels_heavy_single" />				
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-0.5"
+			MaxX="4"
+		/>
+		<Constraint _template="TrailerRagdoll" />
+		<Foot Origin="(2.87; -0.136; -0.521)" />
+		<Foot Origin="(2.87; -0.136; 0.521)" />
+		<Camera Center="(0; 0; 0)" />
+		<Axles>
+			<Axle Frame="Axle1_cdt" />
+			<Axle Frame="Axle2_cdt" />			
+		</Axles>		
+	</TruckData>	
+	<PoweredConstraints>
+		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
+		</Group>		
+		<Group ExternalUi="true" Id="hitch2" LocaleUid="TOGGLE HITCH (out)">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="0"/>
+		</Group>		
+		<Group ExternalUi="true" Id="hitch3" LocaleUid="TOGGLE HITCH (extended)">
+			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="-.2"/>
+		</Group>		
+		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT 2/5">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="1.6"/>
+		</Group>		
+		<Group ExternalUi="true" Id="lift2" LocaleUid="TOGGLE LIFT 1/2">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="2"/>
+		</Group>		
+		<Group ExternalUi="true" Id="lift3" LocaleUid="TOGGLE LIFT 3/4">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.05"/>
+		</Group>		
+		<Group ExternalUi="true" Id="lift4" LocaleUid="TOGGLE LIFT FULL">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.88"/>
+		</Group>		
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/tuning/extension">
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="500"
+		>
+			<Body Mass="500" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body 
+				Friction="0"
+				Mass="200"
+				ModelFrame="Pin_cdt"
+				NetSync="pv"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body
+				Mass="26"
+				ModelFrame="Flag_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Prismatic"
+					MinLimit="-0.3"
+					MaxLimit="0.3"
+				>
+					<Motor Damping="0.8" 
+						   Spring="5" 
+						   Type="Spring" 
+						   Tau="1" 
+					/>
+				</Constraint>
+			</Body>			
+			<Body
+				Friction="2.0"
+				Mass="200"
+				ModelFrame="BoneHitch_cdt"
+				NetSync="pv"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Name="Hitch"
+					Type="Prismatic"
+					MinLimit="-1"
+					MaxLimit="1"
+				>
+					<Motor
+						Damping="1"
+						Force="15000000"
+						Tau="1"
+						Type="Position"
+					/>
+				</Constraint>
+			</Body>
+			<Body
+				Friction="2.0"
+				Mass="200"
+				ModelFrame="Lift_cdt"
+				NetSync="pv"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Lift"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit="4"
+				>
+					<Motor
+						Damping="1"
+						Force="15000000"
+						Tau="1"
+						Type="Position"
+					/>
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
+	<GameData Price="2100">
+		<UiDesc
+			UiDesc="[JoAT] 4-Slot+ Semi-Trailer (Extension)"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="[JoAT] 4-Slot+ Semi-Trailer (Extension)"
+		/>
+		<InstallSocket
+			Offset="(3.7; 1.7; -1.97)"
+			Type="Trailer"
+		/>
+
+		<WinchSocket Pos="(5.2; 1.735; 0)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(5.2; 1.735; 0)" ParentFrame="Body_cdt" />	
+
+		<WinchSocket Pos="(4; 1.735; 0)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(4; 1.735; 0)" ParentFrame="Body_cdt" />	
+
+		<WinchSocket Pos="(-8.454; 6.4; 0)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.4; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.4; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.4; -0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.4; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.4; -0.4)" ParentFrame="Body_cdt" />	
+		
+		<WinchSocket Pos="(-8.454; 1.9; 0)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 1.9; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8; 1.9; -1.5)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8; 1.9; -1.5)" ParentFrame="Body_cdt" />	
+		<CraneSocket Pos="(-8; 1.9; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-3.5; 1.9; -1.5)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-3.5; 1.9; -1.5)" ParentFrame="Body_cdt" />	
+		<CraneSocket Pos="(-3.5; 1.9; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(1; 1.9; -1.5)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(1; 1.9; -1.5)" ParentFrame="Body_cdt" />	
+		<CraneSocket Pos="(1; 1.9; 0)" ParentFrame="Body_cdt" />	
+
+		<WinchSocket Pos="(-8; 1.9; -1.5)" ParentFrame="BoneLift_cdt" />
+		<CraneSocket Pos="(-8; 1.9; -1.5)" ParentFrame="BoneLift_cdt" />	
+		<WinchSocket Pos="(-3.5; 1.9; -1.5)" ParentFrame="BoneLift_cdt" />
+		<CraneSocket Pos="(-3.5; 1.9; -1.5)" ParentFrame="BoneLift_cdt" />	
+		<WinchSocket Pos="(1; 1.9; -1.5)" ParentFrame="BoneLift_cdt" />
+		<CraneSocket Pos="(1; 1.9; -1.5)" ParentFrame="BoneLift_cdt" />	
+		
+		<AddonSlots
+			InitialOffset="(.52; 1.94; 0)"
+			OffsetStep="(-2.559; 0; 0)"
+			ParentFrames="Body_cdt,Body_cdt,Body_cdt, Body_cdt"
+			Quantity="4"
+		/>
+	</GameData>
+</Truck>
