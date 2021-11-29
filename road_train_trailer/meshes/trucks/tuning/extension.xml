@@ -1,7 +1,7 @@
 <CombineXMesh>
 	<Material
 		AlbedoMap="trucks/extension__d.tga"
-		Name="main_mat"
+		Name="extension_mat"
 		NormalMap="trucks/extension__n_d.tga"
 		ShadingMap="trucks/extension__sh_d.tga"
 		SnowUpIntensity="0.0"
