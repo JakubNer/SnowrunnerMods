@@ -1,7 +1,7 @@
 <_templates Include="trucks">
 	<Wheel>
 		<TrailerWheel
-			ConnectedToHandbrake="true"
+			ConnectedToHandbrake="false"
 			SuspensionHeight="0.0244"
 			SuspensionStrength="0.0422"
 			Torque="default"
@@ -9,35 +9,6 @@
 			SuspensionMin="-0.1"
 		/>
 	</Wheel>
-	<Flare>
-		<IgnitionSignalYellow
-			AspectRatio="1.4"
-			Color="g(238; 195; 34) x 0.4"
-			ColorMultAtDay="0.6"
-			Dir="(1; 0; 0)"
-			DirAngle="135"
-			Size="0.1"
-		/>
-		<IgnitionSignalRedSmall
-			AspectRatio="1.4"
-			Color="g(169; 0; 0) x 0.6"
-			ColorMultAtDay="0.6"
-			Dir="(-1; 0; 0)"
-			DirAngle="135"
-			Size="0.1"
-		/>
-	</Flare>	
-	<Flare>
-		<IgnitionSignalRed
-			AspectRatio="1.4"
-			Color="g(169; 0; 0) x 0.8"
-			ColorMultAtDay="0.3"
-			Dir="(-1; 0; 0)"
-			DirAngle="90"
-			Size="0.2"
-		/>
-	</Flare>
-
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
