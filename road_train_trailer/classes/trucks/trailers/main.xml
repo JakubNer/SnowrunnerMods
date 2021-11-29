@@ -139,7 +139,7 @@
 				>
 					<Motor
 						Damping="1"
-						Force="15000000"
+						Force="1500000"
 						Tau="1"
 						Type="Position"
 					/>
