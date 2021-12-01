@@ -5,7 +5,7 @@
 			SuspensionHeight="0.0244"
 			SuspensionStrength="0.0422"
 			Torque="default"
-			Type="semitrailer_oiltank"
+			Type="trailer_flatbed_2"
 			SuspensionMin="-0.1"
 		/>
 	</Wheel>
@@ -13,11 +13,12 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.06)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.06)" />
-			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.06)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.06)" />
+			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.07)" />
 		</Wheels>
+		<CompatibleWheels Scale=".6" Type="wheels_heavy_single" />			
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
@@ -28,10 +29,6 @@
 		<Foot Origin="(2.87; -0.136; -0.521)" />
 		<Foot Origin="(2.87; -0.136; 0.521)" />
 		<Camera Center="(0; 0; 0)" />
-		<Axles>
-			<Axle Frame="Axle1_cdt" />
-			<Axle Frame="Axle2_cdt" />			
-		</Axles>		
 	</TruckData>	
 	<PoweredConstraints>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
@@ -61,7 +58,7 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="500"
+			Mass="3500"
 			NetSync="pv"			
 		>
 			<Body Mass="500" ModelFrame="Body_cdt">
@@ -122,7 +119,7 @@
 			</Body>
 			<Body
 				Friction="2.0"
-				Mass="200"
+				Mass="400"
 				ModelFrame="Lift_cdt"
 				NoFoliageCollisions="true"
 			>
