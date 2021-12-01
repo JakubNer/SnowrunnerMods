@@ -28,7 +28,9 @@
 		<Constraint _template="TrailerRagdoll" />
 		<Foot Origin="(2.87; -0.136; -0.521)" />
 		<Foot Origin="(2.87; -0.136; 0.521)" />
-		<Camera Center="(0; 0; 0)" />
+		<Camera
+			Center="(-2; 0; 0)"
+			RadiusMultiplier="1.4" />		
 		<Axles>
 			<Axle Frame="Axle1_cdt" />
 			<Axle Frame="Axle2_cdt" />			
@@ -82,24 +84,14 @@
 				>				
 				</Constraint>
 			</Body>		
-			<Body
-				Mass="26"
-				ModelFrame="Flag_cdt"
-				NoFoliageCollisions="true"
-			>
+			<Body Friction="0" Mass="20" ModelFrame="Flap_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Type="Prismatic"
-					MinLimit="-0.3"
-					MaxLimit="0.3"
-				>
-					<Motor Damping="0.8" 
-						   Spring="5" 
-						   Type="Spring" 
-						   Tau="1" 
-					/>
-				</Constraint>
-			</Body>			
+					MinLimit="0"
+					MaxLimit="1"
+				/>
+			</Body>							
 			<Body
 				Friction="2.0"
 				Mass="400"
@@ -169,8 +161,8 @@
 		<WinchSocket Pos="(-8.454; 6.74; 0)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8.454; 6.74; 0)" ParentFrame="Body_cdt" />	
 		<WinchSocket Pos="(-8.454; 6.74; 0.4)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 6.74; -0.4)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 6.74; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.74; 0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.74; -0.4)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8.454; 6.74; -0.4)" ParentFrame="Body_cdt" />	
 		
 		<WinchSocket Pos="(-8.454; 2.24; 0)" ParentFrame="Body_cdt" />
