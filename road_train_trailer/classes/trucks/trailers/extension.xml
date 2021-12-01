@@ -13,11 +13,12 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.06)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.06)" />
-			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.06)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.06)" />
+			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.07)" />
 		</Wheels>
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".6" Type="wheels_superheavy_single" />		
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
@@ -61,10 +62,10 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="500"
+			Mass="2500"
 			NetSync="pv"			
 		>
-			<Body Mass="500" ModelFrame="Body_cdt">
+			<Body Mass="2500" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
 				>				
@@ -101,7 +102,7 @@
 			</Body>			
 			<Body
 				Friction="2.0"
-				Mass="200"
+				Mass="400"
 				ModelFrame="BoneHitch_cdt"
 				NoFoliageCollisions="true"
 			>
@@ -151,6 +152,9 @@
 			UiIcon40x40="trailerSemiImg"
 			UiName="[JoAT] 4-Slot+ Semi-Trailer (Extension)"
 		/>
+		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
+		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
+		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
 			Offset="(3.7; 1.7; -1.97)"
 			Type="Trailer"
