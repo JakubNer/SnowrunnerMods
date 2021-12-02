@@ -79,14 +79,6 @@
 				>				
 				</Constraint>
 			</Body>		
-			<Body Friction="0" Mass="20" ModelFrame="Flap_cdt">
-				<Constraint
-					AxisLocal="(0; 1; 0)"
-					Type="Prismatic"
-					MinLimit="0"
-					MaxLimit="1"
-				/>
-			</Body>							
 			<Body
 				Friction="2.0"
 				Mass="400"
