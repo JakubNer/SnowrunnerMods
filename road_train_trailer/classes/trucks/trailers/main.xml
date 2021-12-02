@@ -78,23 +78,17 @@
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
 			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
 		</Group>		
-		<Group ExternalUi="true" Id="hitch2" LocaleUid="TOGGLE HITCH (out)">
-			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="0"/>
-		</Group>		
-		<Group ExternalUi="true" Id="hitch3" LocaleUid="TOGGLE HITCH (extended)">
+		<Group ExternalUi="true" Id="hitch3" LocaleUid="TOGGLE HITCH (out)">
 			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="-.2"/>
 		</Group>		
-		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT 2/5">
+		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT (low)">
 			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="1.6"/>
 		</Group>		
-		<Group ExternalUi="true" Id="lift2" LocaleUid="TOGGLE LIFT 1/2">
-			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="2"/>
+		<Group ExternalUi="true" Id="lift2" LocaleUid="TOGGLE LIFT (mid)">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="2.4"/>
 		</Group>		
-		<Group ExternalUi="true" Id="lift3" LocaleUid="TOGGLE LIFT 3/4">
-			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.05"/>
-		</Group>		
-		<Group ExternalUi="true" Id="lift4" LocaleUid="TOGGLE LIFT FULL">
-			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.88"/>
+		<Group ExternalUi="true" Id="lift3" LocaleUid="TOGGLE LIFT (top)">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.2"/>
 		</Group>		
 	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/main">
@@ -105,6 +99,7 @@
 			Mass="2500"
 			NetSync="pv"			
 		>
+			<Constraint Type="Rigid" />		
 			<Body Mass="2500" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
@@ -213,30 +208,33 @@
 			Type="LargeSemitrailer"
 		/>
 
-		<WinchSocket Pos="(-8.454; 6.74; 0)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 6.74; 0)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 6.74; 0.4)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 6.74; 0.4)" ParentFrame="Body_cdt" />	
-		<WinchSocket Pos="(-8.454; 6.74; -0.4)" ParentFrame="Body_cdt" />
-		<CraneSocket Pos="(-8.454; 6.74; -0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.04; 0)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.04; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.04; 0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.04; 0.4)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8.454; 6.04; -0.4)" ParentFrame="Body_cdt" />
+		<CraneSocket Pos="(-8.454; 6.04; -0.4)" ParentFrame="Body_cdt" />	
+		
 		<WinchSocket Pos="(-8.454; 2.24; 0)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8.454; 2.24; 0)" ParentFrame="Body_cdt" />	
+
 		<WinchSocket Pos="(-8; 2.24; -1.5)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-8; 2.24; -1.5)" ParentFrame="Body_cdt" />	
 		<CraneSocket Pos="(-8; 2.24; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-8; 2.24; 1.5)" ParentFrame="BoneLift_cdt" />
+		<CraneSocket Pos="(-8; 2.24; 1.5)" ParentFrame="BoneLift_cdt" />	
+
 		<WinchSocket Pos="(-3.5; 2.24; -1.5)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(-3.5; 2.24; -1.5)" ParentFrame="Body_cdt" />	
 		<CraneSocket Pos="(-3.5; 2.24; 0)" ParentFrame="Body_cdt" />	
+		<WinchSocket Pos="(-3.5; 2.24; 1.5)" ParentFrame="BoneLift_cdt" />
+		<CraneSocket Pos="(-3.5; 2.24; 1.5)" ParentFrame="BoneLift_cdt" />	
+
 		<WinchSocket Pos="(1; 2.24; -1.5)" ParentFrame="Body_cdt" />
 		<CraneSocket Pos="(1; 2.24; -1.5)" ParentFrame="Body_cdt" />	
 		<CraneSocket Pos="(1; 2.24; 0)" ParentFrame="Body_cdt" />	
-
-		<WinchSocket Pos="(-8; 2.24; -1.5)" ParentFrame="BoneLift_cdt" />
-		<CraneSocket Pos="(-8; 2.24; -1.5)" ParentFrame="BoneLift_cdt" />	
-		<WinchSocket Pos="(-3.5; 2.24; -1.5)" ParentFrame="BoneLift_cdt" />
-		<CraneSocket Pos="(-3.5; 2.24; -1.5)" ParentFrame="BoneLift_cdt" />	
-		<WinchSocket Pos="(1; 2.24; -1.5)" ParentFrame="BoneLift_cdt" />
-		<CraneSocket Pos="(1; 2.24; -1.5)" ParentFrame="BoneLift_cdt" />	
+		<WinchSocket Pos="(1; 2.24; 1.5)" ParentFrame="BoneLift_cdt" />
+		<CraneSocket Pos="(1; 2.24; 1.5)" ParentFrame="BoneLift_cdt" />	
 		
 		<AddonSlots
 			InitialOffset="(.52; 2.28; 0)"

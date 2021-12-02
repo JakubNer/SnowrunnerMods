@@ -1,0 +1,69 @@
+<TruckAddon IsChassisFullOcclusion="true">
+	<PoweredConstraints>
+		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT (low)">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="1.6"/>
+		</Group>		
+		<Group ExternalUi="true" Id="lift2" LocaleUid="TOGGLE LIFT (mid)">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="2.4"/>
+		</Group>		
+		<Group ExternalUi="true" Id="lift3" LocaleUid="TOGGLE LIFT (out)">
+			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.12"/>
+		</Group>		
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/tuning/main">
+		<NetSync Legacy="false" />	
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="600"
+			NetSync="pv"			
+			ModelFrame="Body_cdt"
+		>
+			<Constraint Type="Rigid" />
+			<Body
+				Friction="2.0"
+				Mass="300"
+				ModelFrame="Lift_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Lift"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit="4"
+				>
+					<Motor
+						Damping="1"
+						Force="150000"
+						Tau=".04"
+						Type="Position"
+					/>
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="1250"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] 2-Slot+ Flatbed"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] 2-Slot+ Flatbed"
+		/>
+		<InstallSocket Type="FrameAddon" />
+		<AddonSlots
+			InitialOffset="(1; 0.4; 0)"
+			OffsetStep="(-2.559; 0; 0)"
+			ParentFrames="Body_cdt,Body_cdt"
+			Quantity="2"
+		/>
+	</GameData>
+</TruckAddon>
