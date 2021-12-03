@@ -138,8 +138,8 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
-						Tau=".04"
+						Force="3000000"
+						Tau="1"
 						Type="Position"
 					/>
 				</Constraint>
@@ -199,6 +199,9 @@
 			Offset="(5.21; 2.04; 0)"
 			Type="LargeSemitrailer"
 		/>
+
+		<WinchSocket Pos="(-7.4; -8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<WinchSocket Pos="(-7.4; 8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 
 		<WinchSocket Pos="(-8.454; 6.04; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-8.454; 6.04; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
