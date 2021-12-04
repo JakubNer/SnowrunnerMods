@@ -42,10 +42,12 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.07)" ParentFrame="Body_cdt" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.07)" ParentFrame="Body_cdt" />
-			<Wheel _template="TrailerWheel" Pos="(-7.789; 1.37; 1.07)" ParentFrame="Body_cdt" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.789; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-5.937; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-5.937; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-7.182; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.182; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-4.665; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-4.665; 1.37; 1.07)" ParentFrame="Body_cdt" />
 		</Wheels>
 		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".6" Type="wheels_superheavy_single" />
 		<OcclusionMap
@@ -55,26 +57,16 @@
 			MaxX="4"
 		/>
 		<Constraint _template="TrailerRagdoll" />
-		<Foot Origin="(2.87; -0.136; -0.521)" />
-		<Foot Origin="(2.87; -0.136; 0.521)" />
 		<Camera
 			Center="(-2; 0; 0)"
 			RadiusMultiplier="1.4" />		
 		<Axles>
 			<Axle Frame="Axle1_cdt" />
 			<Axle Frame="Axle2_cdt" />			
+			<Axle Frame="Axle3_cdt" />			
 		</Axles>		
 	</TruckData>	
 	<PoweredConstraints>
-		<Group Id="_trailer_foot">
-			<Constraint
-				InitialFix="true"
-				Name="Leg"
-				Tau="0.04"
-				TerminalFix="true"
-				Position="0.78"
-			/>
-		</Group>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
 			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
 		</Group>		
@@ -96,32 +88,16 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="2500"
+			Mass="1500"
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
-			<Body Mass="2500" ModelFrame="Body_cdt">
+			<Body Mass="1500" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
 				>				
 				</Constraint>
 			</Body>		
-			<Body
-				ForceBodyParams="true"
-				Mass="500"
-				ModelFrame="BoneLeg_cdt"
-				NoFoliageCollisions="true"
-			>
-				<Constraint
-					AxisLocal="(0; 1; 0)"
-					Name="Leg"
-					Type="Prismatic"
-					MinLimit="0"
-					MaxLimit="0.77"
-				>
-					<Motor Force="150000" Type="Position" />
-				</Constraint>
-			</Body>
 			<Body
 				Friction="2.0"
 				Mass="200"
