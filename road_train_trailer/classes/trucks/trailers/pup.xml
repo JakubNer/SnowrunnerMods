@@ -100,6 +100,11 @@
 					MinLimit="-60"
 					MaxLimit="60"
 				/>
+				<Body ForceBodyParams="true" Mass="200" ModelFrame="Loop_cdt">
+					<Constraint
+						Type="Fixed"
+					/>
+				</Body>
 			</Body>
 			<Body Mass="500" ModelFrame="Thump_cdt">
 				<Constraint
@@ -182,7 +187,7 @@
 		<InstallSocket
 			Offset="(1.767; 1.667; 0)"
 			Type="Trailer"
-			ParentFrame="Arm_cdt"
+			ParentFrame="Loop_cdt"
 		/>
 
 		<WinchSocket Pos="(1.767; 1.667; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
@@ -190,7 +195,7 @@
 
 	
 		<AddonSlots
-			InitialOffset="(.52; 2.28; 0)"
+			InitialOffset="(-1.8647; 2.28; 0)"
 			OffsetStep="(-2.559; 0; 0)"
 			ParentFrames="Body_cdt,Body_cdt"
 			Quantity="2"
