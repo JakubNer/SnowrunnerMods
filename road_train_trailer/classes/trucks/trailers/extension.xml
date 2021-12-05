@@ -13,10 +13,10 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.07)" ParentFrame="Body_cdt" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.07)" ParentFrame="Body_cdt" />
-			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.07)" ParentFrame="Body_cdt" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.07)" ParentFrame="Body_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.07)"  />
+			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.07)" />
 		</Wheels>
 		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".6" Type="wheels_superheavy_single" />		
 		<OcclusionMap
@@ -31,10 +31,6 @@
 		<Camera
 			Center="(-2; 0; 0)"
 			RadiusMultiplier="1.4" />		
-		<Axles>
-			<Axle Frame="Axle1_cdt" />
-			<Axle Frame="Axle2_cdt" />			
-		</Axles>		
 	</TruckData>	
 	<PoweredConstraints>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
@@ -62,7 +58,13 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
-			<Body Mass="2500" ModelFrame="Body_cdt">
+			<Body Mass="2000" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body Mass="500" ModelFrame="Thump_cdt">
 				<Constraint
 					Type="Fixed"
 				>				
