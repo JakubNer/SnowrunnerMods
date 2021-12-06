@@ -62,7 +62,7 @@
 			RadiusMultiplier="1.4" />		
 	</TruckData>	
 	<PoweredConstraints>
-		<Group Id="anchor" ExternalUi="true" LocaleUid="HITCH ANCHOR">
+		<Group Id="anchor3" ExternalUi="true" LocaleUid="HITCH ANCHOR">
 			<Constraint InitialFix="true" Position=".78" Name="Anchor" Tau="0.04" TerminalFix="true" />
 		</Group>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">

@@ -71,7 +71,7 @@
 				Position="0.78"
 			/>
 		</Group>
-		<Group Id="anchor" ExternalUi="true" LocaleUid="HITCH ANCHOR">
+		<Group Id="anchor2" ExternalUi="true" LocaleUid="HITCH ANCHOR">
 			<Constraint InitialFix="true" Position=".78" Name="Anchor" TerminalFix="true" />
 		</Group>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
@@ -115,9 +115,9 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
-						Tau="1"
+						Force="1500000"
 						Type="Position"
+						Tau="1"
 					/>
 				</Constraint>
 			</Body>		
@@ -215,7 +215,7 @@
 			Type="LargeSemitrailer"
 		/>
 		
-		<WinchSocket Pos="(-6; 3; 0)" ParentFrame="Anchor_cdt" WinchableWhenAttached="true" />
+		<WinchSocket Pos="(-8.59; 1.27; 0)" ParentFrame="Anchor_cdt" WinchableWhenAttached="true" />
 		
 
 		<WinchSocket Pos="(-7.4; -8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
