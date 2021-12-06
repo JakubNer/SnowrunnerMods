@@ -15,10 +15,10 @@
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-6.54; 1.37; 1.07)" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; 1.37; 1.07)"  />
-			<Wheel _template="TrailerWheel" Pos="(-7.8; 1.37; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.8; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.78; 1.37; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.78; 1.37; 1.07)" />
 		</Wheels>
-		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".6" Type="wheels_superheavy_single" />		
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_superheavy_single" />		
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
@@ -33,6 +33,9 @@
 			RadiusMultiplier="1.4" />		
 	</TruckData>	
 	<PoweredConstraints>
+		<Group Id="anchor" ExternalUi="true" LocaleUid="HITCH ANCHOR">
+			<Constraint InitialFix="true" Position=".78" Name="Anchor" TerminalFix="true" />
+		</Group>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
 			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
 		</Group>		
@@ -58,16 +61,26 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
-			<Body Mass="2000" ModelFrame="Body_cdt">
+			<Body Mass="2200" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
 				>				
 				</Constraint>
 			</Body>		
-			<Body Mass="500" ModelFrame="Thump_cdt">
+			<Body Mass="300" ModelFrame="Anchor_cdt">
 				<Constraint
-					Type="Fixed"
-				>				
+					AxisLocal="(0; -1; 0)"
+					Name="Anchor"
+					Type="Prismatic"
+					MinLimit="-1"
+					MaxLimit="1"
+				>
+					<Motor
+						Damping="1"
+						Force="4500000"
+						Tau="1"
+						Type="Position"
+					/>
 				</Constraint>
 			</Body>		
 			<Body 
