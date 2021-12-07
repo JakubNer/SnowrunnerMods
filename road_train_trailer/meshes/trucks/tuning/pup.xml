@@ -8,10 +8,10 @@
 		AlphaKill="true"
 	/>
 	<Material
-		AlbedoMap="trucks/lift__d.tga"
+		AlbedoMap="trucks/puplift__d.tga"
 		Name="puplift_mat"
-		NormalMap="trucks/lift__n_d.tga"
-		ShadingMap="trucks/lift__sh_d.tga"
+		NormalMap="trucks/puplift__n_d.tga"
+		ShadingMap="trucks/puplift__sh_d.tga"
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>	

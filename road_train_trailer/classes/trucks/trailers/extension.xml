@@ -154,9 +154,6 @@
 			Type="Trailer"
 		/>
 
-		<WinchSocket Pos="(-7.4; -8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<WinchSocket Pos="(-7.4; 8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-
 		<WinchSocket Pos="(5.2; 2.075; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(5.2; 2.075; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 

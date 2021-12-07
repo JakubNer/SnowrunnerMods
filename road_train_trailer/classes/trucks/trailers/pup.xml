@@ -172,18 +172,18 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<StopSignals>
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-5.852; 2.13; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-5.852; 2.13; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-5.852; 2.13; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-5.852; 2.13; 1.07)" ParentFrame="Body_cdt" />
 		</StopSignals>
 		<Ignition>
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; 1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; 2.11; -1.19)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; 2.11; 1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-5.852; 2.13; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-5.852; 2.13; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-5.852; 2.13; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(--5.852; 2.13; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-5.852; 2.13; -1.18)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-5.852; 2.13; 1.18)" ParentFrame="Body_cdt" />
 		</Ignition>
 	</ModelAttachments>	
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
@@ -205,6 +205,29 @@
 
 		<WinchSocket Pos="(1.767; 1.667; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(1.767; 1.667; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+
+		<WinchSocket Pos="(-5.852; 6.04; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 6.04; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.852; 6.04; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 6.04; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.852; 6.04; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 6.04; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		
+		<WinchSocket Pos="(-5.852; 2.24; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 2.24; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(-4; 2.24; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4; 2.24; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<CraneSocket Pos="(-4; 2.24; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4; 2.24; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4; 2.24; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(-1; 2.24; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-1; 2.24; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<CraneSocket Pos="(-1; 2.24; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-1; 2.24; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-1; 2.24; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
 
 		<AddonSlots
 			InitialOffset="(-1.8647; 2.28; 0)"

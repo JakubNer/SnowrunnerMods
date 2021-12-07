@@ -72,7 +72,7 @@
 			/>
 		</Group>
 		<Group Id="anchor2" ExternalUi="true" LocaleUid="HITCH ANCHOR">
-			<Constraint InitialFix="true" Position=".78" Name="Anchor" TerminalFix="true" />
+			<Constraint InitialFix="true" Position=".58" Name="Anchor" TerminalFix="true" />
 		</Group>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
 			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
@@ -115,7 +115,7 @@
 				>
 					<Motor
 						Damping="1"
-						Force="1500000"
+						Force="150000"
 						Type="Position"
 						Tau="1"
 					/>
@@ -184,18 +184,18 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<StopSignals>
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; 2.11; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; 2.13; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; 2.13; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; 2.13; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; 2.13; 1.07)" ParentFrame="Body_cdt" />
 		</StopSignals>
 		<Ignition>
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.11; 1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; 2.11; -1.19)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; 2.11; 1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.13; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.13; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.13; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; 2.13; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; 2.13; -1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; 2.13; 1.19)" ParentFrame="Body_cdt" />
 		</Ignition>
 	</ModelAttachments>	
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
@@ -217,10 +217,6 @@
 		
 		<WinchSocket Pos="(-8.59; 1.27; 0)" ParentFrame="Anchor_cdt" WinchableWhenAttached="true" />
 		
-
-		<WinchSocket Pos="(-7.4; -8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<WinchSocket Pos="(-7.4; 8; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-
 		<WinchSocket Pos="(-8.454; 6.04; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-8.454; 6.04; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<WinchSocket Pos="(-8.454; 6.04; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
