@@ -72,7 +72,7 @@
 			/>
 		</Group>
 		<Group Id="anchor2" ExternalUi="true" LocaleUid="HITCH ANCHOR">
-			<Constraint InitialFix="true" Position=".58" Name="Anchor" TerminalFix="true" />
+			<Constraint InitialFix="true" Position=".58" Name="Anchor" TerminalFix="true" SpeedMult=".2" />
 		</Group>
 		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
 			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
@@ -115,7 +115,7 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
+						Force="50000000"
 						Type="Position"
 						Tau="1"
 					/>
