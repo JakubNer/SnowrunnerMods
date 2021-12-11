@@ -116,7 +116,7 @@
 				</Constraint>
 			</Body>
 			<Body
-				Friction="2.0"
+				Friction="2"
 				Mass="400"
 				ModelFrame="Lift_cdt"
 				NoFoliageCollisions="true"
@@ -130,8 +130,8 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
-						Tau=".04"
+						Force="3000000"
+						Tau="1"
 						Type="Position"
 					/>
 				</Constraint>
@@ -140,7 +140,7 @@
 						AxisLocal="(0; 0; 1)"
 						Name="Gate"
 						Type="Prismatic"
-						MinLimit="-1"
+						MinLimit="0"
 						MaxLimit="1"
 					>
 						<Motor
@@ -203,20 +203,19 @@
 		<WinchSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
 		
-		<!--LoadArea Subtype="TrailerLogMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(-3.333; 1.3; -1.23)" Max="(-0.433; 2.9; 1.23)" ParentFrame="Body_cdt" />
-		<LoadArea Subtype="TrailerLogMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(-0.134; 1.3; -1.23)" Max="(3.3; 2.9; 1.23)" ParentFrame="Body_cdt" /-->		
-		<LoadArea Subtype="TrailerPoleLogLong" TrailerLoad="true" Type="CargoLogsLong" Min="(-3.333; 1.3; -1.23)" Max="(-0.433; 2.9; 1.23)" ParentFrame="Body_cdt" />
-		<LoadArea Subtype="TrailerPoleLogLong" TrailerLoad="true" Type="CargoLogsLong" Min="(-0.134; 1.3; -1.23)" Max="(3.3; 2.9; 1.23)" ParentFrame="Body_cdt" />		
+		<LoadArea Subtype="JoatCargoLogsLong" TrailerLoad="true" Type="CargoLogsLong" Min="(1.83; 1; -1.4)" Max="(-10.97; 2; 1.4)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="JoatCargoLogsLong" TrailerLoad="true" Type="CargoLogsLong" Min="(1.83; 1; -1.4)" Max="(-10.97; 2; 1.4)" ParentFrame="Body_cdt" />		
 		
-		<!--AddonSlots
-			InitialOffset="(-1.5; -.25; 0)"
-			ParentFrames="Body_cdt"
-			Quantity="1"
-		/-->
 		<AddonSlots
-			InitialOffset="(-1.5; -.25; 0)"
+			InitialOffset="(1.829; .95; 0)"
 			ParentFrames="Body_cdt"
 			Quantity="1"
+		/>
+		<LongLogsAlignData
+			CargoPivotBody="Body_cdt"
+			CargoBodiesToAlign="Body_cdt"
+			TruckAddonBodiesToAlign="Body_cdt"
+			TrailerBodiesToAlign="Body_cdt"
 		/>
 	</GameData>
 </Truck>
