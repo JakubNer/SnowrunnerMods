@@ -71,15 +71,9 @@
 				Position="0.78"
 			/>
 		</Group>
-		<Group Id="anchor2" ExternalUi="true" LocaleUid="HITCH ANCHOR">
-			<Constraint InitialFix="true" Position=".58" Name="Anchor" TerminalFix="true" SpeedMult=".2" />
+		<Group Id="anchor2" ExternalUi="true" LocaleUid="LOG SHUTE">
+			<Constraint InitialFix="true" Position=".58" Name="Gate" TerminalFix="true" />
 		</Group>
-		<Group ExternalUi="true" Id="hitch1" LocaleUid="TOGGLE HITCH (in)">
-			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position=".1"/>
-		</Group>		
-		<Group ExternalUi="true" Id="hitch3" LocaleUid="TOGGLE HITCH (out)">
-			<Constraint InitialFix="true" Name="Hitch" SpeedMult=".2" Position="-.2"/>
-		</Group>		
 		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT (low)">
 			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="1.6"/>
 		</Group>		
@@ -105,22 +99,6 @@
 				>				
 				</Constraint>
 			</Body>		
-			<Body Mass="300" ModelFrame="Anchor_cdt">
-				<Constraint
-					AxisLocal="(0; -1; 0)"
-					Name="Anchor"
-					Type="Prismatic"
-					MinLimit="-1"
-					MaxLimit="1"
-				>
-					<Motor
-						Damping="1"
-						Force="50000000"
-						Type="Position"
-						Tau="1"
-					/>
-				</Constraint>
-			</Body>		
 			<Body
 				ForceBodyParams="true"
 				Mass="500"
@@ -135,28 +113,6 @@
 					MaxLimit="0.77"
 				>
 					<Motor Force="150000" Type="Position" />
-				</Constraint>
-			</Body>
-			<Body
-				Friction="2.0"
-				Mass="200"
-				ModelFrame="BoneHitch_cdt"
-				NetSync="pv"
-				NoFoliageCollisions="true"
-			>
-				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Name="Hitch"
-					Type="Prismatic"
-					MinLimit="-1"
-					MaxLimit="1"
-				>
-					<Motor
-						Damping="1"
-						Force="3000000"
-						Tau="1"
-						Type="Position"
-					/>
 				</Constraint>
 			</Body>
 			<Body
@@ -179,23 +135,39 @@
 						Type="Position"
 					/>
 				</Constraint>
+				<Body Mass="300" ModelFrame="Gate_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="Gate"
+						Type="Prismatic"
+						MinLimit="-1"
+						MaxLimit="1"
+					>
+						<Motor
+							Damping="1"
+							Force="50000000"
+							Type="Position"
+							Tau="1"
+						/>
+					</Constraint>
+				</Body>						
 			</Body>
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
 		<StopSignals>
-			<Flare _template="StopSignal" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; .986; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-8.454; .986; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.07; .986; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.07; .986; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.07; .986; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.07; .986; 1.07)" ParentFrame="Body_cdt" />
 		</StopSignals>
 		<Ignition>
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; 1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; .986; -1.19)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; .986; 1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.07; .986; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.07; .986; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.07; .986; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.07; .986; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-11.07; .986; -1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-11.07; .986; 1.19)" ParentFrame="Body_cdt" />
 		</Ignition>
 	</ModelAttachments>	
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
@@ -215,39 +187,36 @@
 			Type="LargeSemitrailer"
 		/>
 		
-		<WinchSocket Pos="(-8.454; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-8.454; 4.896; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 4.896; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-8.454; 4.896; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 4.896; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+	
+		<WinchSocket Pos="(-10.84; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-10.84; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-10.84; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-10.84; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(-4.3; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.3; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4.3; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.3; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
 		
-		<WinchSocket Pos="(-8.454; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-
-		<WinchSocket Pos="(-8; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<CraneSocket Pos="(-8; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-8; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
-
-		<WinchSocket Pos="(-3.5; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-3.5; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<CraneSocket Pos="(-3.5; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-3.5; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-3.5; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
-
-		<WinchSocket Pos="(1; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<CraneSocket Pos="(1; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(1; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+		<!--LoadArea Subtype="TrailerLogMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(-3.333; 1.3; -1.23)" Max="(-0.433; 2.9; 1.23)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="TrailerLogMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(-0.134; 1.3; -1.23)" Max="(3.3; 2.9; 1.23)" ParentFrame="Body_cdt" /-->		
+		<LoadArea Subtype="TrailerPoleLogLong" TrailerLoad="true" Type="CargoLogsLong" Min="(-3.333; 1.3; -1.23)" Max="(-0.433; 2.9; 1.23)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="TrailerPoleLogLong" TrailerLoad="true" Type="CargoLogsLong" Min="(-0.134; 1.3; -1.23)" Max="(3.3; 2.9; 1.23)" ParentFrame="Body_cdt" />		
 		
+		<!--AddonSlots
+			InitialOffset="(-1.5; -.25; 0)"
+			ParentFrames="Body_cdt"
+			Quantity="1"
+		/-->
 		<AddonSlots
-			InitialOffset="(.52; 1.136; 0)"
-			OffsetStep="(-2.559; 0; 0)"
-			ParentFrames="Body_cdt,Body_cdt,Body_cdt, Body_cdt"
-			Quantity="4"
+			InitialOffset="(-1.5; -.25; 0)"
+			ParentFrames="Body_cdt"
+			Quantity="1"
 		/>
 	</GameData>
 </Truck>
