@@ -77,6 +77,15 @@
 		<Group ExternalUi="true" Id="lift3" LocaleUid="TOGGLE LIFT">
 			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.2"/>
 		</Group>		
+		<Chain>
+			<Group ExternalUi="true" Id="lift4" LocaleUid="RATTLE">
+				<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.2"/>
+				<Constraint InitialFix="true" Name="Lift" SpeedMult="4" Position="3"/>
+				<Constraint InitialFix="true" Name="Lift" SpeedMult="4" Position="3.2"/>
+				<Constraint InitialFix="true" Name="Lift" SpeedMult="4" Position="3"/>
+				<Constraint InitialFix="true" Name="Lift" SpeedMult="4" Position="3.2"/>
+			</Group>		
+		</Chain>
 	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/short">
 		<NetSync Legacy="false" />	
@@ -124,8 +133,8 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
-						Tau=".04"
+						Force="3000000"
+						Tau="1"
 						Type="Position"
 					/>
 				</Constraint>
@@ -172,7 +181,7 @@
 			UiIcon40x40="trailerSemiImg"
 			UiName="[JoAT] Short Logs (semi)"
 		/>
-		<RequiredAddon _template="SaddleHigh" />
+		<RequiredAddon _template="SaddleLow" />
 		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
