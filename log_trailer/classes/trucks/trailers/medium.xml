@@ -73,7 +73,7 @@
 		</Group>
 	</PoweredConstraints>
 	<ActionCategories>
-		<ActionCategory Action="1" Id="lift_control" LocaleUid="LOG TRAILER LIFT CONTROL" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LOG TRAILER CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="RAISE" Name="Lift" BelongToCategorie="lift_control" SpeedMult="4"/>
