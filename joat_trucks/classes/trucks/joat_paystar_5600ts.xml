@@ -574,7 +574,7 @@
 			</Socket>
 			<Socket Names="FrameAddon3" Offset="(-2.226; 1.135; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.43; 0; 0)" Types="MinicraneUS" />
-				<AddonsShift Offset="(-0.1; 0; 0)" Types="MinicraneRU" />
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="MinicraneRU" />
 			</Socket>
 			<Socket Names="FrameAddonSideboard3" Offset="(-2.05; 1.135; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.745; 0; 0)" Types="MinicraneUS" />
