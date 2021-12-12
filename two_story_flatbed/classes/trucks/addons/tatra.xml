@@ -1,15 +1,10 @@
 <TruckAddon IsChassisFullOcclusion="true">
-	<PoweredConstraints>
-		<Group ExternalUi="true" Id="lift1" LocaleUid="TOGGLE LIFT (low)">
-			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="1.6"/>
-		</Group>		
-		<Group ExternalUi="true" Id="lift2" LocaleUid="TOGGLE LIFT (mid)">
-			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="2.4"/>
-		</Group>		
-		<Group ExternalUi="true" Id="lift3" LocaleUid="TOGGLE LIFT (top)">
-			<Constraint InitialFix="true" Name="Lift" SpeedMult=".4" Position="3.12"/>
-		</Group>		
-	</PoweredConstraints>
+	<ActionCategories>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LIFT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+	</ActionCategories>	
+	<ControlledConstraints>
+		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
+	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/main">
 		<NetSync Legacy="false" />	
 		<Body
@@ -31,7 +26,7 @@
 					Name="Lift"
 					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="4"
+					MaxLimit="3.1"
 				>
 					<Motor
 						Damping="1"
