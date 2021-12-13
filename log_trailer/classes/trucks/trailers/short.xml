@@ -104,7 +104,7 @@
 					AxisLocal="(0; 1; 0)"
 					Name="Leg"
 					Type="Prismatic"
-					MinLimit="0.2"
+					MinLimit="0"
 					MaxLimit="0.77"
 				>
 					<Motor Force="150000" Type="Position" />
