@@ -68,7 +68,7 @@
 				Name="Leg"
 				Tau="0.04"
 				TerminalFix="true"
-				Position="0.78"
+				Position="1.3"
 			/>
 		</Group>
 	</PoweredConstraints>
@@ -122,7 +122,7 @@
 					Name="Leg"
 					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="0.77"
+					MaxLimit="1.3"
 				>
 					<Motor Force="150000" Type="Position" />
 				</Constraint>
@@ -201,7 +201,7 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(5.21; .896; 0)"
+			Offset="(5.52; .896; 0)"
 			Type="LargeSemitrailer"
 		/>
 		
