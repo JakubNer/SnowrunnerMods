@@ -173,6 +173,10 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-8.454; .98; 0)" Dir="-1; 0; 0)" AttenStart="0" AttenEnd="1" />
+			<Flare _template="ReverseSignal" Pos="(-8.454; .98; 0)" />
+		</ReverseSignals>
 		<StopSignals>
 			<Flare _template="StopSignal" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
 			<Flare _template="StopSignal" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />
