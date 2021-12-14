@@ -598,7 +598,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.006; 2.143; 1.603)" Position="(4.48; 3.034; -0.203)" />
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.388; 1; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.845; 1.705; -6.183)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
-			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.788; 1.117; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.701; 2.508; -4.833)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(2; 1.903; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-14.733; 2.67; 5.257)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.101; 2.223; -0.174)" Position="(3.521; 2.549; -3.022)" />
 			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.974; 2.607; -1.643)" Position="(9.026; 2.923; -1.643)" />
 			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.006; 2.657; 1.394)" Position="(3.878; 3.246; -0.366)" />

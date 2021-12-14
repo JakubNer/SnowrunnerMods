@@ -375,7 +375,7 @@
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(2.813; 0.409; 0.126)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.853; 1.52; -5.155)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(5.432; 1.554; 1.822)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.74; 2.387; 4.944)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.197; 1.735; -0.23)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.641; 2.738; -4.536)" />
-			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(2; 1.903; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.733; 4.067; 5.257)" />
 			<CameraPos FOV="32.0" Name="glass_sticker" InterestPosition="(6.954; 1.85; -0.725)" Position="(11.7; 2.977; 1.399)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(4.223; 1.21; 0)" />

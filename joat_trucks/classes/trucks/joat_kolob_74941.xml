@@ -462,7 +462,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(8.466; 0.731; 1.569)" Position="(4.366; 3.198; -0.562)" />
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(3.407; 0.627; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(6.058; 2.362; -6.974)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
-			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(2; 1.903; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.733; 4.067; 5.257)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(3.456; 2.225; 0.304)" Position="(2.237; 2.62; -3.149)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(4.777; 1.145; -0.842)" />
