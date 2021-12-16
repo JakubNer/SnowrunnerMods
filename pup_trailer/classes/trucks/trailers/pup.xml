@@ -1,9 +1,9 @@
 <_templates Include="trucks">
 	<Wheel>
 		<TrailerWheel
-			ConnectedToHandbrake="true"
-			SuspensionHeight="0.0244"
-			SuspensionStrength="0.0422"
+			ConnectedToHandbrake="false"
+			SuspensionHeight="0.05"
+			SuspensionStrength="0.025"
 			Torque="default"
 			Type="semitrailer_oiltank"
 			SuspensionMin="-0.1"
@@ -84,14 +84,16 @@
 				>				
 				</Constraint>
 			</Body>		
-			<Body ForceBodyParams="true" Mass="200" ModelFrame="Arm_cdt">
+			<Body ForceBodyParams="true" Mass="200" ModelFrame="Arm_cdt" Friction="0">
 				<Constraint
 					AxisLocal="(0; 0; 1)"
 					Type="Hinge"
 					MinLimit="-60"
 					MaxLimit="60"
-				/>
-				<Body ForceBodyParams="true" Mass="200" ModelFrame="Loop_cdt">
+				>
+					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+				</Constraint>
+				<Body Mass="200" ModelFrame="Loop_cdt" Collisions="None">
 					<Constraint
 						Type="Fixed"
 					/>
@@ -190,7 +192,7 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(1.767; .523; 0)"
+			Offset="(1.764; .6293; 0)"
 			Type="Trailer"
 			ParentFrame="Loop_cdt"
 		/>

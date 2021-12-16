@@ -2,8 +2,8 @@
 	<Wheel>
 		<TrailerWheel
 			ConnectedToHandbrake="true"
-			SuspensionHeight="0.0244"
-			SuspensionStrength="0.0422"
+			SuspensionHeight="0.05"
+			SuspensionStrength="0.025"
 			Torque="default"
 			Type="semitrailer_oiltank"
 			SuspensionMin="-0.1"

@@ -2,13 +2,41 @@
 	<Wheel>
 		<TrailerWheel
 			ConnectedToHandbrake="false"
-			SuspensionHeight="0.0244"
-			SuspensionStrength="0.0422"
+			SuspensionHeight="0.05"
+			SuspensionStrength="0.025"
 			Torque="default"
 			Type="semitrailer_oiltank"
 			SuspensionMin="-0.1"
 		/>
 	</Wheel>
+	<Flare>
+		<IgnitionSignalYellow
+			AspectRatio="1.4"
+			Color="g(238; 195; 34) x 0.4"
+			ColorMultAtDay="0.6"
+			Dir="(1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+		<IgnitionSignalRedSmall
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.6"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+	</Flare>	
+	<Flare>
+		<IgnitionSignalRed
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.8"
+			ColorMultAtDay="0.3"
+			Dir="(-1; 0; 0)"
+			DirAngle="90"
+			Size="0.2"
+		/>
+	</Flare>	
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
@@ -59,7 +87,7 @@
 					Name="Anchor"
 					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="1"
+					MaxLimit="1.3"
 				>
 					<Motor
 						Damping="1"
@@ -79,6 +107,18 @@
 					Type="Fixed"
 				>				
 				</Constraint>
+				<Body 
+					Friction="0"
+					Mass="10"
+					ModelFrame="Cone_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						Type="Fixed"
+						LinearLimitsY="(0; 0.2)"
+					>				
+					</Constraint>
+				</Body>				
 			</Body>		
 			<Body
 				Friction="2.0"
@@ -124,6 +164,26 @@
 			</Body>
 		</Body>
 	</PhysicsModel>
+	<ModelAttachments>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-8.454; .98; 0)" Dir="-1; 0; 0)" AttenStart="0" AttenEnd="1" />
+			<Flare _template="ReverseSignal" Pos="(-8.454; .98; 0)" />
+		</ReverseSignals>
+		<StopSignals>
+			<Flare _template="StopSignal" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; .986; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-8.454; .986; 1.07)" ParentFrame="Body_cdt" />
+		</StopSignals>
+		<Ignition>
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-8.454; .986; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; .986; -1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-8.454; .986; 1.19)" ParentFrame="Body_cdt" />
+		</Ignition>
+	</ModelAttachments>		
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData Price="2100">
 		<UiDesc
@@ -136,12 +196,14 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(3.7; .556; -1.97)"
-			Type="Trailer"
+			Offset="(5.232; .63; 0)"
+			Type="LargeSemitrailer"
 		/>
 
 		<WinchSocket Pos="(5.2; .931; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(5.2; .931; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(4; -1.2; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 
 		<WinchSocket Pos="(4; 1.156; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(4; 1.156; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
