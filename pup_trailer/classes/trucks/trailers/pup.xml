@@ -207,8 +207,8 @@
 			ParentFrame="Loop_cdt"
 		/>
 
-		<WinchSocket Pos="(1.767; .523; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1.767; .523; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<WinchSocket Pos="(1.6; 1.15; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.6; 1.15; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
 
 		<WinchSocket Pos="(-5.852; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-5.852; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
