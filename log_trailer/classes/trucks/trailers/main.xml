@@ -2,8 +2,8 @@
 	<Wheel>
 		<TrailerWheel
 			ConnectedToHandbrake="true"
-			SuspensionHeight="0.0244"
-			SuspensionStrength="0.0422"
+			SuspensionHeight="0.05"
+			SuspensionStrength="0.025"
 			Torque="default"
 			Type="semitrailer_oiltank"
 			SuspensionMin="-0.1"
@@ -42,10 +42,12 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-6.54; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.54; .226; 1.07)" />
 			<Wheel _template="TrailerWheel" Pos="(-7.78; .226; 1.07)" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.78; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-9.046; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-9.046; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-10.29; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-10.29; .226; 1.07)" />
 		</Wheels>
 		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_superheavy_single" />
 		<OcclusionMap
@@ -89,6 +91,12 @@
 		>
 			<Constraint Type="Rigid" />		
 			<Body Mass="2200" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body Mass="200" ModelFrame="Hitch_cdt" Friction="0" >
 				<Constraint
 					Type="Fixed"
 				>				
@@ -182,7 +190,13 @@
 			Type="LargeSemitrailer"
 		/>
 		
+		<WinchSocket Pos="(5.52; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(5.52; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(4.176; 1.861; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(4.176; 1.861; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 	
+		<WinchSocket Pos="(-10.84; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-10.84; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<WinchSocket Pos="(-10.84; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-10.84; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<WinchSocket Pos="(-10.84; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />

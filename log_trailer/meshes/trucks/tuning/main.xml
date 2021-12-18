@@ -15,4 +15,12 @@
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>	
+	<Material
+		AlbedoMap="trucks/hitch__d.tga"
+		Name="hitch_mat"
+		NormalMap="trucks/hitch__n_d.tga"
+		ShadingMap="trucks/hitch__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>	
 </CombineXMesh>
