@@ -205,10 +205,10 @@
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData Price="2100">
 		<UiDesc
-			UiDesc="[JoAT] 4-Slot+ (High Semi)"
+			UiDesc="[JoAT] 4-Slot+ A-Double (High Semi)"
 			UiIcon30x30="trailerSemiImg30"
 			UiIcon40x40="trailerSemiImg"
-			UiName="[JoAT] 4-Slot+ (High Semi)"
+			UiName="[JoAT] 4-Slot+ A-Double (High Semi)"
 		/>
 		<RequiredAddon _template="SaddleHigh" />
 		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />

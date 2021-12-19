@@ -197,10 +197,10 @@
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData Price="2100">
 		<UiDesc
-			UiDesc="[JoAT] 4-Slot+ Extension (High Semi)"
+			UiDesc="[JoAT] 4-Slot+ B-Double (High Semi)"
 			UiIcon30x30="trailerSemiImg30"
 			UiIcon40x40="trailerSemiImg"
-			UiName="[JoAT] 4-Slot+ Extension (High Semi)"
+			UiName="[JoAT] 4-Slot+ B-Double (High Semi)"
 		/>
 		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
@@ -212,8 +212,6 @@
 
 		<WinchSocket Pos="(5.2; .931; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(5.2; .931; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-
-		<WinchSocket Pos="(4; -1.2; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 
 		<WinchSocket Pos="(4; 1.156; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(4; 1.156; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
