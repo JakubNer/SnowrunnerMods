@@ -336,6 +336,7 @@
 			<Socket Names="ScautTrailer" Offset="(-3.89; 0.776; 0)" >
 				<AddonsShift Offset="(-.04; -.17; 0)" Types="joat_6x6_hitch_scout" />								
 			</Socket>			
+			<Socket Names="Semitrailer" Offset="(-2.5; 1.25; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_f750_guard">
 			<Socket Names="joat_f750_guard" Offset="(-3.15; 0.5; 0)" />
@@ -366,6 +367,10 @@
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="FordF750Trunk" />
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="MinicraneLoadstar" />
 				<AddonsShift Offset="(-0.15; 0; 0)" Types="MinicraneRU" />									 
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-2.5; .92; 0)" >	
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; -0.02)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.02)" />			
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_6x6_ford_f750_transferbox_default">

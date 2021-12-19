@@ -157,9 +157,9 @@
 					MaxLimit="3.2"
 				>
 					<Motor
-						Damping="1"
+						Damping="2"
 						Force="1500000"
-						Tau="2"
+						Tau="1"
 						Type="Position"
 					/>
 				</Constraint>
