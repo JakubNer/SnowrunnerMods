@@ -1,9 +1,9 @@
 <_templates Include="trucks">
 	<Wheel>
 		<TrailerWheel
-			ConnectedToHandbrake="true"
-			SuspensionHeight="0.0244"
-			SuspensionStrength="0.0422"
+			ConnectedToHandbrake="false"
+			SuspensionHeight="0.05"
+			SuspensionStrength="0.025"
 			Torque="default"
 			Type="semitrailer_oiltank"
 			SuspensionMin="-0.1"
@@ -61,23 +61,15 @@
 			Center="(-2; 0; 0)"
 			RadiusMultiplier="1.4" />		
 	</TruckData>	
-	<PoweredConstraints>
-		<Group Id="_trailer_foot">
-			<Constraint
-				InitialFix="true"
-				Name="Leg"
-				Tau="0.04"
-				TerminalFix="true"
-				Position="1.3"
-			/>
-		</Group>
-	</PoweredConstraints>
 	<ActionCategories>
-		<ActionCategory Action="1" Id="lift_control" LocaleUid="LOG TRAILER CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LOG TRAILER LIFT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="2" Id="attach_control" LocaleUid="LOG TRAILER ATTACH CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="RAISE" Name="Lift" BelongToCategorie="lift_control" SpeedMult="4"/>
 		<Constraint Action="11" Id="gate_control" LocaleUid="LOG SHUTE" Name="Gate" BelongToCategorie="lift_control" SpeedMult="30"/>
+		<Constraint Action="9" Id="anchor_control" LocaleUid="FEET" Name="Leg" BelongToCategorie="attach_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="hitch_control" LocaleUid="REAR HITCH" Name="Hitch" BelongToCategorie="attach_control" SpeedMult="3"/>
 	</ControlledConstraints>
 	<PhysicsModel Mesh="trucks/tuning/short">
 		<NetSync Legacy="false" />	
@@ -94,6 +86,17 @@
 				>				
 				</Constraint>
 			</Body>		
+			<Body Mass="200" ModelFrame="Hitch_cdt" Friction="0" >
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Name="Hitch"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit=".68"
+				>
+					<Motor Force="150000" Type="Position" />
+				</Constraint>
+			</Body>		
 			<Body
 				ForceBodyParams="true"
 				Mass="500"
@@ -101,10 +104,10 @@
 				NoFoliageCollisions="true"
 			>
 				<Constraint
-					AxisLocal="(0; 1; 0)"
+					AxisLocal="(0; -1; 0)"
 					Name="Leg"
 					Type="Prismatic"
-					MinLimit="0.2"
+					MinLimit="0"
 					MaxLimit="1.3"
 				>
 					<Motor Force="150000" Type="Position" />
@@ -150,6 +153,20 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
+		<ReverseSignals>
+			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-4.377; 4.738; 0)" Color="g(255; 235; 215) x 0.6" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-4.377; 4.738; -0.06)" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-4.377; 4.738; 0.06)" />		
+			<Flare _template="HeadLight" Pos="(-4.377; 4.738; -0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
+			<Flare _template="HeadLight" Pos="(-4.377; 4.738; 0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
+		</ReverseSignals>
+		<MainHeadLight>
+			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-4.377; 4.738; 0)" Color="g(225; 205; 185)" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x " Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-4.377; 4.738; -0.06)" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 1" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-4.377; 4.738; 0.06)" />		
+			<Flare _template="HeadLight" Pos="(-4.377; 4.738; -0.06)" Color="g(255; 235; 215) x 0.3" DirAngle="135" Size="0.3" />
+			<Flare _template="HeadLight" Pos="(-4.377; 4.738; 0.06)" Color="g(255; 235; 215) x 0.3" DirAngle="135" Size="0.3" />
+		</MainHeadLight>	
 		<StopSignals>
 			<Flare _template="StopSignal" Pos="(-3.782; .986; -0.78)" ParentFrame="Body_cdt" />
 			<Flare _template="StopSignal" Pos="(-3.782; .986; 0.78)" ParentFrame="Body_cdt" />
@@ -181,6 +198,16 @@
 			Offset="(5.52; .896; 0)"
 			Type="LargeSemitrailer"
 		/>
+			
+		<WinchSocket Pos="(5.52; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(5.52; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(4.176; 1.861; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(4.176; 1.861; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+	
+		<WinchSocket Pos="(-3.91; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-3.91; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4.1; 4.768; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.1; 4.768; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />				
 			
 		<WinchSocket Pos="(-3.654; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-3.654; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
