@@ -60,6 +60,17 @@
 			Center="(-2; 0; 0)"
 			RadiusMultiplier="1.4" />		
 	</TruckData>	
+	<PoweredConstraints>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Hook"
+				Tau="1"
+				TerminalFix="true"
+				Position=".483"
+			/>
+		</Group>
+	</PoweredConstraints>	
 	<ActionCategories>
 		<ActionCategory Action="1" Id="lift_control" LocaleUid="TRAILER CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
@@ -77,7 +88,7 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
-			<Body Mass="2200" ModelFrame="Body_cdt">
+			<Body Mass="2000" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
 				>				
@@ -121,6 +132,27 @@
 					>				
 					</Constraint>
 				</Body>				
+				<Body 
+					Friction="0"
+					Mass="200"
+					ModelFrame="Hook_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Name="Hook"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit=".483"
+					>
+						<Motor
+							Damping="1"
+							Force="3000000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>		
 			</Body>		
 			<Body
 				Friction="2.0"
@@ -208,7 +240,7 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(5.232; .63; 0)"
+			Offset="(5.52; 1.11; 0)"
 			Type="LargeSemitrailer"
 		/>
 

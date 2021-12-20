@@ -15,4 +15,20 @@
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>	
+	<Material
+		AlbedoMap="trucks/arm__d.tga"
+		Name="arm_mat"
+		NormalMap="trucks/arm__n_d.tga"
+		ShadingMap="trucks/arm__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>	
+	<Material
+		AlbedoMap="trucks/quintuple__d.tga"
+		Name="quintuple_mat"
+		NormalMap="trucks/quintuple__n_d.tga"
+		ShadingMap="trucks/quintuple__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>		
 </CombineXMesh>
