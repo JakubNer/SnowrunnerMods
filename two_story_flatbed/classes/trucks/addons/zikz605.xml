@@ -4,6 +4,7 @@
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="lift_raise" LocaleUid="LIFT" Name="Sublift" BelongToCategorie="lift_control" SpeedMult="3"/>
 	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/deepish">
 		<NetSync Legacy="false" />	
@@ -18,15 +19,15 @@
 			<Body
 				Friction="2.0"
 				Mass="300"
-				ModelFrame="Lift_cdt"
+				ModelFrame="Sublift_cdt"
 				NoFoliageCollisions="true"
 			>
 				<Constraint
 					AxisLocal="(0; 1; 0)"
-					Name="Lift"
+					Name="Sublift"
 					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="3.1"
+					MaxLimit="1.7"
 				>
 					<Motor
 						Damping="1"
@@ -35,7 +36,28 @@
 						Type="Position"
 					/>
 				</Constraint>
-			</Body>
+				<Body
+					Friction="2.0"
+					Mass="300"
+					ModelFrame="Lift_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Name="Lift"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit="1.45"
+					>
+						<Motor
+							Damping="1"
+							Force="150000"
+							Tau=".04"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>		
+			</Body>	
 		</Body>
 	</PhysicsModel>
 
