@@ -241,6 +241,7 @@
 			Offset="(5.52; 1.11; 0)"
 			Type="Semitrailer"
 		/>
+		<RequiredAddon _template="SaddleLow" />
 
 		<WinchSocket Pos="(5.2; .931; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(5.2; .931; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
