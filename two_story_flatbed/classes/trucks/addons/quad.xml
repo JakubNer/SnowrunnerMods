@@ -89,15 +89,15 @@
 			Quantity="4"
 		/>
 		
-		<WinchSocket Pos="(-.7; 3.9; 1.55)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-.7; 3.9; 1.55)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-.7; 3.9; -1.55)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-.7; 3.9; -1.55)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.8; 2.3; 1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.8; 2.3; 1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.8; 2.3; -1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.8; 2.3; -1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />	
 
-		<WinchSocket Pos="(-2.96; .25; .26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-2.96; 0.25; .26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-2.96; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-2.96; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.1; .25; .26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.1; 0.25; .26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.1; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.1; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
 		
 	</GameData>
 </TruckAddon>
