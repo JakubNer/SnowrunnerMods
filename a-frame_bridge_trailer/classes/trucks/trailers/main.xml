@@ -285,7 +285,7 @@
 		</Ignition>
 	</ModelAttachments>		
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
-	<GameData Price="3900">
+	<GameData Price="1250">
 		<UiDesc
 			UiDesc="[JoAT] A-Frame Long Ramp"
 			UiIcon30x30="trailerSemiImg30"
