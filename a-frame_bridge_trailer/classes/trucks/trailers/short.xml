@@ -1,7 +1,7 @@
 <_templates Include="trucks">
 	<Wheel>
 		<TrailerWheel
-			ConnectedToHandbrake="false"
+			ConnectedToHandbrake="true"
 			SuspensionHeight="0.05"
 			SuspensionStrength="0.025"
 			Torque="default"
@@ -66,7 +66,7 @@
 		<ActionCategory Action="5" Id="leg2_control" LocaleUid="LEG 2 CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
 	<ControlledConstraints>
-		<Constraint Action="9" Id="ramp_raise" LocaleUid="RAMP ROTATE" Name="Ramp" BelongToCategorie="ramp_control" SpeedMult=".3"/>
+		<Constraint Action="9" Id="ramp_raise" LocaleUid="RAMP ROTATE" Name="Ramp" BelongToCategorie="ramp_control" SpeedMult=".7"/>
 		<Constraint Action="11" Id="ramp_overcrank" LocaleUid="RAMP OVERCRANK" Name="Overcrank" BelongToCategorie="ramp_control" SpeedMult="1"/>
 		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PIN" Name="RightRot" BelongToCategorie="pin_control" SpeedMult="1"/>
 		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PIN" Name="LeftRot" BelongToCategorie="pin_control" SpeedMult="1"/>
@@ -77,6 +77,17 @@
 		<Constraint Action="9" Id="right_top" LocaleUid="RIGHT LEG 2" Name="RightTop" BelongToCategorie="leg2_control" SpeedMult="1.5"/>
 		<Constraint Action="11" Id="left_top" LocaleUid="LEFT LEG 2" Name="LeftTop" BelongToCategorie="leg2_control" SpeedMult="1.5"/>
 	</ControlledConstraints>	
+	<PoweredConstraints>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Arm"
+				Tau="0.04"
+				TerminalFix="true"
+				Position="20"
+			/>
+		</Group>
+	</PoweredConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/short">
 		<NetSync Legacy="false" />		
 		<Body
@@ -87,7 +98,7 @@
 		>
 			<Constraint Type="Rigid" />		
 			<Body 
-				Mass="2000" 				
+				Mass="1000" 				
 				Friction="4.0"
 				ModelFrame="Body_cdt"
 			>
@@ -96,6 +107,25 @@
 				>				
 				</Constraint>
 			</Body>		
+			<Body
+				ModelFrame="Arm_cdt"
+				Mass="1000"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="Arm"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="20"
+				>
+					<Motor
+						Damping="1"
+						Force="500000"
+						Tau="1"
+						Type="Position"
+					/>				
+				</Constraint>
+			</Body>			
 			<Body
 				ModelFrame="Overcrank_cdt"
 				Collisions="None"
@@ -116,7 +146,7 @@
 					/>				
 				</Constraint>
 				<Body
-					Mass="2000"
+					Mass="3000"
 					Friction="4.0"				
 					ModelFrame="Ramp_cdt"
 					NoFoliageCollisions="true"
