@@ -41,14 +41,14 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-7.885; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.885; .226; 1.07)"  />
-			<Wheel _template="TrailerWheel" Pos="(-9.152; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-9.152; .226; 1.07)"  />
-			<Wheel _template="TrailerWheel" Pos="(-10.4; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-10.4; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.885; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.885; .226; 1.2)"  />
+			<Wheel _template="TrailerWheel" Pos="(-9.152; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-9.152; .226; 1.2)"  />
+			<Wheel _template="TrailerWheel" Pos="(-10.4; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-10.4; .226; 1.2)" />
 		</Wheels>
-		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_superheavy_single" />		
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" />		
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"

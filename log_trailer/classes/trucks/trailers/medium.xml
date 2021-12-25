@@ -42,12 +42,12 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-2.592; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-2.592; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" Pos="(-3.838; .226; 1.07)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-3.838; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" Pos="(-2.592; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-2.592; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" Pos="(-3.838; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-3.838; .226; 1.2)" />
 		</Wheels>
-		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_superheavy_single" />
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" />
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
