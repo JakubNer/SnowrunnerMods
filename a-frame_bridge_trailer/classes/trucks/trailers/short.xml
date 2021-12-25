@@ -93,12 +93,12 @@
 		<Body
 			CenterOfMassOffset="(5; 0; 0)"
 			ImpactType="Truck"
-			Mass="1500"
+			Mass="1000"
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
 			<Body 
-				Mass="1000" 				
+				Mass="2000" 				
 				Friction="4.0"
 				ModelFrame="Body_cdt"
 			>
