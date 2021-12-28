@@ -1,0 +1,166 @@
+<_templates Include="trucks">
+	<Flare>
+		<IgnitionSignalYellow
+			AspectRatio="1.4"
+			Color="g(238; 195; 34) x 0.4"
+			ColorMultAtDay="0.6"
+			Dir="(1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+		<IgnitionSignalRedSmall
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.6"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+	</Flare>	
+	<Flare>
+		<IgnitionSignalRed
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.8"
+			ColorMultAtDay="0.3"
+			Dir="(-1; 0; 0)"
+			DirAngle="90"
+			Size="0.2"
+		/>
+	</Flare>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<ActionCategories>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LOG ADDON LIFT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+	</ActionCategories>	
+	<ControlledConstraints>
+		<Constraint Action="9" Id="lift_raise" LocaleUid="RAISE" Name="Lift" BelongToCategorie="lift_control" SpeedMult="4"/>
+		<Constraint Action="11" Id="gate_control" LocaleUid="LOG SHUTE" Name="Gate" BelongToCategorie="lift_control" SpeedMult="30"/>
+	</ControlledConstraints>
+	<PhysicsModel Mesh="trucks/tuning/main">
+		<NetSync Legacy="false" />	
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="2500"
+			NetSync="pv"			
+		>
+			<Constraint Type="Rigid" />		
+			<Body Mass="200" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>
+			<Body
+				Friction="2"
+				Mass="400"
+				ModelFrame="Lift_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Lift"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit="3.2"
+				>
+					<Motor
+						Damping="1"
+						Force="3000000"
+						Tau="1"
+						Type="Position"
+					/>
+				</Constraint>
+				<Body Mass="300" ModelFrame="Gate_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="Gate"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit=".58"
+					>
+						<Motor
+							Damping="1"
+							Force="50000000"
+							Type="Position"
+							Tau="1"
+						/>
+					</Constraint>
+				</Body>						
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Flare _template="StopSignal" Pos="(-11.19; .774; -0.625)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.19; .774; 0.625)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.19; .774; -.895)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-11.19; .774; .895)" ParentFrame="Body_cdt" />
+		</StopSignals>
+		<Ignition>
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.19; .774; -0.625)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.19; .774; 0.625)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.19; .774; -.895)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-11.19; .774; .895)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-11.19; .774; -1.021)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-11.19; .774; 1.021)" ParentFrame="Body_cdt" />
+		</Ignition>
+	</ModelAttachments>		
+	<GameData 
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		Price="3900"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Long Logs"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="[JoAT] Long Logs"
+		/>
+		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
+		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
+		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
+		<InstallSocket 
+			Type="JoatFrameAddon4" 
+			Offset="(-1.77; 0.6; 0)"
+		/>
+		
+		<WinchSocket Pos="(-11.2; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-11.2; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-11.36; 4.768; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-11.36; 4.768; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(-10.84; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-10.84; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-10.84; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-10.84; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(-4.3; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.3; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4.3; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.3; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+		
+		<LoadArea Subtype="JoatCargoLogsLong" TrailerLoad="true" Type="CargoLogsLong" Min="(1.83; 1; -1.4)" Max="(-10.97; 2; 1.4)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="JoatCargoLogsLong" TrailerLoad="true" Type="CargoLogsLong" Min="(1.83; 1; -1.4)" Max="(-10.97; 2; 1.4)" ParentFrame="Body_cdt" />		
+		
+		<AddonSlots
+			InitialOffset="(1.829; .95; 0)"
+			ParentFrames="Body_cdt"
+			Quantity="1"
+		/>
+		<LongLogsAlignData
+			CargoPivotBody="Body_cdt"
+			CargoBodiesToAlign="Body_cdt"
+			TruckAddonBodiesToAlign="Body_cdt"
+			TrailerBodiesToAlign="Body_cdt"
+		/>
+	</GameData>
+</TruckAddon>

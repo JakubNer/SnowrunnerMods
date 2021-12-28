@@ -1,0 +1,115 @@
+<TruckAddon IsChassisFullOcclusion="true">
+	<ActionCategories>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LOG LIFT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+	</ActionCategories>	
+	<ControlledConstraints>
+		<Constraint Action="9" Id="lift_raise" LocaleUid="RAISE" Name="Lift" BelongToCategorie="lift_control" SpeedMult="4"/>
+		<Constraint Action="11" Id="gate_control" LocaleUid="LOG SHUTE" Name="Gate" BelongToCategorie="lift_control" SpeedMult="60"/>
+	</ControlledConstraints>
+	<PhysicsModel Mesh="trucks/tuning/medium">
+		<NetSync Legacy="false" />	
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="2500"
+			NetSync="pv"			
+		>
+			<Constraint Type="Rigid" />		
+			<Body Mass="200" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>
+			<Body
+				Friction="2"
+				Mass="400"
+				ModelFrame="Lift_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Lift"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit="3.2"
+				>
+					<Motor
+						Damping="1"
+						Force="3000000"
+						Tau="1"
+						Type="Position"
+					/>
+				</Constraint>
+				<Body Mass="300" ModelFrame="Gate_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="Gate"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit=".58"
+					>
+						<Motor
+							Damping="1"
+							Force="50000000"
+							Type="Position"
+							Tau="1"
+						/>
+					</Constraint>
+				</Body>						
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData 
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		Price="3300"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Medium Logs"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="[JoAT] Medium Logs"
+		/>
+		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
+		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
+		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
+		<InstallSocket 
+			Type="FrameAddonLogMedium" 
+			Offset="(-0.15; 0.687; 0)"
+		/>
+		
+		<WinchSocket Pos="(-4.657; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.657; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4.847; 4.768; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.847; 4.768; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />				
+		
+		<WinchSocket Pos="(-4.417; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.417; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4.417; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.417; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+		
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />		
+		
+		<AddonSlots
+			InitialOffset="(1.829; .95; 0)"
+			ParentFrames="Body_cdt"
+			Quantity="1"
+		/>
+		<LongLogsAlignData
+			CargoPivotBody="Body_cdt"
+			CargoBodiesToAlign="Body_cdt"
+			TruckAddonBodiesToAlign="Body_cdt"
+			TrailerBodiesToAlign="Body_cdt"
+		/>
+	</GameData>
+</TruckAddon>

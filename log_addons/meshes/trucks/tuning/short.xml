@@ -1,0 +1,34 @@
+<CombineXMesh>
+	<Material
+		AlbedoMap="trucks/short__d.tga"
+		Name="short_mat"
+		NormalMap="trucks/short__n_d.tga"
+		ShadingMap="trucks/short__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/lift2__d.tga"
+		Name="lift2_mat"
+		NormalMap="trucks/lift2__n_d.tga"
+		ShadingMap="trucks/lift2__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>	
+	<Material
+		AlbedoMap="trucks/hitch__d.tga"
+		Name="hitch_mat"
+		NormalMap="trucks/hitch__n_d.tga"
+		ShadingMap="trucks/hitch__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>		
+	<Material
+		AlbedoMap="trucks/arm__d.tga"
+		Name="arm_mat"
+		NormalMap="trucks/arm__n_d.tga"
+		ShadingMap="trucks/arm__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>			
+</CombineXMesh>
