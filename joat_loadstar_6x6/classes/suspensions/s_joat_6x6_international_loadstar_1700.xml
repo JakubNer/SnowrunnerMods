@@ -9,7 +9,7 @@
 		<Suspension 
 			Damping=".2" 
 			Height="0.35" 
-			Strength="0.035" 
+			Strength="0.18" 
 			WheelType="front" 
 			BrokenSuspensionMax="0.15" 
 			SuspensionMin="-0.45" 
@@ -17,22 +17,22 @@
 		<Suspension 
 			Damping=".2" 
 			Height="0.18" 
-			Strength="0.045" 
+			Strength="0.16" 
 			WheelType="rear" 
 			BrokenSuspensionMax="0.15" 
 			SuspensionMin="-0.4" 
 		/>
 		<GameData
 			Price="5700"
-			UnlockByExploration="true"
+			UnlockByExploration="false"
 			UnlockByRank="1"
 		>
 			<UiDesc
-				UiDesc="UI_SUSPENSION_HIGH_DESC"
+				UiDesc="[JoAT] Raised (Front Crane)"
 				UiIcon30x30=""
 				UiIcon40x40=""
-				UiName="UI_SUSPENSION_HIGH_NAME"
+				UiName="[JoAT] Raised (Front Crane)"
 			/>
 		</GameData>
-	</SuspensionSet>
+	</SuspensionSet>	
 </SuspensionSetVariants>
