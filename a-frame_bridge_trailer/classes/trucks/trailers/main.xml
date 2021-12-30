@@ -72,10 +72,10 @@
 		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PIN" Name="LeftRot" BelongToCategorie="pin_control" SpeedMult="1"/>
 		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PUSHOUT" Name="RightPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
 		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PUSHOUT" Name="LeftPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
-		<Constraint Action="9" Id="right_bottom" LocaleUid="RIGHT LEG 1" Name="RightBottom" BelongToCategorie="leg1_control" SpeedMult="1.5"/>
-		<Constraint Action="11" Id="left_bottom" LocaleUid="LEFT LEG 1" Name="LeftBottom" BelongToCategorie="leg1_control" SpeedMult="1.5"/>
-		<Constraint Action="9" Id="right_top" LocaleUid="RIGHT LEG 2" Name="RightTop" BelongToCategorie="leg2_control" SpeedMult="1.5"/>
-		<Constraint Action="11" Id="left_top" LocaleUid="LEFT LEG 2" Name="LeftTop" BelongToCategorie="leg2_control" SpeedMult="1.5"/>
+		<Constraint Action="9" Id="right_bottom" LocaleUid="RIGHT LEG 1" Name="RightBottom" BelongToCategorie="leg1_control" SpeedMult=".5"/>
+		<Constraint Action="11" Id="left_bottom" LocaleUid="LEFT LEG 1" Name="LeftBottom" BelongToCategorie="leg1_control" SpeedMult=".5"/>
+		<Constraint Action="9" Id="right_top" LocaleUid="RIGHT LEG 2" Name="RightTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
+		<Constraint Action="11" Id="left_top" LocaleUid="LEFT LEG 2" Name="LeftTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
 	</ControlledConstraints>	
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
