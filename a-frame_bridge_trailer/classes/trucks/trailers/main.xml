@@ -129,7 +129,7 @@
 			<Body
 				ModelFrame="Overcrank_cdt"
 				Collisions="None"
-				Mass="100"
+				Mass="50"
 			>
 				<Constraint
 					AxisLocal="(0; 0; 1)"
@@ -330,14 +330,14 @@
 			Type="Trailer"
 		/>
 
-		<WinchSocket Pos="(22.46; 1.11; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(22.46; 1.11; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(22.35; .237; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(22.35; .237; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />	
 
-		<WinchSocket Pos="(18; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(18; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<CraneSocket Pos="(18; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(18; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(18; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(18; 1.096; -1.5)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(18; 1.096; -1.5)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />	
+		<CraneSocket Pos="(18; 1.096; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(18; 1.096; 1.5)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(18; 1.096; 1.5)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />	
 
 		<WinchSocket Pos="(9; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(9; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
