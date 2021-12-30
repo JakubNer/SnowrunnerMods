@@ -1,0 +1,110 @@
+<_templates Include="trucks">
+	<Wheel>
+		<DollyWheel
+			SuspensionHeight=".5"
+			SuspensionStrength=".3"
+			Torque="none"
+			Type="wheel_scout_trailer_front"
+			SuspensionMin="-1"
+		/>
+	</Wheel>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData>
+		<Wheels>
+			<Wheel _template="DollyWheel" Pos="(4.723; .65; .2)" />
+			<Wheel _template="DollyWheel" Pos="(4.723; .65; .2)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-4.723; .65; .2)" />
+			<Wheel _template="DollyWheel" Pos="(-4.723; .65; .2)" RightSide="true" />								
+		</Wheels>
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-0.5"
+			MaxX="4"
+		/>
+
+		<Constraint Type="Hinge" AxisLocal="(0; 1; 0)" MinLimit="-1" MaxLimit="1">
+		</Constraint>
+		<Camera Center="(0; 0; 0)" />
+	</TruckData>	
+
+	<PhysicsModel Mesh="trucks/tuning/ramps">
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="3000"
+			Friction="6"			
+		>
+			<Body 
+				ForceBodyParams="true"
+				Mass="1000"
+				NoFoliageCollisions="true"
+				Collisions="All"
+				ModelFrame="FrontLeft_cdt" >
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="UnlimitedHinge"
+				>
+				</Constraint>		
+			</Body>				
+			<Body 
+				ForceBodyParams="true"
+				Mass="1000"
+				Collisions="All"
+				NoFoliageCollisions="true"
+				ModelFrame="FrontRight_cdt" >
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="UnlimitedHinge"
+				>
+				</Constraint>		
+			</Body>				
+			<Body 
+				ForceBodyParams="true"
+				Mass="1000"
+				NoFoliageCollisions="true"
+				Collisions="All"
+				ModelFrame="RearLeft_cdt" >
+				<Constraint
+					AxisLocal="(0; 0; -1)"
+					Type="UnlimitedHinge"
+				>
+				</Constraint>		
+			</Body>				
+			<Body 
+				ForceBodyParams="true"
+				Mass="1000"
+				Collisions="All"
+				NoFoliageCollisions="true"
+				ModelFrame="RearRight_cdt" >
+				<Constraint
+					AxisLocal="(0; 0; -1)"
+					Type="UnlimitedHinge"
+				>
+				</Constraint>		
+			</Body>				
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
+	<GameData Price="575">
+		<UiDesc
+			UiDesc="Friction Bridge (ramps)"
+			UiName="Friction Bridge (ramps)"
+		/>
+		<InstallSocket Offset="(7; .7; 0)" Type="Trailer" />		
+		<WinchSocket Pos="(0; 1.48; 0)" />		
+		<CraneSocket Pos="(0; 1.48; 0)" />						
+
+		<WinchSocket Pos="(-5.217; 1.77; -.54)" ParentFrame="RearLeft_cdt" />		
+		<CraneSocket Pos="(-5.217; 1.77; -.54)" ParentFrame="RearLeft_cdt" />						
+		<WinchSocket Pos="(-5.217; 1.77; 1.52)" ParentFrame="RearRight_cdt" />		
+		<CraneSocket Pos="(-5.217; 1.77; 1.52)" ParentFrame="RearRight_cdt" />						
+
+		<WinchSocket Pos="(5.22; 1.77; -1.52)" ParentFrame="FrontRight_cdt" />		
+		<CraneSocket Pos="(5.22; 1.77; -1.52)" ParentFrame="FrontRight_cdt" />						
+		<WinchSocket Pos="(5.22; 1.77; .54)" ParentFrame="FrontLeft_cdt" />		
+		<CraneSocket Pos="(5.22; 1.77; .54)" ParentFrame="FrontLeft_cdt" />						
+		
+	</GameData>
+</Truck>

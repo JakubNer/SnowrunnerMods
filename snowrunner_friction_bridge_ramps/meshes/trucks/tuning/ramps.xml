@@ -1,0 +1,10 @@
+<CombineXMesh>
+	<Material
+		AlbedoMap="trucks/ramps__d.tga"
+		Name="ramps_mat"
+		NormalMap="trucks/ramps__n_d.tga"
+		ShadingMap="trucks/ramps__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+</CombineXMesh>
