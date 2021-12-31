@@ -91,14 +91,14 @@
 	<PhysicsModel Mesh="trucks/tuning/main">
 		<NetSync Legacy="false" />		
 		<Body
-			CenterOfMassOffset="(10; 0; 0)"
+			CenterOfMassOffset="(6.5; 0.5; 0)"
 			ImpactType="Truck"
 			Mass="1000"
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
 			<Body 
-				Mass="2250" 				
+				Mass="2000" 				
 				Friction="4.0"
 				ModelFrame="Body_cdt"
 			>
@@ -146,7 +146,7 @@
 					/>				
 				</Constraint>
 				<Body
-					Mass="3250"
+					Mass="3000"
 					Friction="4.0"				
 					ModelFrame="Ramp_cdt"
 					NoFoliageCollisions="true"
