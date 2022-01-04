@@ -127,6 +127,10 @@
 			Type="JoatFrameAddon4" 
 			Offset="(-1.77; 0.6; 0)"
 		/>
+		<InstallSocket 
+			Type="FrameAddon3" 
+			Offset="(-1.77; 0.82; 0)"
+		/>
 		
 		<WinchSocket Pos="(-11.2; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-11.2; .96; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	

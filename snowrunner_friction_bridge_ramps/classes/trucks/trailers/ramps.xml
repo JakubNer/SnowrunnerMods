@@ -96,6 +96,16 @@
 		<WinchSocket Pos="(0; 1.48; 0)" />		
 		<CraneSocket Pos="(0; 1.48; 0)" />						
 
+		<WinchSocket Pos="(4.72; 1.21; 2.09)" />		
+		<CraneSocket Pos="(4.72; 1.21; 2.09)" />		
+		<WinchSocket Pos="(4.72; 1.21; -2.09)" />		
+		<CraneSocket Pos="(4.72; 1.21; -2.09)" />		
+		<WinchSocket Pos="(-4.72; 1.21; 2.09)" />		
+		<CraneSocket Pos="(-4.72; 1.21; 2.09)" />		
+		<WinchSocket Pos="(-4.72; 1.21; -2.09)" />		
+		<CraneSocket Pos="(-4.72; 1.21; -2.09)" />		
+
+
 		<WinchSocket Pos="(-5.217; 1.77; -.54)" ParentFrame="RearLeft_cdt" />		
 		<CraneSocket Pos="(-5.217; 1.77; -.54)" ParentFrame="RearLeft_cdt" />						
 		<WinchSocket Pos="(-5.217; 1.77; 1.52)" ParentFrame="RearRight_cdt" />		
