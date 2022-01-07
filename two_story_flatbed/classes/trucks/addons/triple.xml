@@ -18,7 +18,7 @@
 			<Constraint Type="Rigid" />
 			<Body
 				Friction="2.0"
-				Mass="300"
+				Mass="200"
 				ModelFrame="Sublift_cdt"
 				NoFoliageCollisions="true"
 			>
@@ -31,8 +31,8 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
-						Tau=".04"
+						Force="300000"
+						Tau=".5"
 						Type="Position"
 					/>
 				</Constraint>
@@ -51,8 +51,8 @@
 					>
 						<Motor
 							Damping="1"
-							Force="150000"
-							Tau=".04"
+							Force="300000"
+							Tau=".5"
 							Type="Position"
 						/>
 					</Constraint>

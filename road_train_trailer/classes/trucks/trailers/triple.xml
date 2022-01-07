@@ -175,7 +175,7 @@
 			</Body>
 			<Body
 				Friction="2.0"
-				Mass="200"
+				Mass="300"
 				ModelFrame="Lift_cdt"
 				NoFoliageCollisions="true"
 			>
@@ -188,8 +188,8 @@
 				>
 					<Motor
 						Damping="1"
-						Force="150000"
-						Tau=".04"
+						Force="300000"
+						Tau=".5"
 						Type="Position"
 					/>
 				</Constraint>
