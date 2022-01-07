@@ -202,7 +202,7 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(1.764; 1.15; 0)"
+			Offset="(1.79; .658; 0)"
 			Type="Trailer"
 			ParentFrame="Loop_cdt"
 		/>
@@ -222,12 +222,14 @@
 
 		<WinchSocket Pos="(-4; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-4; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<CraneSocket Pos="(-4; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<WinchSocket Pos="(-4; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-4; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
 
 		<WinchSocket Pos="(-1; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-1; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-1; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<CraneSocket Pos="(-1; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<WinchSocket Pos="(-1; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-1; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
