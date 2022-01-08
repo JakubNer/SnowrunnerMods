@@ -91,7 +91,7 @@
 					MinLimit="-60"
 					MaxLimit="60"
 				>
-					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+					<Motor Damping="10000" Spring="20000" Type="Spring" />				
 				</Constraint>
 				<Body Mass="200" ModelFrame="Loop_cdt" Collisions="None">
 					<Constraint
