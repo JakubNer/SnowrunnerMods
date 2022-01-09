@@ -1,0 +1,52 @@
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData FuelCapacity="4800">
+		<LimitedFluid
+			Center="(2.4; 1.6; 0)"
+			LengthX="4.2"
+			RadiusY="1.2"
+			RadiusZ="1.2"
+			Type="Cylinder"
+		/>
+		<LimitedFluid
+			Center="(-2.4; 1.6; 0)"
+			LengthX="4.2"
+			RadiusY="1.2"
+			RadiusZ="1.2"
+			Type="Cylinder"
+		/>
+	</TruckData>
+	
+	<PhysicsModel Mesh="trucks/cargo/cargo_boiler_5">
+		<NetSync Legacy="false" />	
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="600"
+		>
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="2800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Huge Fuel Tank"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Huge Fuel Tank"
+		/>
+		<InstallSocket 
+			Type="JoatFrameAddon4" 
+			Offset="(.5; -.35; 0)"
+		/>
+	</GameData>
+	<FuelMass>
+		<Body Mass="12000" />
+	</FuelMass>	
+</TruckAddon>
