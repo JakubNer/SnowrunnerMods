@@ -1,0 +1,10 @@
+<CombineXMesh>
+	<Material
+		AlbedoMap="trucks/joat_fuel_siderack__d.tga"
+		Name="joat_fuel_siderack_mat"
+		NormalMap="trucks/joat_fuel_siderack__n_d.tga"
+		ShadingMap="trucks/joat_fuel_siderack__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+</CombineXMesh>

@@ -411,10 +411,10 @@
 		<CraneSocket Pos="(-4.644; 0.832; 0)" />
 		<CraneSocket Pos="(-0.605; 0.717; 1.483)" />
 		<CraneSocket Pos="(-0.605; 0.717; -1.483)" />
-		<AddonSockets>
+		<AddonSockets DefaultAddon="joat_crane_support_rear">
 			<Socket Names="joat_crane_support_rear" Offset="(0.01; 1.6; 0)" NamesBlock="Kolob74760SpareWheel" />
 		</AddonSockets>		
-		<AddonSockets>
+		<AddonSockets DefaultAddon="joat_crane_krs_58_bandit">
 			<Socket Names="joat_crane_krs_58_bandit" Offset="(-.96; .7; 0)" />			
 		</AddonSockets>
 		<AddonSockets>

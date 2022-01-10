@@ -42,7 +42,7 @@
 			UiName="[JoAT] Huge Fuel Tank"
 		/>
 		<InstallSocket 
-			Type="JoatFrameAddon4" 
+			Type="JoatFuelAddon4" 
 			Offset="(.5; -.35; 0)"
 		/>
 	</GameData>

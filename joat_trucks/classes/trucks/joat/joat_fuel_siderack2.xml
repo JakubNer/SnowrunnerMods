@@ -1,0 +1,128 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="240">
+		<LimitedFluid
+			Center="(0.327; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(0.327; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(0.126; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(0.126; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.065; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.065; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.264; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.264; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.461; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.461; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.656; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.656; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+	</TruckData>
+
+	<PhysicsModel Mesh="trucks/tuning/joat_fuel_siderack">
+		<Body ImpactType="Truck" Mass="50">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>	
+	<GameData
+		CameraPreset="rear"
+		Category="JOAT"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Fuel Side Rack"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Fuel Side Rack"
+		/>
+		<InstallSocket Type="joat_fuel_siderack2" />				
+	</GameData>
+	
+	<FuelMass>
+		<Body Mass="200" />
+	</FuelMass>		
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
