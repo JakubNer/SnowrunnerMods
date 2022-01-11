@@ -1,22 +1,22 @@
 <TruckAddon IsChassisFullOcclusion="true">
 	<TruckData FuelCapacity="4800">
 		<LimitedFluid
-			Center="(2.4; 1.6; 0)"
-			LengthX="4.2"
+			Center="(2.65; 1.4; 0)"
+			LengthX="4.46"
 			RadiusY="1.2"
-			RadiusZ="1.2"
+			RadiusZ="1"
 			Type="Cylinder"
 		/>
 		<LimitedFluid
-			Center="(-2.4; 1.6; 0)"
-			LengthX="4.2"
+			Center="(-2.65; 1.4; 0)"
+			LengthX="4.6"
 			RadiusY="1.2"
-			RadiusZ="1.2"
+			RadiusZ="1"
 			Type="Cylinder"
 		/>
 	</TruckData>
 	
-	<PhysicsModel Mesh="trucks/cargo/cargo_boiler_5">
+	<PhysicsModel Mesh="trucks/tuning/quad_tank">
 		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"

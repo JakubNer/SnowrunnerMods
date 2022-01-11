@@ -618,7 +618,7 @@
 			<Socket Names="JoatFrameAddon4" Offset="(-1.45; 1.47; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="JoatFuelAddon4" Offset="(-1.45; 1.47; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="JoatFuelAddon4" Offset="(-2.1; 1.44; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_rear_crane" >
 			<Socket Names="joat_rear_crane" Offset="(-8.38525; 1.66; 0)" />
@@ -634,7 +634,6 @@
 				Offset="(3.4; 2.05; 0.15)"
 				Dir="(-1;0;0)" 
 				UpDir="(0;1;0)"
-				NamesBlock="JoatFuelAddon4"
 			/>
 		</AddonSockets>		
 		<AddonSockets>
