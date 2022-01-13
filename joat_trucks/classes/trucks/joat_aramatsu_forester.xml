@@ -341,6 +341,9 @@
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
+		<AddonSockets DefaultAddon="joat_snorkel2" >
+			<Socket Names="joat_snorkel2" Offset="(1.5; 0.1; 0.05)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>				
 		<AddonSockets>
 			<Socket InCockpit="true" Names="AramatsuForesterSticker_1x1_01" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
