@@ -1,6 +1,6 @@
 <TruckAddon>
 	<Snorkel Origin="(3.036; 2.898; -0.974)" />
-	<PhysicsModel Mesh="trucks/ws_4964_white_tuning/ws_4964_white_snorkel_2">
+	<PhysicsModel Mesh="trucks/ank_mk38_tuning/ank_mk38_snorkel_default">
 		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Fixed" />
 		</Body>
