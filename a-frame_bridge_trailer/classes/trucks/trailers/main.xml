@@ -150,7 +150,7 @@
 					Friction="4.0"				
 					ModelFrame="Ramp_cdt"
 					NoFoliageCollisions="true"
-					Collisions="Default"
+					Collisions="All"
 				>
 					<Constraint
 						AxisLocal="(0; 0; 1)"
