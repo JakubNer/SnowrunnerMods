@@ -89,7 +89,13 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
-			<Body Mass="2200" ModelFrame="Body_cdt">
+			<Body Mass="2100" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body Mass="100" ModelFrame="Pin_cdt" Friction="0">
 				<Constraint
 					Type="Fixed"
 				>				
@@ -215,7 +221,7 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(1.708; .62; 0)"
+			Offset="(1.708; .52; 0)"
 			Type="Semitrailer"
 		/>
 		
