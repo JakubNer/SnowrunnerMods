@@ -1,12 +1,12 @@
 <_templates Include="trucks"/>
 <TruckAddon IsChassisFullOcclusion="true">
-	<ActionCategories>
+	<!--ActionCategories>
 		<ActionCategory Action="1" Id="lift_control" LocaleUid="LIFT CONTROLS" AvailableForFastMode="false" RemoveChildActionsFromCustomPanelShowCounter = "false"/>
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
 		<Constraint Action="11" Id="lift_raise" LocaleUid="LIFT" Name="Sublift" BelongToCategorie="lift_control" SpeedMult="3"/>
-	</ControlledConstraints>	
+	</ControlledConstraints-->	
 	<PhysicsModel Mesh="trucks/tuning/quad">
 		<NetSync Legacy="false" />	
 		<Body
