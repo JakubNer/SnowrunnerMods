@@ -1,0 +1,141 @@
+<_templates Include="trucks"/>
+<TruckAddon IsChassisFullOcclusion="true">
+	<ActionCategories>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LIFT CONTROLS" AvailableForFastMode="false" RemoveChildActionsFromCustomPanelShowCounter = "false"/>
+	</ActionCategories>	
+	<ControlledConstraints>
+		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="lift_raise" LocaleUid="LIFT" Name="Sublift" BelongToCategorie="lift_control" SpeedMult="3"/>
+	</ControlledConstraints>	
+	<PhysicsModel Mesh="trucks/tuning/quad">
+		<NetSync Legacy="false" />	
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="600"
+			NetSync="pv"			
+			ModelFrame="Body_cdt"
+		>
+			<Constraint Type="Rigid" />
+			<Body
+				Friction="2.0"
+				Mass="200"
+				ModelFrame="Sublift_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Name="Sublift"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit="1.7"
+				>
+					<Motor
+						Damping="1"
+						Force="800000"
+						Tau=".5"
+						Type="Position"
+					/>
+				</Constraint>
+				<Body
+					Friction="2.0"
+					Mass="400"
+					ModelFrame="Lift_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Name="Lift"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit="1.45"
+					>
+						<Motor
+							Damping="1"
+							Force="800000"
+							Tau=".5"
+							Type="Position"
+						/>
+					</Constraint>
+					<Body Mass="200" ModelFrame="Boom_cdt">
+						<Constraint
+							AxisLocal="(-1; 0; 0)"
+							Name="Boom"
+							Type="Prismatic"
+							MinLimit="0"
+							MaxLimit="5"
+						>
+							<Motor Force="800000" Tau="0.4" Type="Position" />
+						</Constraint>
+						<Body Mass="200" ModelFrame="Hook_cdt">
+							<Constraint
+								AxisLocal="(1; 0; 0)"
+								Name="Hook"
+								Type="Prismatic"
+								MinLimit="0"
+								MaxLimit="5"
+							>
+								<Motor Force="800000" Tau="0.4" Type="Position" />
+							</Constraint>
+						</Body>
+					</Body>
+				</Body>				
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="2800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] 4-Slot+ Flatbed"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] 4-Slot+ Flatbed"
+		/>
+		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
+		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
+		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />				
+		<InstallSocket 
+			Type="JoatFrameAddon4" 
+			Offset="(-1.6; 0; 0)"
+		/>
+		<AddonType Name="Crane" />		
+		<AddonSlots
+			InitialOffset="(1; 0.4; 0)"
+			OffsetStep="(-2.559; 0; 0)"
+			ParentFrames="Body_cdt,Body_cdt,Body_cdt,Body_cdt"
+			Quantity="4"
+		/>
+		
+		<WinchSocket Pos="(-5.8; 2.3; 1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.8; 2.3; 1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.8; 2.3; -1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.8; 2.3; -1.55)" ParentFrame="Sublift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(-8.1; .25; .26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.1; 0.25; .26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.1; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.1; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		
+		<CraneSourceSocket Pos="(-7.67; .131; -.116)" ParentFrame="Hook_cdt" />				
+	</GameData>
+	<ControlledIK
+		CoeffEndMovementSpeedOY=".8"
+		CoeffEndMovementSpeedOYWithLoad=".8"
+		CoeffEndMovementSpeedXZ=".8"
+		CoeffEndMovementSpeedXZWithLoad=".8"
+	>
+		<Chain Name="Crane" EndOffset="(0; 0.1; 0)" ModelFrames="Sublift_cdt,Lift_cdt,Boom_cdt,Hook_cdt">
+			<ConstraintStartPosition Name="Sublift" SpeedMult=".8" Value="1.7" />		
+			<ConstraintStartPosition Name="Lift" SpeedMult=".8" Value="1.45" />		
+			<ConstraintStartPosition Name="Boom" SpeedMult=".8" Value="5" />		
+			<ConstraintStartPosition Name="Hook" SpeedMult=".8" Value="1" />		
+		</Chain>
+	</ControlledIK>	
+</TruckAddon>
