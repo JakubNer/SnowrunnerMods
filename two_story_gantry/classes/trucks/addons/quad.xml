@@ -1,13 +1,14 @@
 <_templates Include="trucks"/>
 <TruckAddon IsChassisFullOcclusion="true">
 	<PhysicsModel Mesh="trucks/tuning/quad">
-		<NetSync Legacy="false" />	
+		<NetSync Legacy="true" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="600"
 			NetSync="pv"			
 			ModelFrame="Body_cdt"
+			Collisions="None"
 		>
 			<Constraint Type="Fixed" />
 			<Body
@@ -124,11 +125,36 @@
 		CoeffEndMovementSpeedXZ=".8"
 		CoeffEndMovementSpeedXZWithLoad=".8"
 	>
-		<Chain Name="Crane" EndOffset="(0; 0.1; 0)" ModelFrames="Body_cdt,Sublift_cdt,Lift_cdt,Boom_cdt,Hook_cdt">
+		<Chain EndOffset="(0; 0; 0)" ModelFrames="Body_cdt,Sublift_cdt,Lift_cdt,Boom_cdt">
 			<ConstraintStartPosition Name="Sublift" SpeedMult=".8" Value="1.7" />		
 			<ConstraintStartPosition Name="Lift" SpeedMult=".8" Value="1.45" />		
 			<ConstraintStartPosition Name="Boom" SpeedMult=".8" Value="5" />		
 			<ConstraintStartPosition Name="Hook" SpeedMult=".8" Value="1" />		
 		</Chain>
 	</ControlledIK>	
+	<!--AutomaticIK>
+		<IKBone ModelFrame="Sublift_cdt" ParentFrame="Sublift_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="Lift_cdt"
+				ModelFrame="Lift_cdt"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="Lift_cdt" ParentFrame="Lift_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="Boom_cdt"
+				ModelFrame="Boom_cdt"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK-->	
+	<!--ControlledConstraints>
+		<Constraint Action="9" ActionId="lift_raise" Id="lift_raise" LocaleUid="Hook" Name="Hook" SpeedMult="1"/>
+	</ControlledConstraints-->		
 </TruckAddon>
