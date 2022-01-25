@@ -1,12 +1,5 @@
 <_templates Include="trucks"/>
 <TruckAddon IsChassisFullOcclusion="true">
-	<!--ActionCategories>
-		<ActionCategory Action="1" Id="lift_control" LocaleUid="LIFT CONTROLS" AvailableForFastMode="false" RemoveChildActionsFromCustomPanelShowCounter = "false"/>
-	</ActionCategories>	
-	<ControlledConstraints>
-		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
-		<Constraint Action="11" Id="lift_raise" LocaleUid="LIFT" Name="Sublift" BelongToCategorie="lift_control" SpeedMult="3"/>
-	</ControlledConstraints-->	
 	<PhysicsModel Mesh="trucks/tuning/quad">
 		<NetSync Legacy="false" />	
 		<Body
@@ -16,7 +9,7 @@
 			NetSync="pv"			
 			ModelFrame="Body_cdt"
 		>
-			<Constraint Type="Rigid" />
+			<Constraint Type="Fixed" />
 			<Body
 				Friction="2.0"
 				Mass="200"
@@ -131,7 +124,7 @@
 		CoeffEndMovementSpeedXZ=".8"
 		CoeffEndMovementSpeedXZWithLoad=".8"
 	>
-		<Chain Name="Crane" EndOffset="(0; 0.1; 0)" ModelFrames="Sublift_cdt,Lift_cdt,Boom_cdt,Hook_cdt">
+		<Chain Name="Crane" EndOffset="(0; 0.1; 0)" ModelFrames="Body_cdt,Sublift_cdt,Lift_cdt,Boom_cdt,Hook_cdt">
 			<ConstraintStartPosition Name="Sublift" SpeedMult=".8" Value="1.7" />		
 			<ConstraintStartPosition Name="Lift" SpeedMult=".8" Value="1.45" />		
 			<ConstraintStartPosition Name="Boom" SpeedMult=".8" Value="5" />		
