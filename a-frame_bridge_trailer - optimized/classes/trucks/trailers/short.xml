@@ -67,7 +67,6 @@
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="ramp_raise" LocaleUid="RAMP ROTATE" Name="Ramp" BelongToCategorie="ramp_control" SpeedMult=".7"/>
-		<Constraint Action="11" Id="ramp_overcrank" LocaleUid="RAMP OVERCRANK" Name="Overcrank" BelongToCategorie="ramp_control" SpeedMult="1"/>
 		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PIN" Name="RightRot" BelongToCategorie="pin_control" SpeedMult="1"/>
 		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PIN" Name="LeftRot" BelongToCategorie="pin_control" SpeedMult="1"/>
 		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PUSHOUT" Name="RightPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
@@ -82,7 +81,7 @@
 			<Constraint
 				InitialFix="true"
 				Name="Arm"
-				Tau="0.04"
+				Tau="1"
 				TerminalFix="true"
 				Position="20"
 			/>
@@ -131,7 +130,6 @@
 				Friction="4.0"				
 				ModelFrame="Ramp_cdt"
 				NoFoliageCollisions="true"
-				Collisions="All"
 			>
 				<Constraint
 					AxisLocal="(0; 0; 1)"

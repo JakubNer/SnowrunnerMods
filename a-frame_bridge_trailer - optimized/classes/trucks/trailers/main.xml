@@ -81,7 +81,7 @@
 			<Constraint
 				InitialFix="true"
 				Name="Arm"
-				Tau="0.04"
+				Tau="1"
 				TerminalFix="true"
 				Position="10"
 			/>
@@ -130,7 +130,6 @@
 				Friction="4.0"				
 				ModelFrame="Ramp_cdt"
 				NoFoliageCollisions="true"
-				Collisions="All"
 			>
 				<Constraint
 					AxisLocal="(0; 0; 1)"
