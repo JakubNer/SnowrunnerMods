@@ -1,0 +1,69 @@
+<TruckAddon>
+	<PoweredConstraints>
+		<Chain
+			Action="3"
+			LocaleUid="UI_SCAN_WATCHPOINT"
+			Name="Watchpoint_Trailer"
+			ResetOnLoad="true"
+			ParentBodies="Radar_cdt"
+		>
+			<Group Id="radar">
+				<Constraint
+					InitialFix="true"
+					Name="AntennaMainRotator"
+					SpeedMult="1.2"
+					Position="360"
+				/>
+				<SoundBrand Name="addons/scout_trailer_radar/radar_scan_phase07" Range="20" Type="Start" />
+				<SoundBrand Name="addons/scout_trailer_radar/radar_scan_phase08" Range="20" Type="Stop" />
+			</Group>
+		</Chain>
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/tuning/radar">
+		<Body Mass="80">
+			<Constraint Type="Rigid" />
+			<Body 
+				Mass="80"
+				ModelFrame="Radar_cdt"
+			>
+				<Constraint AxisLocal="(0; 1; 0)" Name="AntennaMainRotator" Type="Hinge" MinLimit="0" MaxLimit="360">
+					<Motor
+						Damping="1"
+						Force="2000"
+						Tau=".99"
+						Type="Position"
+					/>
+			</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<TruckData
+		FuelCapacity="120"
+	>
+		<LimitedFluid
+			Center="(0; .65; .35)"
+			LengthX="1"
+			RadiusY=".2"
+			RadiusZ=".2"
+			Type="Cylinder"
+		/>	
+	</TruckData>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="2800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Truck Mounted Radar"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Truck Mounted Radar"
+		/>
+		<InstallSocket Type="FrameAddonFlatbed1" Offset="(0; .4; 0)" />
+		<InstallSocket Type="FrameAddonSideboard1" Offset="(0; .39; 0)" />
+		<AddonType Name="Watchtower" />
+	</GameData>
+</TruckAddon>
