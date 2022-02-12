@@ -69,6 +69,17 @@
 		<Constraint Action="10" Id="hitch1" LocaleUid="HITCH" Name="Hitch" BelongToCategorie="lift_control" SpeedMult="6"/>
 		<Constraint Action="11" Id="anchor_control" LocaleUid="FEET" Name="Anchor" BelongToCategorie="lift_control" SpeedMult="3"/>
 	</ControlledConstraints>	
+	<PoweredConstraints>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Arm"
+				Tau="1"
+				TerminalFix="true"
+				Position="-16"
+			/>
+		</Group>
+	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/pup4">
 		<NetSync Legacy="false" />	
 		<Body
@@ -88,6 +99,7 @@
 				<Constraint
 					AxisLocal="(0; 0; 1)"
 					Type="Hinge"
+					Name="Arm"										
 					MinLimit="-60"
 					MaxLimit="60"
 				>
