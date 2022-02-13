@@ -103,7 +103,7 @@
 					MinLimit="-60"
 					MaxLimit="60"
 				>
-					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+					<Motor Damping="10000" Spring="100000" Type="Spring" />				
 				</Constraint>
 				<Body Mass="200" ModelFrame="Loop_cdt" Collisions="None">
 					<Constraint
@@ -219,8 +219,8 @@
 			ParentFrame="Loop_cdt"
 		/>
 
-		<WinchSocket Pos="(1.6; .658; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1.6; .658; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<WinchSocket Pos="(1.28; .658; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.28; .658; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
 
 		<WinchSocket Pos="(-11.16; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-11.16; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
