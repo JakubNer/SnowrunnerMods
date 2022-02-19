@@ -12,8 +12,10 @@
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="240">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.3; 1.1; 0.08)" />
-			<Wheel _template="DollyWheel" Pos="(-.65; 1.1; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(.3; 1.09; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; 1.09; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(.3; 1.09; -0.31)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; 1.09; -0.31)" />
 		</Wheels>	
 		<LimitedFluid
 			Center="(0.327; .746; .09)"
@@ -106,6 +108,7 @@
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>	
+	<Landmark Mesh="landmarks/cargo_unit_barrels_1_lmk" MinScale="1.8" MaxScale="3.8" />	
 	<GameData
 		CameraPreset="rear"
 		Category="JOAT"

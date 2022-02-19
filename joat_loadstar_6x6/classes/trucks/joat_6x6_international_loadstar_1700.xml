@@ -65,7 +65,7 @@
 			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.78; 0.376; 0.9)" />
 		</Wheels>
 		<SuspensionSocket
-			Default="international_loadstar_1700_suspension_high"
+			Default="international_loadstar_1700_suspension_noncrane"
 			Type="s_joat_6x6_international_loadstar_1700"
 			MaxWheelRadiusWithoutSuspension="0.25"
 		/>
@@ -325,7 +325,7 @@
 		<AddonSockets DefaultAddon="joat_6x6_hitch_both">
 			<Socket Names="joat_6x6_hitch_both" Offset="(-3.24; 0.205; 0)" NamesBlock="InternationalLoadstar1700ServiceBody"/>
 		</AddonSockets>				
-		<AddonSockets DefaultAddon="joat_crane_support_front_6x6_loadstar" >
+		<AddonSockets>
 			<Socket Names="joat_crane_support_front_6x6_loadstar" Offset="(3.45; .19; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="joat_6x6_crane_krs_58_bandit_loadstar" >
@@ -361,7 +361,7 @@
 		<AddonSockets>
 			<Socket Names="InternationalLoadstar1700Snorkel" Offset="(0; 0; 0)" />
 		</AddonSockets>
-		<AddonSockets>
+		<AddonSockets DefaultAddon="frame_addon_sideboard_1">
 			<Socket Names="FrameAddonSideboard1" Offset="(-2.37; .81; 0)" NamesBlock="MinicraneRU">			
 				<AddonsShift Offset="(.62; 0; 0)" Types="joat_crane_support_front_6x6_loadstar" />																
 			</Socket>
