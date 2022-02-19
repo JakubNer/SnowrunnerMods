@@ -1,0 +1,146 @@
+<_templates Include="trucks">
+	<Wheel>
+		<DollyWheel
+			SuspensionHeight="0.5"
+			SuspensionStrength=".3"
+			Torque="none"
+			Type="wheel_scout_trailer_front"
+			SuspensionMin="-1"
+		/>
+	</Wheel>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData FuelCapacity="240">
+		<Wheels>
+			<Wheel _template="DollyWheel" Pos="(.3; 1.1; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; 1.1; 0.08)" />
+		</Wheels>	
+		<LimitedFluid
+			Center="(0.327; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(0.327; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(0.126; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(0.126; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.065; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.065; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.264; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.264; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.461; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.461; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.656; .746; .09)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+		<LimitedFluid
+			Center="(-0.656; .746; -.3)"
+			SizeX="0.16"
+			SizeY="0.35"
+			SizeZ="0.46"
+			Type="Box"
+		/>
+	</TruckData>
+
+	<PhysicsModel Mesh="trucks/tuning/fuel_rack">
+		<Body ImpactType="Truck" Mass="50">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>	
+	<GameData
+		CameraPreset="rear"
+		Category="JOAT"
+		Price="275"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="Fuel Jerry Can Rack"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="Fuel Jerry Can Rack"
+		/>
+		<InstallSocket Offset="(4.5; 0.75; 0)" Type="Trailer" />
+		<InstallSocket Offset="(4.5; 0.75; 0)" Type="ScautTrailer" />
+
+		<CraneSocket Pos="(-0.15; 1.05; -0.1)" />
+		<WinchSocket Pos="(-0.15; 1.05; -0.1)" />
+	</GameData>
+	
+	<FuelMass>
+		<Body Mass="200" />
+	</FuelMass>		
+</Truck>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
