@@ -43,7 +43,7 @@
 		>
 		</Body>
 	</PhysicsModel>
-	<Landmark Mesh="landmarks/cargo_unit_barrels_1_lmk" MinScale="1.8" MaxScale="3.8" />
+	<Landmark Mesh="landmarks/cargo_unit_barrels_1_lmk" MinScale="1" MaxScale="2.5" />
 	<GameData Price="550">
 		<UiDesc
 			UiDesc="Fuel Cistern Skid"

@@ -37,7 +37,7 @@
 		>
 		</Body>
 	</PhysicsModel>
-	<Landmark Mesh="landmarks/cargo_unit_service_spare_parts_1_lmk" MinScale="1.8" MaxScale="3.8" />
+	<Landmark Mesh="landmarks/cargo_unit_service_spare_parts_1_lmk" MinScale=".5" MaxScale="1" />
 	<GameData Price="775">
 		<CraneSocket Pos="(-.3; 1.6; 0)" />
 		<UiDesc

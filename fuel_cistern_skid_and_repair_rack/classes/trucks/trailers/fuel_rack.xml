@@ -108,7 +108,7 @@
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>	
-	<Landmark Mesh="landmarks/cargo_unit_barrels_1_lmk" MinScale="1.8" MaxScale="3.8" />	
+	<Landmark Mesh="landmarks/cargo_unit_service_spare_parts_1_lmk" MinScale=".5" MaxScale="1" />	
 	<GameData
 		CameraPreset="rear"
 		Category="JOAT"
@@ -118,8 +118,9 @@
 	>
 		<UiDesc
 			UiDesc="Fuel Jerry Can Rack"
-			UiIcon30x30=""
-			UiIcon40x40=""
+			UiIcon20x20="cargoTypeBarrel20"
+			UiIcon40x40="cargoTypeBarrel40"
+			UiIcon100x100="cargoTypeBarrels"
 			UiName="Fuel Jerry Can Rack"
 		/>
 		<InstallSocket Offset="(4.5; 0.75; 0)" Type="Trailer" />

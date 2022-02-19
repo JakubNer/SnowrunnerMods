@@ -98,10 +98,10 @@
 			UnlockByRank="1"
 		>
 			<UiDesc
-				UiDesc="UI_SUSPENSION_HIGH_DESC"
+				UiDesc="Original Raised"
 				UiIcon30x30=""
 				UiIcon40x40=""
-				UiName="UI_SUSPENSION_HIGH_NAME"
+				UiName="Original Raised"
 			/>
 		</GameData>
 	</SuspensionSet>
