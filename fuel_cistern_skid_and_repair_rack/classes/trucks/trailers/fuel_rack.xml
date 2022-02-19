@@ -104,7 +104,7 @@
 	</TruckData>
 
 	<PhysicsModel Mesh="trucks/tuning/fuel_rack">
-		<Body ImpactType="Truck" Mass="50">
+		<Body ImpactType="Truck" Mass="250">
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>	
@@ -131,7 +131,7 @@
 	</GameData>
 	
 	<FuelMass>
-		<Body Mass="200" />
+		<Body Mass="50" />
 	</FuelMass>		
 </Truck>
 
