@@ -12,11 +12,17 @@
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="240">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.3; 1.09; 0.08)" />
-			<Wheel _template="DollyWheel" Pos="(-.65; 1.09; 0.08)" />
-			<Wheel _template="DollyWheel" Pos="(.3; 1.09; -0.31)" />
-			<Wheel _template="DollyWheel" Pos="(-.65; 1.09; -0.31)" />
+			<Wheel _template="DollyWheel" Pos="(.3; 1.15; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; 1.15; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(.3; 1.15; -0.31)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; 1.15; -0.31)" />
 		</Wheels>	
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-0.5"
+			MaxX="4"
+		/>		
 		<LimitedFluid
 			Center="(0.327; .746; .09)"
 			SizeX="0.16"
@@ -101,21 +107,22 @@
 			SizeZ="0.46"
 			Type="Box"
 		/>
+		
+		<Constraint Type="Hinge" AxisLocal="(0; 1; 0)" MinLimit="-1" MaxLimit="1">
+		</Constraint>
+		<Camera Center="(0; 0; 0)" />		
 	</TruckData>
 
 	<PhysicsModel Mesh="trucks/tuning/fuel_rack">
-		<Body ImpactType="Truck" Mass="250">
-			<Constraint Type="Rigid" />
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="250"
+		>
 		</Body>
 	</PhysicsModel>	
 	<Landmark Mesh="landmarks/cargo_unit_service_spare_parts_1_lmk" MinScale=".5" MaxScale="1" />	
-	<GameData
-		CameraPreset="rear"
-		Category="JOAT"
-		Price="275"
-		UnlockByExploration="false"
-		UnlockByRank="1"
-	>
+	<GameData Price="275">
 		<UiDesc
 			UiDesc="Fuel Jerry Can Rack"
 			UiIcon20x20="cargoTypeBarrel20"
@@ -129,10 +136,6 @@
 		<CraneSocket Pos="(-0.15; 1.05; -0.1)" />
 		<WinchSocket Pos="(-0.15; 1.05; -0.1)" />
 	</GameData>
-	
-	<FuelMass>
-		<Body Mass="50" />
-	</FuelMass>		
 </Truck>
 
 
