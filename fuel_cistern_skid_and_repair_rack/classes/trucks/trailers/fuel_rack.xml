@@ -117,7 +117,7 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="250"
+			Mass="300"
 		>
 		</Body>
 	</PhysicsModel>	
