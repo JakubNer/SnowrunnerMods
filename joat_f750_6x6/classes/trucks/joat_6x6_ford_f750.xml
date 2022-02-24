@@ -357,12 +357,17 @@
 		<AddonSockets>
 			<Socket Names="FordF750Trunk" />
 			<Socket Names="MinicraneLoadstar" Offset="(-0.23; 0.91; 0)" />
-			<Socket Names="MinicraneRU" Offset="(-0.09; 0.91; 0)" />			
+			<Socket Names="MinicraneRU" Offset="(-0.09; 0.91; 0)" >
+				<AddonsShift Offset="(-2.4; 0; 0)" Types="FrameRadar" />	
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FordF750Rooftrunk" NamesBlock="FordF750Spotlight, FordF750Beacon, FordF750Beacon2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="FrameRadar" Offset="(-.5; 0.911; 0)" NamesBlock="MinicraneLoadstar" >
+				<AddonsShift Offset="(-1.1; 0; 0)" Types="FordF750Trunk" />			
+			</Socket>		
 			<Socket Names="FrameAddonFlatbed1" Offset="(-2; 0.911; 0)">
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="FordF750Trunk" />
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="MinicraneLoadstar" />

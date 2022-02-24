@@ -65,7 +65,7 @@
 		TruckImage="chevkodiak70blazer"
 		TruckType="HEAVY_DUTY"
 	>
-		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_1"
@@ -377,19 +377,19 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.04)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.04)" />
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />
+				<AddonsShift Offset="(-1.85; 0; 0)" Types="FrameRadar" />	
+				<AddonsShift Offset="(-2.75; 0; 0)" Types="FrameAddonSideboard1" />	
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FrameRadar" Offset="(.3; 1; 0)" NamesBlock="SaddleLow1, SaddleHigh, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddonTow, FrameAddonKung, FrameAddonTank, BigCraneUs, LogLift" >
-				<AddonsShift Offset="(-.85; 0; 0)" Types="MinicraneRU" />	
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />				
 			</Socket>
 		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="FrameAddonSideboard1" Offset="(-.2; 1; 0)" NamesBlock="SaddleLow1, SaddleHigh, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddonTow, FrameAddonKung, FrameAddonTank, BigCraneUs, LogLift" >
-				<AddonsShift Offset="(-.85; 0; 0)" Types="MinicraneRU" />	
-				<AddonsShift Offset="(-1.85; 0; 0)" Types="FrameRadar" />	
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />				
+				<AddonsShift Offset="(-1.85; 0; 0)" Types="FrameRadar" />	
 			</Socket>
 		</AddonSockets>		
 		<AddonSockets>
