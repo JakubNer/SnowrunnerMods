@@ -1,0 +1,58 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/joat_f750_guard">
+		<Body Mass="10">
+			<Constraint Type="Rigid" />
+			<Body Mass="10" ModelFrame="AxleUpDown_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Prismatic"
+					MinLimit="-0.05"
+					MaxLimit="0.05"
+				>
+					<Motor Damping="90" Spring="10000" Type="Spring" />
+				</Constraint>
+				<Body Mass="10" ModelFrame="AxleTilt_cdt" Collisions="None">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-10"
+						MaxLimit="10"
+					>
+						<Motor Damping="10" Spring="10000" Type="Spring" />
+					</Constraint>
+				</Body>				
+			</Body>
+		</Body>
+	</PhysicsModel>	
+	<GameData
+		CameraPreset="rear"
+		Category="JOAT"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Third Axle"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Third Axle"
+		/>
+		<InstallSocket Type="kodiak_guard" />
+				
+	</GameData>
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -130,7 +130,7 @@
 			UiIcon100x100="cargoTypeBarrels"
 			UiName="Fuel Jerry Can Rack"
 		/>
-		<InstallSocket Offset="(4.5; 0.75; 0)" Type="Trailer" />
+		<InstallSocket Offset="(4.5; 0.75; 0)" Type="ScautTrailer" />
 
 		<CraneSocket Pos="(-0.15; 1.05; -0.1)" />
 		<WinchSocket Pos="(-0.15; 1.05; -0.1)" />
