@@ -387,9 +387,10 @@
 			</Socket>
 		</AddonSockets>		
 		<AddonSockets>
-			<Socket Names="FrameAddonSideboard1" Offset="(-.2; 1; 0)" NamesBlock="SaddleLow1, SaddleHigh, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddonTow, FrameAddonKung, FrameAddonTank, BigCraneUs, LogLift" >
+			<Socket Names="FrameAddonSideboard1" Offset="(-.2; 1; 0)" NamesBlock="SaddleLow1, SaddleHigh, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddonTow, FrameAddonKung, FrameAddonTank, BigCraneUs" >
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />				
 				<AddonsShift Offset="(-1.85; 0; 0)" Types="FrameRadar" />	
+				<AddonsShift Offset="(-2.3; 0; 0)" Types="LogLift" />	
 			</Socket>
 		</AddonSockets>		
 		<AddonSockets>
