@@ -1,6 +1,7 @@
 <_templates Include="trucks">
 	<Wheel>
 		<DollyWheel
+			ConnectedToHandbrake="true"
 			SuspensionHeight="0.5"
 			SuspensionStrength=".3"
 			Torque="none"
@@ -12,10 +13,10 @@
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="1280">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .9)" />
-			<Wheel _template="DollyWheel" Pos="(.56; 0.7; .9)" RightSide="true" />
-			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .9)" />
-			<Wheel _template="DollyWheel" Pos="(-.56; 0.7; .9)" RightSide="true" />			
+			<Wheel _template="DollyWheel" Pos="(.56; 0.6; .9)" />
+			<Wheel _template="DollyWheel" Pos="(.56; 0.6; .9)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.6; .9)" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.6; .9)" RightSide="true" />			
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="1.8"
@@ -39,7 +40,7 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="1000"
+			Mass="1400"
 		>
 		</Body>
 	</PhysicsModel>
