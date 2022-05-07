@@ -2,21 +2,22 @@
 	<Wheel>
 		<DollyWheel
 			ConnectedToHandbrake="true"
-			SuspensionHeight="0.5"
-			SuspensionStrength=".3"
+			SuspensionHeight="0"
+			SuspensionStrength="0.02"
 			Torque="none"
 			Type="wheel_scout_trailer_front"
-			SuspensionMin="-1"
+			SuspensionMin="0"
+			SuspensionMax="0"
 		/>
 	</Wheel>
 </_templates>
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="1280">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.56; 0.6; .9)" />
-			<Wheel _template="DollyWheel" Pos="(.56; 0.6; .9)" RightSide="true" />
-			<Wheel _template="DollyWheel" Pos="(-.56; 0.6; .9)" />
-			<Wheel _template="DollyWheel" Pos="(-.56; 0.6; .9)" RightSide="true" />			
+			<Wheel _template="DollyWheel" Pos="(.56; 0.1; .9)" />
+			<Wheel _template="DollyWheel" Pos="(.56; 0.1; .9)" RightSide="true" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.1; .9)" />
+			<Wheel _template="DollyWheel" Pos="(-.56; 0.1; .9)" RightSide="true" />			
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="1.8"
@@ -60,6 +61,15 @@
 
 		<WinchSocket Pos="(.8; .1; 0)" ParentFrame="BoneRoot_cdt" />
 		<CraneSocket Pos="(.8; .1; 0)" ParentFrame="BoneRoot_cdt" />		
+		
+		<WinchSocket Pos="(-.8; .1; 0)" ParentFrame="BoneRoot_cdt" />
+		<CraneSocket Pos="(-.8; .1; 0)" ParentFrame="BoneRoot_cdt" />		
+
+		<WinchSocket Pos="(0; 0.1; -1.14)" ParentFrame="BoneRoot_cdt" />
+		<CraneSocket Pos="(0; 0.1; -1.14)" ParentFrame="BoneRoot_cdt" />		
+
+		<WinchSocket Pos="(0; 0.1; 1.14)" ParentFrame="BoneRoot_cdt" />
+		<CraneSocket Pos="(0; 0.1; 1.14)" ParentFrame="BoneRoot_cdt" />				
 	</GameData>
 	<FuelMass>
 		<Body Mass="1280" />

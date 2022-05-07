@@ -2,21 +2,22 @@
 	<Wheel>
 		<DollyWheel
 			ConnectedToHandbrake="true"
-			SuspensionHeight="0.5"
-			SuspensionStrength=".3"
+			SuspensionHeight="0"
+			SuspensionStrength="0.02"
 			Torque="none"
 			Type="wheel_scout_trailer_front"
-			SuspensionMin="-1"
+			SuspensionMin="0"
+			SuspensionMax="0"
 		/>
 	</Wheel>
 </_templates>
 <Truck Type="Trailer">
 	<TruckData FuelCapacity="240">
 		<Wheels>
-			<Wheel _template="DollyWheel" Pos="(.3; 1.07; 0.08)" />
-			<Wheel _template="DollyWheel" Pos="(-.65; 1.07; 0.08)" />
-			<Wheel _template="DollyWheel" Pos="(.3; 1.07; -0.31)" />
-			<Wheel _template="DollyWheel" Pos="(-.65; 1.07; -0.31)" />
+			<Wheel _template="DollyWheel" Pos="(.3; .57; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; .57; 0.08)" />
+			<Wheel _template="DollyWheel" Pos="(.3; .57; -0.31)" />
+			<Wheel _template="DollyWheel" Pos="(-.65; .57; -0.31)" />
 		</Wheels>	
 		<OcclusionMap
 			HalfSizeZ="1.8"
@@ -135,6 +136,16 @@
 
 		<CraneSocket Pos="(-0.15; 1.05; -0.1)" />
 		<WinchSocket Pos="(-0.15; 1.05; -0.1)" />
+		
+		<CraneSocket Pos="(.45; .57; 0.08)" />
+		<WinchSocket Pos="(.45; .57; 0.08)" />
+		<CraneSocket Pos="(-.8; .57; 0.08)" />
+		<WinchSocket Pos="(-.8; .57; 0.08)" />
+		<CraneSocket Pos="(.45; .57; -0.31)" />
+		<WinchSocket Pos="(.45; .57; -0.31)" />
+		<CraneSocket Pos="(-.8; .57; -0.31)" />
+		<WinchSocket Pos="(-.8; .57; -0.31)" />
+		
 	</GameData>
 </Truck>
 
