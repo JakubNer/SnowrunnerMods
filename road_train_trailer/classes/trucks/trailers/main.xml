@@ -78,9 +78,9 @@
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
 		<Constraint Action="10" Id="hitch1" LocaleUid="HITCH" Name="Hitch" BelongToCategorie="lift_control" SpeedMult="6"/>
-		<Constraint Action="11" Id="anchor_control" LocaleUid="FEET" Name="Anchor" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="anchor_control" LocaleUid="FEET" Name="Anchor" BelongToCategorie="lift_control" SpeedMult="6"/>
 	</ControlledConstraints>	
-	<PhysicsModel Mesh="trucks/tuning/main">
+	<PhysicsModel Mesh="trucks/tuning/lowmain">
 		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
@@ -89,26 +89,16 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
-			<Body Mass="2200" ModelFrame="Body_cdt">
+			<Body Mass="2100" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
 				>				
 				</Constraint>
 			</Body>		
-			<Body Mass="300" ModelFrame="Anchor_cdt">
+			<Body Mass="100" ModelFrame="Pin_cdt" Friction="0">
 				<Constraint
-					AxisLocal="(0; -1; 0)"
-					Name="Anchor"
-					Type="Prismatic"
-					MinLimit="0"
-					MaxLimit=".58"
-				>
-					<Motor
-						Damping="1"
-						Force="50000000"
-						Type="Position"
-						Tau="1"
-					/>
+					Type="Fixed"
+				>				
 				</Constraint>
 			</Body>		
 			<Body
@@ -169,6 +159,22 @@
 						Type="Position"
 					/>
 				</Constraint>
+				<Body Mass="300" ModelFrame="Anchor_cdt">
+					<Constraint
+						AxisLocal="(0; -1; 0)"
+						Name="Anchor"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit="1.18"
+					>
+						<Motor
+							Damping="1"
+							Force="100000000"
+							Type="Position"
+							Tau="1"
+						/>
+					</Constraint>
+				</Body>		
 			</Body>
 		</Body>
 	</PhysicsModel>
@@ -215,10 +221,9 @@
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
 		<InstallSocket
-			Offset="(5.52; 1.37; 0)"
+			Offset="(1.708; .49; 0)"
 			Type="LargeSemitrailer"
 		/>
-		<RequiredAddon _template="SaddleHigh" />
 		
 		<WinchSocket Pos="(-8.454; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-8.454; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
