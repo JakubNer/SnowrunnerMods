@@ -1,16 +1,22 @@
 <_templates Include="trucks"/>
 <TruckAddon IsChassisFullOcclusion="true">
+	<ActionCategories>
+		<ActionCategory Action="1" Id="lift_control" LocaleUid="LIFT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+	</ActionCategories>	
+	<ControlledConstraints>
+		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="10" Id="lift_raise" LocaleUid="PIVOT" LocaleUid="Pivot" Name="Pivot" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="lift_raise" LocaleUid="HOOK" LocaleUid="Hook" Name="Hook" BelongToCategorie="lift_control" SpeedMult="3"/>
+	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/quad">
-		<NetSync Legacy="true" />	
+		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="600"
 			NetSync="pv"			
-			ModelFrame="Body_cdt"
-			Collisions="None"
 		>
-			<Constraint Type="Fixed" />
+			<Constraint Type="Fixed" />		
 			<Body
 				Friction="2.0"
 				Mass="200"
@@ -25,7 +31,6 @@
 					MaxLimit="1.7"
 				>
 					<Motor
-						Damping="1"
 						Force="800000"
 						Tau=".5"
 						Type="Position"
@@ -42,10 +47,9 @@
 						Name="Lift"
 						Type="Prismatic"
 						MinLimit="0"
-						MaxLimit="1.45"
+						MaxLimit="2.9"
 					>
 						<Motor
-							Damping="1"
 							Force="800000"
 							Tau=".5"
 							Type="Position"
@@ -56,20 +60,20 @@
 							AxisLocal="(-1; 0; 0)"
 							Name="Boom"
 							Type="Prismatic"
-							MinLimit="0"
-							MaxLimit="5"
+							MinLimit="-5"
+							MaxLimit="0"
 						>
-							<Motor Force="800000" Tau="0.4" Type="Position" />
+							<Motor Force="800000" Tau="0.5" Type="Position" />
 						</Constraint>
 						<Body Mass="200" ModelFrame="Hook_cdt">
 							<Constraint
-								AxisLocal="(1; 0; 0)"
+								AxisLocal="(-1; 0; 0)"
 								Name="Hook"
 								Type="Prismatic"
 								MinLimit="0"
-								MaxLimit="5"
+								MaxLimit="16.7"
 							>
-								<Motor Force="800000" Tau="0.4" Type="Position" />
+								<Motor Force="800000" Tau="0.5" Type="Position" />
 							</Constraint>
 						</Body>
 					</Body>
@@ -99,7 +103,7 @@
 			Type="JoatFrameAddon4" 
 			Offset="(-1.6; 0; 0)"
 		/>
-		<AddonType Name="Crane" />		
+		<!--AddonType Name="Crane" /-->		
 		<AddonSlots
 			InitialOffset="(1; 0.4; 0)"
 			OffsetStep="(-2.559; 0; 0)"
@@ -117,24 +121,15 @@
 		<WinchSocket Pos="(-8.1; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-8.1; 0.25; -.26)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
 		
-		<CraneSourceSocket Pos="(-7.67; .131; -.116)" ParentFrame="Hook_cdt" />				
+		<CraneSourceSocket Pos="(1.28; .131; -.116)" ParentFrame="Hook_cdt" />				
 	</GameData>
-	<ControlledIK
-		CoeffEndMovementSpeedOY=".8"
-		CoeffEndMovementSpeedOYWithLoad=".8"
-		CoeffEndMovementSpeedXZ=".8"
-		CoeffEndMovementSpeedXZWithLoad=".8"
-	>
-		<Chain EndOffset="(0; 0; 0)" ModelFrames="Body_cdt,Sublift_cdt,Lift_cdt,Boom_cdt">
-			<ConstraintStartPosition Name="Sublift" SpeedMult=".8" Value="1.7" />		
-			<ConstraintStartPosition Name="Lift" SpeedMult=".8" Value="1.45" />		
-			<ConstraintStartPosition Name="Boom" SpeedMult=".8" Value="5" />		
-			<ConstraintStartPosition Name="Hook" SpeedMult=".8" Value="1" />		
+	<!--ControlledIK>
+		<Chain EndOffset="(0.1; 0; 0)" ModelFrames="Body_cdt,Sublift_cdt,Lift_cdt,Boom_cdt,Hook_cdt">
 		</Chain>
-	</ControlledIK>	
-	<!--AutomaticIK>
+	</ControlledIK-->	
+	<AutomaticIK>
 		<IKBone ModelFrame="Sublift_cdt" ParentFrame="Sublift_cdt">
-			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
 				AttachToFrame="Lift_cdt"
@@ -143,18 +138,15 @@
 				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
-		<IKBone ModelFrame="Lift_cdt" ParentFrame="Lift_cdt">
-			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+		<IKBone ModelFrame="Boom_cdt" ParentFrame="Boom_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
-				AttachToFrame="Boom_cdt"
-				ModelFrame="Boom_cdt"
+				AttachToFrame="Hook_cdt"
+				ModelFrame="Hook_cdt"
 			>
-				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
-	</AutomaticIK-->	
-	<!--ControlledConstraints>
-		<Constraint Action="9" ActionId="lift_raise" Id="lift_raise" LocaleUid="Hook" Name="Hook" SpeedMult="1"/>
-	</ControlledConstraints-->		
+	</AutomaticIK>	
 </TruckAddon>
