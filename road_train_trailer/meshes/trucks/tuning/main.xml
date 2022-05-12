@@ -1,9 +1,9 @@
 <CombineXMesh>
 	<Material
-		AlbedoMap="trucks/main__d.tga"
-		Name="main_mat"
-		NormalMap="trucks/main__n_d.tga"
-		ShadingMap="trucks/main__sh_d.tga"
+		AlbedoMap="trucks/main2__d.tga"
+		Name="main2_mat"
+		NormalMap="trucks/main2__n_d.tga"
+		ShadingMap="trucks/main2__sh_d.tga"
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>
