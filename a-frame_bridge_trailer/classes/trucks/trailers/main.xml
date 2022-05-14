@@ -174,7 +174,7 @@
 					Name="RightRot"
 					Type="Hinge"
 					MinLimit="0"
-					MaxLimit="100"
+					MaxLimit="150"
 				>
 					<Motor
 						Damping="1"
@@ -238,7 +238,7 @@
 					Name="LeftRot"
 					Type="Hinge"
 					MinLimit="0"
-					MaxLimit="100"
+					MaxLimit="150"
 				>
 					<Motor
 						Damping="1"
