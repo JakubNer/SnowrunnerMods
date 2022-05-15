@@ -8,6 +8,26 @@
 			Type="semitrailer_oiltank"
 			SuspensionMin="-0.1"
 		/>
+		<LegWheelRight
+			ConnectedToHandbrake="true"
+			ParentFrame="TopRightAnchor_cdt"
+			SuspensionHeight="0"
+			SuspensionStrength="0.5"
+			Torque="none"
+			Type="wheel_scout_trailer_flatbed"
+			SuspensionMin="0"
+			SuspensionMax="0"
+		/>
+		<LegWheelLeft
+			ConnectedToHandbrake="true"
+			ParentFrame="TopLeftAnchor_cdt"
+			SuspensionHeight="0"
+			SuspensionStrength="0.5"
+			Torque="none"
+			Type="wheel_scout_trailer_flatbed"
+			SuspensionMin="0"
+			SuspensionMax="0"
+		/>
 	</Wheel>
 	<Flare>
 		<IgnitionSignalYellow
@@ -45,8 +65,9 @@
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(4.599; .226; 1.07)"  />
 			<Wheel _template="TrailerWheel" Pos="(3.334; .226; 1.07)" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(3.334; .226; 1.07)"  />
+			<Wheel _template="LegWheelLeft" RightSide="true" Pos="(-1.10; 1.19; -1.7)"  />
+			<Wheel _template="LegWheelRight" Pos="(-1.10; 1.19; -1.7)"  />
 		</Wheels>
-		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_superheavy_single" />		
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
@@ -300,18 +321,18 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<StopSignals>
-			<Flare _template="StopSignal" Pos="(-0.2044; .986; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-0.2044; .986; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-0.2044; .986; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-0.2044; .986; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; 1.07)" ParentFrame="Body_cdt" />
 		</StopSignals>
 		<Ignition>
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .986; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .986; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .986; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .986; 1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .986; -1.19)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .986; 1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .832; -1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .832; 1.19)" ParentFrame="Body_cdt" />
 		</Ignition>
 	</ModelAttachments>		
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
