@@ -73,13 +73,13 @@
 		EngineIconScale="1.4"
 		EngineStartDelay="3.2"
 		ExhaustStartTime="2.8"
-		FuelCapacity="400"
+		FuelCapacity="520"
 		Responsiveness="0.25"
 		SteerSpeed="0.02"
 		TruckImage="derryLonghorn4520"
 		TruckType="HEAVY"
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="joat_winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim_5"
 			DefaultTire="highway_1"
@@ -150,7 +150,13 @@
 		<OcclusionMap HalfSizeZ="1.8" MinX="-5.5" MaxX="5" />
 		<LimitedFluid Center="(1.799; 0.831; -0.896)" LengthX="0.893" RadiusY="0.388" RadiusZ="0.388" Type="Cylinder" />
 		<LimitedFluid Center="(1.536; 0.831; 0.896)" LengthX="1.418" RadiusY="0.388" RadiusZ="0.388" Type="Cylinder" />
-		<Intake Dir="(1; 0; 0)" Origin="(4.19; 1.61; 0)" Size="0.8" />
+		<LimitedFluid
+			Center="(.3; 1.85; 0)"
+			SizeX="0.35"
+			SizeY="0.6"
+			SizeZ="0.9"
+			Type="Box"
+		/>				<Intake Dir="(1; 0; 0)" Origin="(4.19; 1.61; 0)" Size="0.8" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="100" />
 		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_longhorn_4520" />
@@ -170,6 +176,7 @@
 			<DamageArea Type="FuelTank" Min="(0; 0.443; -1.3)" Max="(2.286; 1.239; 1.3)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.64" Type="wheels_heavy_double1" />
+		<CompatibleWheels Scale="0.66" Type="wheels_heavy_double_p16" />
 		<CompatibleWheels OffsetZ=".05" Scale="0.64" Type="wheels_heavy_double2" />
 		<CompatibleWheels OffsetZ="-0.03" Scale="0.64" Type="wheels_heavy_single" />
 		<CompatibleWheels Scale="0.64" Type="wheels_heavy_mudtires_tayga" />
@@ -392,13 +399,15 @@
 		<WinchSocket Pos="(-4.744; 0.88; 0.523)" />
 		<WinchSocket Pos="(0.615; 0.905; -0.553)" />
 		<WinchSocket Pos="(-0.035; 1.454; 1.213)" />
+		<WinchSocket Pos="(-.9; 2.25; .85)" />
+		<WinchSocket Pos="(-.9; 2.25; -.85)" />
 		<UiDesc
-			UiDesc="UI_VEHICLE_DERRY_LONGHORN_4520_DESC"
+			UiDesc="[JoAT] Derry Longhorn 4520"
 			UiIcon30x30="heavyVehicleImg30"
 			UiIcon328x458="Longhorn4520"
 			UiIcon40x40="heavyVehicleImg"
-			UiIconLogo="DerryLonghornLogo80"
-			UiName="UI_VEHICLE_DERRY_LONGHORN_4520_NAME"
+			UiIconLogo="JoATLogo80"
+			UiName="[JoAT] Derry Longhorn 4520"
 		/>
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.165; 4.537; 1.118)" Position="(5.018; 2.827; -0.935)" />

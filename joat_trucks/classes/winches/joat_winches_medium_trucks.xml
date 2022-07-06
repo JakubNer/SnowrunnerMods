@@ -1,0 +1,23 @@
+<WinchVariants>
+	<Winch
+		Name="w_medium_trucks_default"
+		Length="42"
+		StrengthMult="1.3"
+		IsEngineIgnitionRequired="false"
+	>
+		<GameData
+			Price="1000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<WinchParams
+			/>
+			<UiDesc
+				UiDesc="Behind-Cab Assisted Autonomous"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Behind-Cab Assisted Autonomous"
+			/>
+		</GameData>
+	</Winch>
+</WinchVariants>
