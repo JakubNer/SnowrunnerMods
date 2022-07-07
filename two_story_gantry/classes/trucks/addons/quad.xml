@@ -1,13 +1,13 @@
 <_templates Include="trucks"/>
 <TruckAddon IsChassisFullOcclusion="true">
-	<ActionCategories>
+	<!--ActionCategories>
 		<ActionCategory Action="1" Id="lift_control" LocaleUid="LIFT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
 		<Constraint Action="10" Id="lift_raise" LocaleUid="PIVOT" LocaleUid="Pivot" Name="Pivot" BelongToCategorie="lift_control" SpeedMult="3"/>
 		<Constraint Action="11" Id="lift_raise" LocaleUid="HOOK" LocaleUid="Hook" Name="Hook" BelongToCategorie="lift_control" SpeedMult="3"/>
-	</ControlledConstraints>	
+	</ControlledConstraints-->	
 	<PhysicsModel Mesh="trucks/tuning/quad">
 		<NetSync Legacy="false" />	
 		<Body
@@ -106,7 +106,7 @@
 			Type="JoatFrameAddon4" 
 			Offset="(-1.6; 0; 0)"
 		/>
-		<!--AddonType Name="Crane" /-->		
+		<AddonType Name="Crane" />		
 		<AddonSlots
 			InitialOffset="(1; 0.4; 0)"
 			OffsetStep="(-2.559; 0; 0)"
@@ -127,7 +127,7 @@
 		<CraneSourceSocket Pos="(1.28; .131; -.116)" ParentFrame="Hook_cdt" />				
 	</GameData>
 	<ControlledIK>
-		<Chain EndOffset="(1.26; 0.058; 0.103)" ModelFrames="Crane_cdt,Boom_cdt,Hook_cdt">
+		<Chain EndOffset="(1.26; 0.058; 0.103)" ModelFrames="Sublift_cdt,Lift_cdt,Crane_cdt,Boom_cdt,Hook_cdt">
 		</Chain>
 	</ControlledIK>	
 	<AutomaticIK>

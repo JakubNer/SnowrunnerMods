@@ -457,6 +457,15 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.5; 1.57; 0)" />
 			<Socket Names="Trailer" Offset="(-4.772; 1.02; 0)" />
 		</AddonSockets>
+		<AddonSockets DefaultAddon="joat_fuel_siderack2">
+			<Socket 
+				Names="joat_fuel_siderack2" 
+				ParentFrame="BoneChassis_cdt"
+				Offset="(.02; 1.8; 0.35)"
+				Dir="(-1;0;0)" 
+				UpDir="(0;1;0)"
+			/>
+		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="DerryLonghorn4520Bumper" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
