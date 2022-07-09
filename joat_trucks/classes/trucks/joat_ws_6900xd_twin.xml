@@ -113,7 +113,7 @@
 		TruckType="HEAVY"
 		RepairsCapacity="315"
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="joat_winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="allterrain_1"
@@ -572,6 +572,7 @@
 		<WinchSocket Pos="(1.616; 1.71; 1.45)" />
 		<WinchSocket Pos="(1.616; 1.71; -1.45)" />
 		<WinchSocket Pos="(1.616; 1.71; 0)" />
+		<WinchSocket Pos="(3.3; 2.25; 0)" />		
 		<UiDesc
 			UiDesc="[JoAT] Western Star 6900 TwinSteer"
 			UiIcon30x30="heavyVehicleImg30"

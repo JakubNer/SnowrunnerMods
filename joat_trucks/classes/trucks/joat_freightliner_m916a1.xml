@@ -437,6 +437,15 @@
 			<Socket Names="Semitrailer" Offset="(-2.02; 1.576; 0)" />
 			<Socket Names="Trailer" Offset="(-3.64; 0.915; -0)" />
 		</AddonSockets>
+		<AddonSockets DefaultAddon="joat_fuel_siderack2">
+			<Socket 
+				Names="joat_fuel_siderack2" 
+				ParentFrame="BoneChassis_cdt"
+				Offset="(-.068; 2.2; 0.16)"
+				Dir="(-1;0;0)" 
+				UpDir="(0;1;0)"
+			/>
+		</AddonSockets>				
 		<AddonSockets>
 			<Socket Names="SaddleLow" Offset="(-2.02; 1.276; -0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.09)" />
