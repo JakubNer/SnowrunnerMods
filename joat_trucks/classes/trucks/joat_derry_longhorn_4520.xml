@@ -157,7 +157,7 @@
 			SizeZ="0.9"
 			Type="Box"
 		/>				<Intake Dir="(1; 0; 0)" Origin="(4.19; 1.61; 0)" Size="0.8" />
-		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
+		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="100" />
 		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_longhorn_4520" />
 		<Driver AnimationSet="HeavyTruck" Pos="(1.938; 2.213; 0.742)" SteeringWheelPos="(2.327; 2.554; 0.746)" />
@@ -218,15 +218,7 @@
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
-				<Constraint
-					AxisLocal="(1; 0; 0)"
-					PivotOffset="(0; 0; 0)"
-					Type="Hinge"
-					MinLimit="-5"
-					MaxLimit="5"
-				>
-					<Motor Damping="100000" Spring="4000000" Type="Spring" />
-				</Constraint>
+				<Constraint Type="Fixed" />
 				<Body _template="Mirror" ModelFrame="BoneMirrorLeft_cdt" />
 				<Body _template="Mirror" ModelFrame="BoneMirrorRight_cdt" />
 				<Body _template="Hitch" ModelFrame="BoneHitch3" />
