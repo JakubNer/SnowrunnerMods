@@ -83,7 +83,7 @@
 	<PhysicsModel Mesh="trucks/tuning/pup">
 		<NetSync Legacy="false" />	
 		<Body
-			CenterOfMassOffset="(0; 0; 0)"
+			CenterOfMassOffset="(-3.5; 0; 0)"
 			ImpactType="Truck"
 			Mass="1500"
 			NetSync="pv"			
@@ -103,7 +103,7 @@
 					MinLimit="-60"
 					MaxLimit="60"
 				>
-					<Motor Damping="10000" Spring="100000" Type="Spring" />				
+					<Motor Damping="10000" Spring="200000" Type="Spring" />				
 				</Constraint>
 				<Body Mass="800" ModelFrame="Loop_cdt" Collisions="None">
 					<Constraint
