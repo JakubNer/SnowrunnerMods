@@ -77,7 +77,6 @@
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
-		<Constraint Action="10" Id="hitch1" LocaleUid="HITCH" Name="Hitch" BelongToCategorie="lift_control" SpeedMult="6"/>
 		<Constraint Action="11" Id="anchor_control" LocaleUid="RAILS" Name="Anchor" BelongToCategorie="lift_control" SpeedMult="6"/>
 	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/main">
