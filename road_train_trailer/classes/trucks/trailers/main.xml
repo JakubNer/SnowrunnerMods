@@ -77,7 +77,6 @@
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
-		<Constraint Action="10" Id="hitch1" LocaleUid="HITCH" Name="Hitch" BelongToCategorie="lift_control" SpeedMult="6"/>
 		<Constraint Action="11" Id="anchor_control" LocaleUid="FEET" Name="Anchor" BelongToCategorie="lift_control" SpeedMult="6"/>
 	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/lowmain">
@@ -90,12 +89,6 @@
 		>
 			<Constraint Type="Rigid" />		
 			<Body Mass="2100" ModelFrame="Body_cdt">
-				<Constraint
-					Type="Fixed"
-				>				
-				</Constraint>
-			</Body>		
-			<Body Mass="100" ModelFrame="Pin_cdt" Friction="0">
 				<Constraint
 					Type="Fixed"
 				>				
@@ -115,28 +108,6 @@
 					MaxLimit="1.3"
 				>
 					<Motor Force="150000" Type="Position" />
-				</Constraint>
-			</Body>
-			<Body
-				Friction="2.0"
-				Mass="200"
-				ModelFrame="BoneHitch_cdt"
-				NetSync="pv"
-				NoFoliageCollisions="true"
-			>
-				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Name="Hitch"
-					Type="Prismatic"
-					MinLimit="-0.2"
-					MaxLimit="0.1"
-				>
-					<Motor
-						Damping="1"
-						Force="3000000"
-						Tau="1"
-						Type="Position"
-					/>
 				</Constraint>
 			</Body>
 			<Body
@@ -186,13 +157,6 @@
 			<Flare _template="HeadLight" Pos="(-8.503; 4.811; -0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
 			<Flare _template="HeadLight" Pos="(-8.503; 4.811; 0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
 		</ReverseSignals>
-		<MainHeadLight>
-			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-8.503; 4.811; 0)" Color="g(225; 205; 185)" />		
-			<Light AttenEnd="4" Color="g(165; 149; 130) x " Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.811; -0.06)" />		
-			<Light AttenEnd="4" Color="g(165; 149; 130) x 1" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.811; 0.06)" />		
-			<Flare _template="HeadLight" Pos="(-8.503; 4.811; -0.06)" Color="g(255; 235; 215) x 0.3" DirAngle="135" Size="0.3" />
-			<Flare _template="HeadLight" Pos="(-8.503; 4.811; 0.06)" Color="g(255; 235; 215) x 0.3" DirAngle="135" Size="0.3" />
-		</MainHeadLight>
 		<StopSignals>
 			<Flare _template="StopSignal" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
 			<Flare _template="StopSignal" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />

@@ -113,28 +113,6 @@
 			</Body>
 			<Body
 				Friction="2.0"
-				Mass="200"
-				ModelFrame="BoneHitch_cdt"
-				NetSync="pv"
-				NoFoliageCollisions="true"
-			>
-				<Constraint
-					AxisLocal="(1; 0; 0)"
-					Name="Hitch"
-					Type="Prismatic"
-					MinLimit="-0.2"
-					MaxLimit="0.1"
-				>
-					<Motor
-						Damping="1"
-						Force="3000000"
-						Tau="1"
-						Type="Position"
-					/>
-				</Constraint>
-			</Body>
-			<Body
-				Friction="2.0"
 				Mass="400"
 				ModelFrame="Lift_cdt"
 				NoFoliageCollisions="true"
@@ -180,13 +158,6 @@
 			<Flare _template="HeadLight" Pos="(-8.503; 4.811; -0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
 			<Flare _template="HeadLight" Pos="(-8.503; 4.811; 0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
 		</ReverseSignals>
-		<MainHeadLight>
-			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-8.503; 4.811; 0)" Color="g(225; 205; 185)" />		
-			<Light AttenEnd="4" Color="g(165; 149; 130) x " Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.811; -0.06)" />		
-			<Light AttenEnd="4" Color="g(165; 149; 130) x 1" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.811; 0.06)" />		
-			<Flare _template="HeadLight" Pos="(-8.503; 4.811; -0.06)" Color="g(255; 235; 215) x 0.3" DirAngle="135" Size="0.3" />
-			<Flare _template="HeadLight" Pos="(-8.503; 4.811; 0.06)" Color="g(255; 235; 215) x 0.3" DirAngle="135" Size="0.3" />
-		</MainHeadLight>
 		<StopSignals>
 			<Flare _template="StopSignal" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
 			<Flare _template="StopSignal" Pos="(-8.454; .986; 0.78)" ParentFrame="Body_cdt" />

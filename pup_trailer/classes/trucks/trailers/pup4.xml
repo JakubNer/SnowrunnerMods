@@ -106,6 +106,13 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
+		<ReverseSignals>
+			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-11.16; 4.811; 0)" Color="g(255; 235; 215) x 0.6" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-11.16; 4.811; -0.06)" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-11.16; 4.811; 0.06)" />		
+			<Flare _template="HeadLight" Pos="(-11.16; 4.811; -0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
+			<Flare _template="HeadLight" Pos="(-11.16; 4.811; 0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
+		</ReverseSignals>
 		<StopSignals>
 			<Flare _template="StopSignal" Pos="(-11.16; .986; -0.78)" ParentFrame="Body_cdt" />
 			<Flare _template="StopSignal" Pos="(-11.16; .986; 0.78)" ParentFrame="Body_cdt" />
