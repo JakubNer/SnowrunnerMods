@@ -66,7 +66,14 @@
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="gate_control" LocaleUid="GATE" Name="Gate" BelongToCategorie="lift_control" SpeedMult="3"/>
 	</ControlledConstraints>	
+	<PoweredConstraints>
+		<Group ExternalUi="true" Id="gate_position" LocaleUid="GATE">
+			<Constraint InitialFix="true" Name="UpperGate" SpeedMult=".5" Position="90" />
+			<Constraint InitialFix="true" Name="LowerGate" SpeedMult=".5" Position="135" />			
+		</Group>
+	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/pup">
 		<NetSync Legacy="false" />	
 		<Body
@@ -103,6 +110,28 @@
 					/>
 				</Constraint>
 			</Body>
+			<Body ForceBodyParams="true" Mass="300" ModelFrame="LowerGate_cdt" Friction="2">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					Name="LowerGate"					
+					MinLimit="0"
+					MaxLimit="135"
+				>
+					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+				</Constraint>
+			</Body>			
+			<Body ForceBodyParams="true" Mass="300" ModelFrame="UpperGate_cdt" Friction="0">
+				<Constraint
+					AxisLocal="(-1; 0; 0)"
+					Type="Hinge"
+					Name="UpperGate"					
+					MinLimit="0"
+					MaxLimit="90"
+				>
+					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+				</Constraint>
+			</Body>			
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
