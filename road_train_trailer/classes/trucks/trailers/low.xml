@@ -77,6 +77,7 @@
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="11" Id="anchor_control" LocaleUid="RAILS" Name="Anchor" BelongToCategorie="lift_control" SpeedMult="6"/>
 	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/lowmain">
 		<NetSync Legacy="false" />	
@@ -135,6 +136,22 @@
 						Type="Position"
 					/>
 				</Constraint>
+				<Body Mass="300" ModelFrame="Anchor_cdt">
+					<Constraint
+						AxisLocal="(0; -1; 0)"
+						Name="Anchor"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit="1.18"
+					>
+						<Motor
+							Damping="1"
+							Force="100000000"
+							Type="Position"
+							Tau="1"
+						/>
+					</Constraint>
+				</Body>		
 			</Body>
 		</Body>
 	</PhysicsModel>
