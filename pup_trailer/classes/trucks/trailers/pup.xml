@@ -65,8 +65,7 @@
 		<ActionCategory Action="1" Id="lift_control" LocaleUid="TRAILER CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
 	<ControlledConstraints>
-		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
-		<Constraint Action="11" Id="gate_control" LocaleUid="GATE" Name="Gate" BelongToCategorie="lift_control" SpeedMult="3"/>
+		<Constraint Action="9" Id="gate_control1" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
 	</ControlledConstraints>	
 	<PoweredConstraints>
 		<Group ExternalUi="true" Id="gate_position" LocaleUid="GATE">
