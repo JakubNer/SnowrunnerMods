@@ -1,0 +1,26 @@
+<CombineXMesh>
+	<Material
+		AlbedoMap="trucks/pup__d.tga"
+		Name="pup4_mat"
+		NormalMap="trucks/pup__n_d.tga"
+		ShadingMap="trucks/pup__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/puptop__d.tga"
+		Name="puptop_mat"
+		NormalMap="trucks/puptop__n_d.tga"
+		ShadingMap="trucks/puptop__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>	
+	<Material
+		AlbedoMap="trucks/puplift__d.tga"
+		Name="pup4lift_mat"
+		NormalMap="trucks/puplift__n_d.tga"
+		ShadingMap="trucks/puplift__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>	
+</CombineXMesh>
