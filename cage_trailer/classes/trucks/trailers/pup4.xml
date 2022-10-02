@@ -69,8 +69,8 @@
 	</ControlledConstraints>	
 	<PoweredConstraints>
 		<Group ExternalUi="true" Id="gate_position" LocaleUid="GATE">
-			<Constraint InitialFix="true" Name="UpperGate" SpeedMult=".5" Position="90" />
-			<Constraint InitialFix="true" Name="LowerGate" SpeedMult=".5" Position="135" />			
+			<Constraint InitialFix="true" Name="UpperGate" SpeedMult=".25" Position="90" />
+			<Constraint InitialFix="true" Name="LowerGate" SpeedMult=".25" Position="135" />			
 		</Group>
 	</PoweredConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/pup4">

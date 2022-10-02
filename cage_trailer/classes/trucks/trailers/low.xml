@@ -71,6 +71,10 @@
 				Position="1.3"
 			/>
 		</Group>
+		<Group ExternalUi="true" Id="gate_position" LocaleUid="GATE">
+			<Constraint InitialFix="true" Name="UpperGate" SpeedMult=".25" Position="90" />
+			<Constraint InitialFix="true" Name="LowerGate" SpeedMult=".25" Position="135" />			
+		</Group>
 	</PoweredConstraints>
 	<ActionCategories>
 		<ActionCategory Action="1" Id="lift_control" LocaleUid="TRAILER CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
@@ -136,6 +140,28 @@
 					/>
 				</Constraint>
 			</Body>
+			<Body ForceBodyParams="true" Mass="300" ModelFrame="LowerGate_cdt" Friction="2">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					Name="LowerGate"					
+					MinLimit="0"
+					MaxLimit="135"
+				>
+					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+				</Constraint>
+			</Body>			
+			<Body ForceBodyParams="true" Mass="300" ModelFrame="UpperGate_cdt" Friction="0">
+				<Constraint
+					AxisLocal="(-1; 0; 0)"
+					Type="Hinge"
+					Name="UpperGate"					
+					MinLimit="0"
+					MaxLimit="90"
+				>
+					<Motor Damping="10000" Spring="200000" Type="Spring" />				
+				</Constraint>
+			</Body>						
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
