@@ -218,20 +218,14 @@
 		<WinchSocket Pos="(1; 1.096; 1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(1; 1.096; 1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 
-		<WinchSocket Pos="(-8; 1.096; -1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8; 1.096; -1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-8; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.5; 5.4; 0)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.5; 5.4; 0)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
 
-		<WinchSocket Pos="(-3.5; 1.096; -1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-3.5; 1.096; -1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-3.5; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-3.5; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-4.3; 5.4; 0)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-4.3; 5.4; 0)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
 
-		<WinchSocket Pos="(1; 1.096; -1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1; 1.096; -1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(1; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(.5; 5.4; 0)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(.5; 5.4; 0)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
 		
 		<AddonSlots
 			InitialOffset="(.52; 1.136; 0)"
