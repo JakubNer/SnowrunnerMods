@@ -1,0 +1,354 @@
+<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheel
+			ConnectedToHandbrake="true"
+			SuspensionHeight="0.05"
+			SuspensionStrength="0.025"
+			Torque="default"
+			Type="semitrailer_oiltank"
+			SuspensionMin="-0.1"
+		/>
+	</Wheel>
+	<Flare>
+		<IgnitionSignalYellow
+			AspectRatio="1.4"
+			Color="g(238; 195; 34) x 0.4"
+			ColorMultAtDay="0.6"
+			Dir="(1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+		<IgnitionSignalRedSmall
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.6"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+	</Flare>	
+	<Flare>
+		<IgnitionSignalRed
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.8"
+			ColorMultAtDay="0.3"
+			Dir="(-1; 0; 0)"
+			DirAngle="90"
+			Size="0.2"
+		/>
+	</Flare>	
+</_templates>
+<Truck Type="Trailer" AttachType="Saddle">
+	<TruckData>
+		<Wheels>
+			<Wheel _template="TrailerWheel" Pos="(4.599; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(4.599; .226; 1.07)"  />
+			<Wheel _template="TrailerWheel" Pos="(3.334; .226; 1.07)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(3.334; .226; 1.07)"  />
+		</Wheels>
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_superheavy_single" />		
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-0.5"
+			MaxX="4"
+		/>
+		<Constraint _template="TrailerRagdoll" />
+		<Camera
+			Center="(0; 0; 0)"
+			RadiusMultiplier="3" />	
+	</TruckData>	
+	<ActionCategories>
+		<ActionCategory Action="1" Id="ramp_control" LocaleUid="RAMP CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="2" Id="pushout_control" LocaleUid="PUSHOUT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="3" Id="pin_control" LocaleUid="PIN CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="4" Id="leg1_control" LocaleUid="LEG 1 CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="5" Id="leg2_control" LocaleUid="LEG 2 CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+	</ActionCategories>	
+	<ControlledConstraints>
+		<Constraint Action="9" Id="ramp_raise" LocaleUid="RAMP ROTATE" Name="Ramp" BelongToCategorie="ramp_control" SpeedMult=".7"/>
+		<Constraint Action="11" Id="ramp_overcrank" LocaleUid="RAMP OVERCRANK" Name="Overcrank" BelongToCategorie="ramp_control" SpeedMult="1"/>
+		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PIN" Name="RightRot" BelongToCategorie="pin_control" SpeedMult="1"/>
+		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PIN" Name="LeftRot" BelongToCategorie="pin_control" SpeedMult="1"/>
+		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PUSHOUT" Name="RightPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
+		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PUSHOUT" Name="LeftPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
+		<Constraint Action="9" Id="right_bottom" LocaleUid="RIGHT LEG 1" Name="RightBottom" BelongToCategorie="leg1_control" SpeedMult=".5"/>
+		<Constraint Action="11" Id="left_bottom" LocaleUid="LEFT LEG 1" Name="LeftBottom" BelongToCategorie="leg1_control" SpeedMult=".5"/>
+		<Constraint Action="9" Id="right_top" LocaleUid="RIGHT LEG 2" Name="RightTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
+		<Constraint Action="11" Id="left_top" LocaleUid="LEFT LEG 2" Name="LeftTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
+	</ControlledConstraints>	
+	<PoweredConstraints>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Arm"
+				Tau="0.04"
+				TerminalFix="true"
+				Position="20"
+			/>
+		</Group>
+	</PoweredConstraints>	
+	<PhysicsModel Mesh="trucks/tuning/short">
+		<NetSync Legacy="false" />		
+		<Body
+			CenterOfMassOffset="(4; 0.5; 0)"
+			ImpactType="Truck"
+			Mass="1000"
+			NetSync="pv"			
+		>
+			<Constraint Type="Rigid" />		
+			<Body 
+				Mass="2000" 				
+				Friction="4.0"
+				ModelFrame="Body_cdt"
+			>
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body
+				ModelFrame="Arm_cdt"
+				Mass="1000"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="Arm"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="20"
+				>
+					<Motor
+						Damping="1"
+						Force="500000"
+						Tau="1"
+						Type="Position"
+					/>				
+				</Constraint>
+			</Body>			
+			<Body
+				ModelFrame="Overcrank_cdt"
+				Collisions="None"
+				Mass="50"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="Overcrank"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="40.2"
+				>
+					<Motor
+						Damping="1"
+						Force="500000"
+						Tau="1"
+						Type="Position"
+					/>				
+				</Constraint>
+				<Body
+					Mass="3000"
+					Friction="4.0"				
+					ModelFrame="Ramp_cdt"
+					NoFoliageCollisions="true"
+					Collisions="All"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="Ramp"
+						Type="Hinge"
+						MinLimit="0"
+						MaxLimit="179.8"
+					>
+						<Motor
+							Damping="1"
+							Force="500000"
+							Tau="1"
+							Type="Position"
+						/>				
+					</Constraint>
+				</Body>							
+			</Body>			
+			<Body Mass="200" ModelFrame="RightAnchor_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="RightRot"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="150"
+				>
+					<Motor
+						Damping="1"
+						Force="50000000"
+						Tau="1"
+						Type="Position"
+					/>
+				</Constraint>
+				<Body Mass="200" ModelFrame="RightAnchorPush_cdt">				
+					<Constraint
+						AxisLocal="(0; 0; -1)"
+						Name="RightPush"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit="1"
+					>
+						<Motor
+							Damping="1"
+							Force="50000000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+					<Body Mass="200" ModelFrame="BottomRightAnchor_cdt">
+						<Constraint
+							AxisLocal="(-1; 0; 0)"
+							Name="RightBottom"
+							Type="Prismatic"
+							MinLimit="0"
+							MaxLimit="8.2"
+						>
+							<Motor
+								Damping="1"
+								Force="50000000"
+								Tau="1"
+								Type="Position"
+							/>
+						</Constraint>
+						<Body Mass="600" ModelFrame="TopRightAnchor_cdt" Friction="4.0" >
+							<Constraint
+								AxisLocal="(-1; 0; 0)"
+								Name="RightTop"
+								Type="Prismatic"
+								MinLimit="0"
+								MaxLimit="8.8"
+							>
+								<Motor
+									Damping="1"
+									Force="50000000"
+									Tau="1"
+									Type="Position"
+								/>
+							</Constraint>
+						</Body>					
+					</Body>					
+				</Body>		
+			</Body>		
+			<Body Mass="200" ModelFrame="LeftAnchor_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="LeftRot"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="150"
+				>
+					<Motor
+						Damping="1"
+						Force="50000000"
+						Tau="1"
+						Type="Position"
+					/>
+				</Constraint>
+				<Body Mass="200" ModelFrame="LeftAnchorPush_cdt">				
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="LeftPush"
+						Type="Prismatic"
+						MinLimit="0"
+						MaxLimit="1"
+					>
+						<Motor
+							Damping="1"
+							Force="50000000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+					<Body Mass="200" ModelFrame="BottomLeftAnchor_cdt">
+						<Constraint
+							AxisLocal="(-1; 0; 0)"
+							Name="LeftBottom"
+							Type="Prismatic"
+							MinLimit="0"
+							MaxLimit="8.2"
+						>
+							<Motor
+								Damping="1"
+								Force="50000000"
+								Tau="1"
+								Type="Position"
+							/>
+						</Constraint>
+						<Body Mass="600" ModelFrame="TopLeftAnchor_cdt" Friction="4.0" >
+							<Constraint
+								AxisLocal="(-1; 0; 0)"
+								Name="LeftTop"
+								Type="Prismatic"
+								MinLimit="0"
+								MaxLimit="8.8"
+							>
+								<Motor
+									Damping="1"
+									Force="50000000"
+									Tau="1"
+									Type="Position"
+								/>
+							</Constraint>
+						</Body>					
+					</Body>					
+				</Body>		
+			</Body>				
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.2044; .832; 1.07)" ParentFrame="Body_cdt" />
+		</StopSignals>
+		<Ignition>
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .832; -1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .832; 1.19)" ParentFrame="Body_cdt" />
+		</Ignition>
+	</ModelAttachments>		
+	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
+	<GameData Price="1100">
+		<UiDesc
+			UiDesc="[JoAT] A-Frame Short Ramp"
+			UiIcon30x30="trailerSemiImg30"
+			UiIcon40x40="trailerSemiImg"
+			UiName="[JoAT] A-Frame Short Ramp"
+		/>
+		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
+		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
+		<SoundPoweredGroupLoop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_loop" Range="5" Volume="1" />		
+		<InstallSocket
+			Offset="(12.9; 1.11; 0)"
+			Type="Trailer"
+		/>
+
+		<WinchSocket Pos="(12.65; -.05; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(12.65; -.05; 0)" ParentFrame="Arm_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(9.07; 1.23; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(9.07; 1.23; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<CraneSocket Pos="(9.07; 1.23; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(9.07; 1.23; 1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(9.07; 1.23; 1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(6; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(6; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<CraneSocket Pos="(6; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(6; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(6; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+
+		<WinchSocket Pos="(0.1409; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(0.1409; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<CraneSocket Pos="(0.1409; 1.096; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(0.1409; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(0.1409; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
+	</GameData>
+</Truck>
