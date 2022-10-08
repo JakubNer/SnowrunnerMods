@@ -116,8 +116,8 @@
 					MaxLimit="20"
 				>
 					<Motor
-						Damping="1"
-						Force="500000"
+						Damping="50000000"
+						Force="50000000"
 						Tau="1"
 						Type="Position"
 					/>				
@@ -136,8 +136,8 @@
 					MaxLimit="40.2"
 				>
 					<Motor
-						Damping="1"
-						Force="500000"
+						Damping="50000000"
+						Force="50000000"
 						Tau="1"
 						Type="Position"
 					/>				
@@ -156,8 +156,8 @@
 						MaxLimit="179.8"
 					>
 						<Motor
-							Damping="1"
-							Force="500000"
+							Damping="50000000"
+							Force="50000000"
 							Tau="1"
 							Type="Position"
 						/>				
@@ -173,7 +173,7 @@
 					MaxLimit="150"
 				>
 					<Motor
-						Damping="1"
+						Damping="50000000"
 						Force="50000000"
 						Tau="1"
 						Type="Position"
@@ -188,8 +188,8 @@
 						MaxLimit="3"
 					>
 						<Motor
-							Damping="1"
-							Force="500000"
+							Damping="50000000"
+							Force="50000000"
 							Tau="1"
 							Type="Position"
 						/>
@@ -203,8 +203,8 @@
 							MaxLimit="11.5"
 						>
 							<Motor
-								Damping="1"
-								Force="500000"
+								Damping="50000000"
+								Force="50000000"
 								Tau="1"
 								Type="Position"
 							/>
@@ -221,8 +221,8 @@
 					MaxLimit="150"
 				>
 					<Motor
-						Damping="1"
-						Force="500000"
+						Damping="50000000"
+						Force="50000000"
 						Tau="1"
 						Type="Position"
 					/>
@@ -236,7 +236,7 @@
 						MaxLimit="3"
 					>
 						<Motor
-							Damping="1"
+							Damping="50000000"
 							Force="50000000"
 							Tau="1"
 							Type="Position"
@@ -251,8 +251,8 @@
 							MaxLimit="11.5"
 						>
 							<Motor
-								Damping="1"
-								Force="500000"
+								Damping="50000000"
+								Force="50000000"
 								Tau="1"
 								Type="Position"
 							/>
