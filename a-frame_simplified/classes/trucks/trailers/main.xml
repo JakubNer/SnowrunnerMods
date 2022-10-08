@@ -185,7 +185,7 @@
 						Name="RightPush"
 						Type="Prismatic"
 						MinLimit="0"
-						MaxLimit="1.45"
+						MaxLimit="3"
 					>
 						<Motor
 							Damping="1"
@@ -233,7 +233,7 @@
 						Name="LeftPush"
 						Type="Prismatic"
 						MinLimit="0"
-						MaxLimit="1.45"
+						MaxLimit="3"
 					>
 						<Motor
 							Damping="1"
