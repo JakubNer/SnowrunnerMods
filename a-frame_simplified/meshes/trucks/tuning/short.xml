@@ -7,4 +7,36 @@
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>
+	<Material
+		AlbedoMap="trucks/arm__d.tga"
+		Name="arm_mat"
+		NormalMap="trucks/arm__n_d.tga"
+		ShadingMap="trucks/arm__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/ramp__d.tga"
+		Name="ramp_mat"
+		NormalMap="trucks/ramp__n_d.tga"
+		ShadingMap="trucks/ramp__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/anchor__d.tga"
+		Name="anchor_mat"
+		NormalMap="trucks/anchor__n_d.tga"
+		ShadingMap="trucks/anchor__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/wheels__d.tga"
+		Name="wheels_mat"
+		NormalMap="trucks/wheels__n_d.tga"
+		ShadingMap="trucks/wheels__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
 </CombineXMesh>
