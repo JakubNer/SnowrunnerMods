@@ -264,18 +264,18 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<StopSignals>
-			<Flare _template="StopSignal" Pos="(-0.2044; .832; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-0.2044; .832; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-0.2044; .832; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="StopSignal" Pos="(-0.2044; .832; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.429; .832; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.429; .832; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.429; .832; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="StopSignal" Pos="(-0.429; .832; 1.07)" ParentFrame="Body_cdt" />
 		</StopSignals>
 		<Ignition>
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; -0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; 0.78)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; -1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.2044; .832; 1.07)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .832; -1.19)" ParentFrame="Body_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.2044; .832; 1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.429; .832; -0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.429; .832; 0.78)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.429; .832; -1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.8" Pos="(-0.429; .832; 1.07)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.429; .832; -1.19)" ParentFrame="Body_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 165; 0) x 0.8" Pos="(-0.429; .832; 1.19)" ParentFrame="Body_cdt" />
 		</Ignition>
 	</ModelAttachments>		
 	<Landmark Mesh="landmarks/cargo_unit_concrete_slab_2_lmk" MinScale="1.8" MaxScale="3.8" />
