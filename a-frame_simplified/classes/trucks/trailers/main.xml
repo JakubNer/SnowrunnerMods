@@ -62,8 +62,7 @@
 		<ActionCategory Action="1" Id="ramp_control" LocaleUid="RAMP CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 		<ActionCategory Action="2" Id="pushout_control" LocaleUid="PUSHOUT CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 		<ActionCategory Action="3" Id="pin_control" LocaleUid="PIN CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
-		<ActionCategory Action="4" Id="leg1_control" LocaleUid="LEG 1 CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
-		<ActionCategory Action="5" Id="leg2_control" LocaleUid="LEG 2 CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
+		<ActionCategory Action="5" Id="leg2_control" LocaleUid="LEG CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
 	</ActionCategories>	
 	<ControlledConstraints>
 		<Constraint Action="9" Id="ramp_raise" LocaleUid="RAMP ROTATE" Name="Ramp" BelongToCategorie="ramp_control" SpeedMult=".7"/>
@@ -72,10 +71,8 @@
 		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PIN" Name="LeftRot" BelongToCategorie="pin_control" SpeedMult="1"/>
 		<Constraint Action="9" Id="right_rot" LocaleUid="RIGHT PUSHOUT" Name="RightPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
 		<Constraint Action="11" Id="left_rot" LocaleUid="LEFT PUSHOUT" Name="LeftPush" BelongToCategorie="pushout_control" SpeedMult="2.5"/>
-		<Constraint Action="9" Id="right_bottom" LocaleUid="RIGHT LEG 1" Name="RightBottom" BelongToCategorie="leg1_control" SpeedMult=".5"/>
-		<Constraint Action="11" Id="left_bottom" LocaleUid="LEFT LEG 1" Name="LeftBottom" BelongToCategorie="leg1_control" SpeedMult=".5"/>
-		<Constraint Action="9" Id="right_top" LocaleUid="RIGHT LEG 2" Name="RightTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
-		<Constraint Action="11" Id="left_top" LocaleUid="LEFT LEG 2" Name="LeftTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
+		<Constraint Action="9" Id="right_top" LocaleUid="RIGHT LEG" Name="RightTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
+		<Constraint Action="11" Id="left_top" LocaleUid="LEFT LEG" Name="LeftTop" BelongToCategorie="leg2_control" SpeedMult=".5"/>
 	</ControlledConstraints>	
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
@@ -183,13 +180,13 @@
 						Type="Position"
 					/>
 				</Constraint>
-				<Body Mass="200" ModelFrame="RightAnchorPush_cdt">				
+				<Body Mass="400" ModelFrame="RightAnchorPush_cdt">				
 					<Constraint
 						AxisLocal="(0; 0; -1)"
 						Name="RightPush"
 						Type="Prismatic"
 						MinLimit="0"
-						MaxLimit="1"
+						MaxLimit="1.45"
 					>
 						<Motor
 							Damping="1"
@@ -198,13 +195,13 @@
 							Type="Position"
 						/>
 					</Constraint>
-					<Body Mass="200" ModelFrame="BottomRightAnchor_cdt">
+					<Body Mass="600" ModelFrame="TopRightAnchor_cdt" Friction="4.0" >
 						<Constraint
 							AxisLocal="(-1; 0; 0)"
-							Name="RightBottom"
+							Name="RightTop"
 							Type="Prismatic"
 							MinLimit="0"
-							MaxLimit="12.7"
+							MaxLimit="17"
 						>
 							<Motor
 								Damping="1"
@@ -213,22 +210,6 @@
 								Type="Position"
 							/>
 						</Constraint>
-						<Body Mass="600" ModelFrame="TopRightAnchor_cdt" Friction="4.0" >
-							<Constraint
-								AxisLocal="(-1; 0; 0)"
-								Name="RightTop"
-								Type="Prismatic"
-								MinLimit="0"
-								MaxLimit="13.5"
-							>
-								<Motor
-									Damping="1"
-									Force="50000000"
-									Tau="1"
-									Type="Position"
-								/>
-							</Constraint>
-						</Body>					
 					</Body>					
 				</Body>		
 			</Body>		
@@ -247,13 +228,13 @@
 						Type="Position"
 					/>
 				</Constraint>
-				<Body Mass="200" ModelFrame="LeftAnchorPush_cdt">				
+				<Body Mass="400" ModelFrame="LeftAnchorPush_cdt">				
 					<Constraint
 						AxisLocal="(0; 0; 1)"
 						Name="LeftPush"
 						Type="Prismatic"
 						MinLimit="0"
-						MaxLimit="1"
+						MaxLimit="1.45"
 					>
 						<Motor
 							Damping="1"
@@ -262,13 +243,13 @@
 							Type="Position"
 						/>
 					</Constraint>
-					<Body Mass="200" ModelFrame="BottomLeftAnchor_cdt">
+					<Body Mass="600" ModelFrame="TopLeftAnchor_cdt" Friction="4.0" >
 						<Constraint
 							AxisLocal="(-1; 0; 0)"
-							Name="LeftBottom"
+							Name="LeftTop"
 							Type="Prismatic"
 							MinLimit="0"
-							MaxLimit="12.7"
+							MaxLimit="17"
 						>
 							<Motor
 								Damping="1"
@@ -277,22 +258,6 @@
 								Type="Position"
 							/>
 						</Constraint>
-						<Body Mass="600" ModelFrame="TopLeftAnchor_cdt" Friction="4.0" >
-							<Constraint
-								AxisLocal="(-1; 0; 0)"
-								Name="LeftTop"
-								Type="Prismatic"
-								MinLimit="0"
-								MaxLimit="13.5"
-							>
-								<Motor
-									Damping="1"
-									Force="50000000"
-									Tau="1"
-									Type="Position"
-								/>
-							</Constraint>
-						</Body>					
 					</Body>					
 				</Body>		
 			</Body>				
