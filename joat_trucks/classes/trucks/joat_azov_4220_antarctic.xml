@@ -492,19 +492,26 @@
 				<AddonsShift Types="MinicraneRU" Offset="-.75, 0, 0" />			
 			</Socket>
 			<Socket Names="FrameAddonTowPlatform" Offset="(-1.92; 1.891; 0)" NamesBlock="MinicraneUS, MetalDetector" ParentFrame="BoneBack_cdt"/>		
-			<Socket Names="SaddleHigh" Offset="(-2.8; 1.9; 0)" ParentFrame="BoneBack_cdt" />
+			<Socket Names="SaddleHigh" Offset="(-2.8; 1.9; 0)" ParentFrame="BoneBack_cdt">
+				<AddonsShift Types="joat_base" Offset="0, .18, 0" />										
+			</Socket>
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="joat_base" Offset="(-2.8; 1.485; 0)" NamesBlock="BunkLog,LogLift,FrameAddon,FrameAddonTowPlatform,FrameAddonSideboard1" ParentFrame="BoneBack_cdt" />
+		</AddonSockets>			
 		<AddonSockets>
 		</AddonSockets>			
 		<AddonSockets>
-			<Socket Names="FrameAddonSideboard1" Offset="(-1.4; 1.865; 0)" NamesBlock="BunkLog,MinicraneRU,FrameAddon,FrameAddonTowPlatform" ParentFrame="BoneBack_cdt" />
+			<Socket Names="FrameAddonSideboard1" Offset="(-1.4; 1.865; 0)" NamesBlock="BunkLog,SaddleHigh,MinicraneRU,FrameAddon,FrameAddonTowPlatform" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>			
 		<AddonSockets>
 			<Socket Names="MinicraneRU" Offset="(-0.4; 1.8; 0)" NamesBlock="BunkLog,LogLift,FrameAddonTowPlatform" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>			
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-5.23; 1.265; 0)" ParentFrame="BoneBack_cdt" />
-			<Socket Names="LargeSemitrailer" Offset="(-2.8; 2.41; 0)" ParentFrame="BoneBack_cdt" />
+			<Socket Names="LargeSemitrailer" Offset="(-2.8; 2.41; 0)" ParentFrame="BoneBack_cdt">
+				<AddonsShift Types="joat_base" Offset="0, .18, 0" />										
+			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="vanilla__azov_4220_antarctic_diff_lock_default">
 			<Socket Names="azov4220antarcticDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />

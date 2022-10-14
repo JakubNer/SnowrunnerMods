@@ -1,0 +1,41 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/joat_base" >
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		Price="100"
+		CameraPreset="rear"
+		Category="JOAT"
+		Category="frame_addons"		
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Addon Riser"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Addon Riser"
+		/>
+		
+		<InstallSocket Type="joat_base" />
+
+	</GameData>
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tuning/void">
+		<Body
+			ModelFrame="BoneChassis_cdt"
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="100"
+			Collisions="None"
+		>
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="rear"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="[JoAT] Truck Bed Winch"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="[JoAT] Truck Bed Winch"
+		/>
+		<InstallSocket Type="ChevroletCk1500TrunkStuff" />
+		
+		<WinchSocket Pos="(-1.25; 4; 0)" ParentFrame="BoneChassis_cdt" />        				
+	</GameData>
+</TruckAddon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
