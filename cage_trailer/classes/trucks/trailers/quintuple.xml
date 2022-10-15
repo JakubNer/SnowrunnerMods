@@ -243,7 +243,7 @@
 		<CraneSocket Pos="(1; 1.096; 1.5)" ParentFrame="Lift_cdt" WinchableWhenAttached="true" />	
 		
 		<AddonSlots
-			InitialOffset="(.52; 1.136; 0)"
+			InitialOffset="(.59; 1.136; 0)"
 			OffsetStep="(-2.559; 0; 0)"
 			ParentFrames="Body_cdt,Body_cdt,Body_cdt,Body_cdt,Body_cdt"
 			Quantity="5"
