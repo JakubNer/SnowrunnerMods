@@ -82,6 +82,50 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
+			<Body 
+				Friction="0"
+				Mass="5"
+				ModelFrame="Cone_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsY="(0; 0.2)"
+					LinearLimitsX="(-0.01; 0.01)"
+					LinearLimitsZ="(-0.01; 0.01)"
+				>				
+				</Constraint>
+			</Body>				
+			<Body 
+				Friction="0"
+				Mass="30"
+				ModelFrame="ChainF_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsY="(0; 0.2)"
+					LinearLimitsX="(-0.05; 0.05)"
+					LinearLimitsZ="(-0.05; 0.05)"
+				>				
+					<Motor Damping="50" Spring="5000" Type="Spring" />				
+				</Constraint>
+			</Body>				
+			<Body 
+				Friction="0"
+				Mass="30"
+				ModelFrame="ChainR_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsY="(0; 0.2)"
+					LinearLimitsX="(-0.05; 0.05)"
+					LinearLimitsZ="(-0.05; 0.05)"
+				>				
+					<Motor Damping="50" Spring="5000" Type="Spring" />				
+				</Constraint>
+			</Body>						
 			<Body Mass="1200" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
