@@ -56,8 +56,8 @@
 		<Foot Origin="(2.87; -1.28; -0.521)" />
 		<Foot Origin="(2.87; -1.28; 0.521)" />
 		<Camera
-			Center="(-2; 0; 0)"
-			RadiusMultiplier="1.4" />		
+			Center="(-4; 0; 0)"
+			RadiusMultiplier="1.8" />		
 	</TruckData>	
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">

@@ -59,7 +59,7 @@
 		<Foot Origin="(2.87; -1.28; 0.521)" />
 		<Camera
 			Center="(-2; 0; 0)"
-			RadiusMultiplier="1.4" />		
+			RadiusMultiplier="2" />		
 	</TruckData>	
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
@@ -91,6 +91,50 @@
 			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
+			<Body 
+				Friction="0"
+				Mass="5"
+				ModelFrame="Cone_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsY="(0; 0.2)"
+					LinearLimitsX="(-0.0045; 0.0045)"
+					LinearLimitsZ="(-0.0045; 0.0045)"
+				>				
+				</Constraint>
+			</Body>				
+			<Body 
+				Friction="0"
+				Mass="30"
+				ModelFrame="ChainF_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsY="(0; 0.2)"
+					LinearLimitsX="(-0.2; 0.2)"
+					LinearLimitsZ="(-0.2; 0.2)"
+				>				
+					<Motor Damping="10" Spring="1000" Type="Spring" />				
+				</Constraint>
+			</Body>				
+			<Body 
+				Friction="0"
+				Mass="30"
+				ModelFrame="ChainR_cdt"
+				NoFoliageCollisions="true"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsY="(0; 0.2)"
+					LinearLimitsX="(-0.2; 0.2)"
+					LinearLimitsZ="(-0.2; 0.2)"
+				>				
+					<Motor Damping="10" Spring="1000" Type="Spring" />				
+				</Constraint>
+			</Body>									
 			<Body Mass="2100" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"

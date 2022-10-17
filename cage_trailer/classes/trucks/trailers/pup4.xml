@@ -59,7 +59,7 @@
 		<Constraint _template="TrailerRagdoll" />
 		<Camera
 			Center="(-5; 0; 0)"
-			RadiusMultiplier="1.4" />		
+			RadiusMultiplier="2" />		
 	</TruckData>	
 	<ActionCategories>
 		<ActionCategory Action="1" Id="lift_control" LocaleUid="TRAILER CONTROLS" AvailableForFastMode="true" RemoveChildActionsFromCustomPanelShowCounter = "true"/>
