@@ -23,4 +23,12 @@
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
 	/>		
+	<Material
+		AlbedoMap="trucks/platform__d.tga"
+		Name="platform_mat"
+		NormalMap="trucks/platform__n_d.tga"
+		ShadingMap="trucks/platform__sh_d.tga"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>				
 </CombineXMesh>
