@@ -70,10 +70,10 @@
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="[JoAT] 2-Slot+ Flatbed (Tatra)"
+			UiDesc="[JoAT] 2-Slot+ Flatbed (Zikz)"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="[JoAT] 2-Slot+ Flatbed (Tatra)"
+			UiName="[JoAT] 2-Slot+ Flatbed (Zikz)"
 		/>
 		<SoundPoweredGroupStop Name="addons/ramp/ramp_trailer_flatbed_ramps_4_stop" Range="5" Volume="1" />
 		<SoundPoweredGroupStart Name="addons/ramp/ramp_trailer_flatbed_ramps_4_start" Range="5" Volume="1" />
