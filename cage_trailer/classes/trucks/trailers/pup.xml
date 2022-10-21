@@ -74,12 +74,10 @@
 		</Group>
 	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/tuning/pup">
-		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="1500"
-			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
 			<Body 

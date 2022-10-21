@@ -83,12 +83,10 @@
 		<Constraint Action="11" Id="hitch_control" LocaleUid="REAR HITCH" Name="Hitch" BelongToCategorie="attach_control" SpeedMult="3"/>
 	</ControlledConstraints>
 	<PhysicsModel Mesh="trucks/tuning/short">
-		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="2500"
-			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
 			<Body Mass="2200" ModelFrame="Body_cdt">

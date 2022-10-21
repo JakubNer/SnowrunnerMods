@@ -46,7 +46,7 @@
 		AlphaKill="true"
 	/>		
 	<Material
-		AlbedoMap="trucks/skid__d.tga"
+		AlbedoMap="trucks/chain__d.tga"
 		Name="skid_mat"
 		SnowUpIntensity="0.0"
 		AlphaKill="true"

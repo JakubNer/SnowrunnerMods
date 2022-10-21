@@ -60,8 +60,8 @@
 		<Foot Origin="(2.87; -1.28; -0.521)" />
 		<Foot Origin="(2.87; -1.28; 0.521)" />
 		<Camera
-			Center="(-2; 0; 0)"
-			RadiusMultiplier="1.4" />		
+			Center="(-3; 0; 0)"
+			RadiusMultiplier="2" />		
 	</TruckData>	
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
@@ -85,12 +85,10 @@
 		<Constraint Action="11" Id="hitch_control" LocaleUid="REAR HITCH" Name="Hitch" BelongToCategorie="attach_control" SpeedMult="3"/>
 	</ControlledConstraints>
 	<PhysicsModel Mesh="trucks/tuning/main">
-		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="2500"
-			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
 			<Body Mass="2000" ModelFrame="Body_cdt">

@@ -81,12 +81,10 @@
 		<Constraint Action="9" Id="lift_raise" LocaleUid="LIFT" Name="Lift" BelongToCategorie="lift_control" SpeedMult="3"/>
 	</ControlledConstraints>	
 	<PhysicsModel Mesh="trucks/tuning/double">
-		<NetSync Legacy="false" />	
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="2500"
-			NetSync="pv"			
 		>
 			<Constraint Type="Rigid" />		
 			<Body 
