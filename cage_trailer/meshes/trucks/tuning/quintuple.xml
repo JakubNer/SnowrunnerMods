@@ -44,5 +44,11 @@
 		Name="chain_mat"
 		SnowUpIntensity="0.0"
 		AlphaKill="true"
-	/>				
+	/>		
+	<Material
+		AlbedoMap="trucks/skid__d.tga"
+		Name="skid_mat"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>			
 </CombineXMesh>
