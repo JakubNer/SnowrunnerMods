@@ -92,8 +92,14 @@
 			Mass="1000"
 		>
 			<Constraint Type="Rigid" />		
+			<Body Mass="300" ModelFrame="Skid_cdt" Friction="0">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
 			<Body 
-				Mass="2000" 				
+				Mass="1700" 				
 				Friction="4.0"
 				ModelFrame="Body_cdt"
 			>

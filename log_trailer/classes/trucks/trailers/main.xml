@@ -90,8 +90,14 @@
 			ImpactType="Truck"
 			Mass="2500"
 		>
-			<Constraint Type="Rigid" />		
-			<Body Mass="2000" ModelFrame="Body_cdt">
+			<Constraint Type="Rigid" />	
+			<Body Mass="300" ModelFrame="Skid_cdt" Friction="0">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>					
+			<Body Mass="1700" ModelFrame="Body_cdt">
 				<Constraint
 					Type="Fixed"
 				>				

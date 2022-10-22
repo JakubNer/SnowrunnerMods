@@ -134,7 +134,13 @@
 					<Motor Damping="10" Spring="1000" Type="Spring" />				
 				</Constraint>
 			</Body>								
-			<Body Mass="2200" ModelFrame="Body_cdt">
+			<Body Mass="1900" ModelFrame="Body_cdt">
+				<Constraint
+					Type="Fixed"
+				>				
+				</Constraint>
+			</Body>		
+			<Body Mass="300" ModelFrame="Skid_cdt" Friction="0">
 				<Constraint
 					Type="Fixed"
 				>				
