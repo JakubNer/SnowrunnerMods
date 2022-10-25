@@ -40,6 +40,25 @@
 		AlphaKill="true"
 	/>
 	<Material
+		AlbedoMap="trucks/platform__d.tga"
+		NormalMap="trucks/platform__n_d.tga"
+		Name="platform_mat"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/chain__d.tga"
+		Name="legs2_mat"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
+		AlbedoMap="trucks/legs__d.tga"
+		Name="legs1_mat"
+		SnowUpIntensity="0.0"
+		AlphaKill="true"
+	/>
+	<Material
 		AlbedoMap="trucks/chain__d.tga"
 		Name="skid_mat"
 		SnowUpIntensity="0.0"

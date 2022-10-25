@@ -124,7 +124,7 @@
 				>
 					<Motor
 						Damping="1"
-						Force="50000"
+						Force="500000"
 						Tau="1"
 						Type="Position"
 					/>				
@@ -183,7 +183,7 @@
 				>
 					<Motor
 						Damping="1"
-						Force="300000"
+						Force="500000"
 						Tau="1"
 						Type="Position"
 					/>
@@ -198,7 +198,7 @@
 					>
 						<Motor
 							Damping="1"
-							Force="50000"
+							Force="500000"
 							Tau="1"
 							Type="Position"
 						/>
@@ -213,7 +213,7 @@
 						>
 							<Motor
 								Damping="1"
-								Force="100000"
+								Force="500000"
 								Tau="1"
 								Type="Position"
 							/>
@@ -231,7 +231,7 @@
 				>
 					<Motor
 						Damping="1"
-						Force="300000"
+						Force="500000"
 						Tau="1"
 						Type="Position"
 					/>
@@ -246,7 +246,7 @@
 					>
 						<Motor
 							Damping="1"
-							Force="50000"
+							Force="500000"
 							Tau="1"
 							Type="Position"
 						/>
@@ -261,7 +261,7 @@
 						>
 							<Motor
 								Damping="1"
-								Force="100000"
+								Force="500000"
 								Tau="1"
 								Type="Position"
 							/>
