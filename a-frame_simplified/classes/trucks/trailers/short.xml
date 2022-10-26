@@ -81,7 +81,7 @@
 				Name="Arm"
 				Tau="0.04"
 				TerminalFix="true"
-				Position="20"
+				Position="14"
 			/>
 		</Group>
 	</PoweredConstraints>	
@@ -121,7 +121,7 @@
 					Name="Arm"
 					Type="Hinge"
 					MinLimit="0"
-					MaxLimit="20"
+					MaxLimit="14"
 				>
 					<Motor
 						Damping="1"
