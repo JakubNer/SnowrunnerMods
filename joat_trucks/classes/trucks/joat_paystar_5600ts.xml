@@ -511,7 +511,6 @@
 	<HeadLight _template="Default" Pos="(6.917; 0.94; 0)" ParentFrame="BoneCabinSusp_cdt" />
 	<GameData
 		Country="US"
-		ExcludeAddons="vanilla__frame_addon_sideboard_2"
 		Price="102600"
 		UnlockByExploration="false"
 		UnlockByRank="1"
