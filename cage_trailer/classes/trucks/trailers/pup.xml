@@ -220,15 +220,15 @@
 			Type="Trailer"
 		/>
 
-		<WinchSocket Pos="(1.28; 1.02; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1.28; 1.02; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<WinchSocket Pos="(1.28; .85; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(1.28; .85; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 
-		<WinchSocket Pos="(-5.852; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-5.852; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-5.852; 4.896; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-5.852; 4.896; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-5.852; 4.896; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-5.852; 4.896; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.852; 4.11; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 4.11; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.852; 4.11; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 4.11; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-5.852; 4.11; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-5.852; 4.11; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		
 		<WinchSocket Pos="(-5.852; .7; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-5.852; .7; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	

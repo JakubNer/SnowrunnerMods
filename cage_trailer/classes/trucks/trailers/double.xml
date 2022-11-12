@@ -245,12 +245,12 @@
 		/>
 		<RequiredAddon _template="LowSaddle" />
 		
-		<WinchSocket Pos="(-8.454; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 4.896; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-8.454; 4.896; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 4.896; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
-		<WinchSocket Pos="(-8.454; 4.896; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(-8.454; 4.896; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.454; 4.11; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.454; 4.11; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.454; 4.11; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.454; 4.11; 0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
+		<WinchSocket Pos="(-8.454; 4.11; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
+		<CraneSocket Pos="(-8.454; 4.11; -0.4)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		
 		<WinchSocket Pos="(-8.454; .7; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(-8.454; .7; 0)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
