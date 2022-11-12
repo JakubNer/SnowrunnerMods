@@ -45,7 +45,7 @@
 			<Wheel _template="TrailerWheel" Pos="(-7.78; .226; 1.2)" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.78; .226; 1.2)" />
 		</Wheels>
-		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" />
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_heavy_single2" />		
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
@@ -160,7 +160,7 @@
 				</Constraint>
 			</Body>
 			<Body
-				Friction="2.0"
+				Friction="2"
 				Mass="400"
 				ModelFrame="Lift_cdt"
 				NoFoliageCollisions="true"
@@ -170,7 +170,7 @@
 					Name="Lift"
 					Type="Prismatic"
 					MinLimit="0"
-					MaxLimit="3.2"
+					MaxLimit="2.33"
 				>
 					<Motor
 						Damping="1"
@@ -206,11 +206,11 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<ReverseSignals>
-			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-8.503; 4.811; 0)" Color="g(255; 235; 215) x 0.6" />		
-			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.811; -0.06)" />		
-			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.811; 0.06)" />		
-			<Flare _template="HeadLight" Pos="(-8.503; 4.811; -0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
-			<Flare _template="HeadLight" Pos="(-8.503; 4.811; 0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
+			<Model _template="HeadLightRay" Dir="(-0.2; -0.9; 0)" Org="(-8.503; 4.01; 0)" Color="g(255; 235; 215) x 0.6" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.01; -0.06)" />		
+			<Light AttenEnd="4" Color="g(165; 149; 130) x 4" Dir="(-1; -0.9; 0)" InnerCone="80" OuterCone="180" Pos="(-8.503; 4.01; 0.06)" />		
+			<Flare _template="HeadLight" Pos="(-8.503; 4.01; -0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
+			<Flare _template="HeadLight" Pos="(-8.503; 4.01; 0.06)" Color="g(255; 235; 215) x 0.6" DirAngle="135" Size="0.3" />
 		</ReverseSignals>
 		<StopSignals>
 			<Flare _template="StopSignal" Pos="(-8.454; .986; -0.78)" ParentFrame="Body_cdt" />
