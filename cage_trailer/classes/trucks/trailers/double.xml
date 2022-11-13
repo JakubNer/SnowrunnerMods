@@ -5,7 +5,7 @@
 			SuspensionHeight="0.05"
 			SuspensionStrength="0.025"
 			Torque="default"
-			Type="semitrailer_oiltank"
+			Type="trailer_sideboard_2"
 			SuspensionMin="-0.1"
 		/>
 	</Wheel>
@@ -42,10 +42,10 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(-7.78; .226; 1.2)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.78; .226; 1.2)" />
+			<Wheel _template="TrailerWheel" Pos="(-7.78; .226; 1.15)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-7.78; .226; 1.15)" />
 		</Wheels>
-		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56" Type="wheels_heavy_single2" />		
+		 <CompatibleWheels OffsetZ="0" RearOffsetZ="0" RearScale="0.47" Scale=".56"/>		
 		<OcclusionMap
 			HalfSizeZ="1.8"
 			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
