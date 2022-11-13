@@ -483,6 +483,21 @@
 		<CraneSocket Pos="(-5.207; 1.279; -0)" ParentFrame="BoneBack_cdt" />
 		<CraneSocket Pos="(-0.647; 1.743; -0.341)" ParentFrame="BoneBack_cdt" />
 		<CraneSocket Pos="(-0.647; 1.743; 0.341)" ParentFrame="BoneBack_cdt" />
+		<AddonSockets DefaultAddon="joat_fuel_siderack">
+			<Socket 
+				Names="joat_fuel_siderack" 
+				ParentFrame="BoneChassis_cdt"
+				Offset="(1.725; 3.6; .5)"
+			/>
+		</AddonSockets>		
+		<AddonSockets DefaultAddon="joat_fuel_siderack2">
+			<Socket 
+				Names="joat_fuel_siderack2" 
+				ParentFrame="BoneChassis_cdt"
+				Offset="(1.4; 3.6; -.5)"
+				Dir="(0;0;-1)"
+			/>
+		</AddonSockets>		
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.038; 1.891; 0)" ParentFrame="BoneBack_cdt" />
 			<Socket Names="LogLift" Offset="(-1.840; 1.885; 0)" ParentFrame="BoneBack_cdt" >
