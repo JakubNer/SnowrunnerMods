@@ -1,0 +1,88 @@
+name: My Azure Foundry Config
+version: 1.0.0
+schema: v1
+
+secrets:
+  AZURE_FOUNDRY_KEY: ${{ env.AZURE_FOUNDRY_KEY }}
+  AZURE_FOUNDRY_ENDPOINT: ${{ env.AZURE_FOUNDRY_ENDPOINT }}
+
+models:
+
+  - name: gpt-5.6-sol
+    provider: openai
+    model: gpt-5.6-sol
+    apiBase: ${{ secrets.AZURE_FOUNDRY_ENDPOINT }}
+    apiKey: ${{ secrets.AZURE_FOUNDRY_KEY }}
+    apiType: azure
+    apiVersion: 2024-10-01-preview
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete
+    defaultCompletionOptions:
+      contextLength: 100352
+      maxTokens: 8192
+      reasoning: true
+    context:
+      - provider: code
+      - provider: codebase
+      - provider: diff
+      - provider: docs
+      - provider: terminal
+      - provider: problems
+      - provider: url
+      - provider: tree
+      - provider: currentFile
+      
+  - name: qwen3.6-27b
+    provider: openai
+    model: qwen/qwen3.6-27b
+    apiBase: http://localhost:1234/v1
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete
+    defaultCompletionOptions:
+      contextLength: 131072
+      maxTokens: 8192
+      reasoning: true
+      temperature: 0.1
+      topP: 0.9
+    chatOptions:
+      baseAgentSystemMessage: >-
+        You are an autonomous coding agent. Follow these rules STRICTLY:
+
+        1. AUTONOMY — You may plan and execute multi-step actions without explicit user approval.
+
+        2. TOOL-ONLY FILE WRITES — Never output code blocks as the final answer.
+          Always use create_new_file or edit_existing_file to write code to disk.
+
+        3. NO INLINE CODEBLOCKS — Codeblocks may be shown only for explanation or previews,
+          never as the final implementation.
+
+        4. VERIFICATION — After every file creation or edit, immediately verify correctness
+          by reading the file or listing the directory.
+
+        5. ITERATE UNTIL COMPLETE — After each verification step, check the original request:
+          - Are all required files present?
+          - Do they reference each other correctly?
+          - Is anything missing?
+          If incomplete, continue working until fully satisfied.
+
+        6. SELF-CORRECT — If you detect a mistake, missing file, or broken import,
+          fix it immediately without waiting for user input.
+
+        7. REPORT COMPLETION — Only after full verification and iteration,
+          summarize what you created and ask if the user wants changes.
+
+      
+
+agent:
+  enabled: true
+  autonomousMode: true
+  allowFileEdits: true
+  applyDiffAutomatically: true
+  maxSteps: 12
+  confirmBeforeExecute: false

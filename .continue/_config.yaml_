@@ -1,0 +1,77 @@
+name: My Azure Foundry Config
+version: 1.0.0
+schema: v1
+
+secrets:
+  AZURE_FOUNDRY_KEY: ${{ env.AZURE_FOUNDRY_KEY }}
+  AZURE_FOUNDRY_ENDPOINT: ${{ env.AZURE_FOUNDRY_ENDPOINT }}
+
+models:
+
+  - name: gpt-5.4
+    provider: openai
+    model: gpt-5.4
+    apiBase: ${{ secrets.AZURE_FOUNDRY_ENDPOINT }}
+    apiKey: ${{ secrets.AZURE_FOUNDRY_KEY }}
+    apiType: azure
+    apiVersion: 2024-10-01-preview
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete
+    defaultCompletionOptions:
+      contextLength: 100352
+      maxTokens: 8192
+      reasoning: true
+    context:
+      - provider: code
+      - provider: codebase
+      - provider: diff
+      - provider: docs
+      - provider: terminal
+      - provider: problems
+      - provider: url
+      - provider: tree
+      - provider: currentFile
+      
+  - name: qwen3.6-27b
+    provider: openai
+    model: qwen/qwen3.6-27b
+    apiBase: http://localhost:1234/v1
+    contextLength: 262144
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      maxTokens: 8192
+
+prompts:
+  - name: commit
+    description: Generate a Git commit message
+    prompt: |
+      Generate a concise Git commit message from the provided changes.
+
+      Requirements:
+      - Use conventional commit style when appropriate
+      - Keep the message short and specific
+      - Do not include explanations or extra text
+
+  - name: share
+    description: Export code to Markdown
+    prompt: |
+      Convert the selected code into clean Markdown.
+
+      Requirements:
+      - Preserve exact code formatting
+      - Wrap code in proper fenced code blocks
+      - Do not modify or reinterpret the code
+
+agent:
+  enabled: true
+  autonomousMode: true
+  allowFileEdits: true
+  applyDiffAutomatically: true
+  maxSteps: 12
+  confirmBeforeExecute: false
