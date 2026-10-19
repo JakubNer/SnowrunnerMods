@@ -266,11 +266,13 @@
 		<WinchSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />
 		<CraneSocket Pos="(1.794; 1.096; -1.5)" ParentFrame="Body_cdt" WinchableWhenAttached="true" />	
 		<WinchSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
-		<CraneSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />	
-		
+				<CraneSocket Pos="(1.794; 1.096; 1.5)" ParentFrame="BoneLift_cdt" WinchableWhenAttached="true" />
+
 		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
-		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />		
-		
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium_Burnt" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium_Burnt" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
+
 		<AddonSlots
 			InitialOffset="(1.829; .95; 0)"
 			ParentFrames="Body_cdt"

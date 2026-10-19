@@ -43,11 +43,11 @@
 	<GameData Price="775">
 		<CraneSocket Pos="(-.3; .9; 0)" />
 		<UiDesc
-			UiDesc="Low & Wide Repair Hitch Rack (Non Scout)"
+			UiDesc="Low &amp; Wide Repair Hitch Rack (Non Scout)"
 			UiIcon20x20="cargoTypeVehiclesSpareParts20"
 			UiIcon40x40="cargoTypeVehiclesSpareParts40"
 			UiIcon100x100="cargoTypeVehicleSpareParts"
-			UiName="Low & Wide Repair Hitch Rack (Non Scout)"
+			UiName="Low &amp; Wide Repair Hitch Rack (Non Scout)"
 		/>
 		<InstallSocket Offset="(.45; 0.48; 0)" Type="Trailer" />		
 		<WinchSocket Pos="(.45; 0.48; 0)" ParentFrame="BoneCabin_cdt" />		
