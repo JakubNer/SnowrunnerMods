@@ -581,7 +581,7 @@
 		<UiDesc
 			UiDesc="Vanilla Western Star 6900 TwinSteer with JoAT long-log addon support"
 			UiIcon30x30="heavyVehicleImg30"
-			UiIcon328x458="shopImgWStwinStar"
+			UiIcon328x458="joatTwinsteerStore"
 			UiIcon40x40="heavyVehicleImg"
 			UiIconLogo="WesternStarLogo80"
 			UiName="JoaT 6900 TwinSteer"
