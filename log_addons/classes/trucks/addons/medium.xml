@@ -100,6 +100,9 @@
 		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
 		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />		
 		
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium_Burnt" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
+		<LoadArea Subtype="JoatCargoLogsMedium" TrailerLoad="true" Type="CargoLogsMedium_Burnt" Min="(1.83; 1; -1.4)" Max="(-5; 2; 1.4)" ParentFrame="Body_cdt" />
+
 		<AddonSlots
 			InitialOffset="(1.829; .95; 0)"
 			ParentFrames="Body_cdt"
